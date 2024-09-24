@@ -1,31 +1,43 @@
 /* Font Faces */
 @font-face {
-  font-family: 'CringeSans';
-  src: url('/src/assets/fonts/CringeSans-Regular.woff2') format('woff2'),
-       url('/src/assets/fonts/CringeSans-Regular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
+  font-family: "CringeSans Black";
+  src: url("/src/assets/fonts/BNCringeSansBlack.woff2") format("woff2"),
+    url("/src/assets/fonts/BNCringeSansBlack.woff") format("woff"),
+    url("/src/assets/fonts/BNCringeSans-Black.otf") format("opentype");
 }
 
 @font-face {
-  font-family: 'CringeSans';
-  src: url('/src/assets/fonts/CringeSans-Bold.woff2') format('woff2'),
-       url('/src/assets/fonts/CringeSans-Bold.woff') format('woff');
-  font-weight: bold;
-  font-style: normal;
+  font-family: "CringeSans Bold";
+  src: url("/src/assets/fonts/BNCringeSansBold.woff2") format("woff2"),
+    url("/src/assets/fonts/BNCringeSansBold.woff") format("woff"),
+    url("/src/assets/fonts/BNCringeSans-Bold.otf") format("opentype");
 }
 
 @font-face {
-  font-family: 'CringeSans';
-  src: url('/src/assets/fonts/CringeSans-Black.woff2') format('woff2'),
-       url('/src/assets/fonts/CringeSans-Black.woff') format('woff');
-  font-weight: 900;
-  font-style: normal;
+  font-family: "CringeSans Light";
+  src: url("/src/assets/fonts/BNCringeSansLight.woff2") format("woff2"),
+    url("/src/assets/fonts/BNCringeSansLight.woff") format("woff"),
+    url("/src/assets/fonts/BNCringeSans-Light.otf") format("opentype");
 }
+
+@font-face {
+  font-family: "CringeSans Medium";
+  src: url("/src/assets/fonts/BNCringeSansMedium.woff2") format("woff2"),
+    url("/src/assets/fonts/BNCringeSansMedium.woff") format("woff"),
+    url("/src/assets/fonts/BNCringeSans-Medium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "CringeSans Regular";
+  src: url("/src/assets/fonts/BNCringeSansRegular.woff2") format("woff2"),
+    url("/src/assets/fonts/BNCringeSansRegular.woff") format("woff"),
+    url("/src/assets/fonts/BNCringeSans-Regular.otf") format("opentype");
+}
+
 
 /* General Styles */
 body {
-  font-family: 'CringeSans', sans-serif;
+  font-family: "CringeSans Regular", sans-serif;
   color: #222221; /* Off-black from the brand */
   font-size: 16px; /* Base font size for easy scaling */
   line-height: 1.6; /* Improve readability */
@@ -33,26 +45,25 @@ body {
 
 /* Headings */
 h1 {
-  font-family: 'CringeSans', sans-serif;
+  font-family: "CringeSans Regular", sans-serif;
   font-size: 3rem; /* Large for main titles */
-  font-weight: 900; /* Black weight */
   text-transform: uppercase; /* All caps as per guideline */
-  color: #E52D20; /* Red Light color */
+  color: #e52d20; /* Red Light color */
   line-height: 1.2;
 }
 
 h2 {
-  font-family: 'CringeSans', sans-serif;
+  font-family: "CringeSans Regular", sans-serif;
   font-size: 2.5rem;
-  font-weight: bold;
   text-transform: uppercase;
-  color: #3F81C3; /* Azure color */
+  color: #3f81c3; /* Azure color */
   line-height: 1.3;
 }
 
-h3, h4, h5 {
-  font-family: 'CringeSans', sans-serif;
-  font-weight: bold; /* Consistent bold style for subheadings */
+h3,
+h4,
+h5 {
+  font-family: "CringeSans Black", sans-serif; /* Consistent bold style for subheadings */
   text-transform: uppercase;
   line-height: 1.4;
 }
@@ -71,16 +82,16 @@ h5 {
 
 /* Paragraphs */
 p {
-  font-family: 'CringeSans', sans-serif;
+  font-family: "CringeSans Regular", sans-serif;
   font-size: 1rem; /* Matches the body font size */
-  font-weight: normal; /* Regular weight for paragraphs */
   color: #222221; /* Off-black for easy reading */
   margin-bottom: 1.2rem; /* Space between paragraphs */
 }
 
 /* Lists */
-ul, ol {
-  font-family: 'CringeSans', sans-serif;
+ul,
+ol {
+  font-family: "CringeSans Regular", sans-serif;
   font-size: 1rem;
   line-height: 1.6;
   margin-bottom: 1rem;
@@ -92,9 +103,8 @@ li {
 
 /* Links */
 a {
-  font-family: 'CringeSans', sans-serif;
-  font-weight: bold;
-  color: #3F81C3; /* Azure color for links */
+  font-family: "CringeSans Black", sans-serif;
+  color: #3f81c3; /* Azure color for links */
   text-decoration: none;
 }
 
