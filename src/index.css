@@ -1,3 +1,103 @@
+/* Font Faces */
+@font-face {
+  font-family: 'CringeSans';
+  src: url('/src/assets/fonts/CringeSans-Regular.woff2') format('woff2'),
+       url('/src/assets/fonts/CringeSans-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CringeSans';
+  src: url('/src/assets/fonts/CringeSans-Bold.woff2') format('woff2'),
+       url('/src/assets/fonts/CringeSans-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CringeSans';
+  src: url('/src/assets/fonts/CringeSans-Black.woff2') format('woff2'),
+       url('/src/assets/fonts/CringeSans-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* General Styles */
 body {
-  margin: 0;
+  font-family: 'CringeSans', sans-serif;
+  color: #222221; /* Off-black from the brand */
+  font-size: 16px; /* Base font size for easy scaling */
+  line-height: 1.6; /* Improve readability */
+}
+
+/* Headings */
+h1 {
+  font-family: 'CringeSans', sans-serif;
+  font-size: 3rem; /* Large for main titles */
+  font-weight: 900; /* Black weight */
+  text-transform: uppercase; /* All caps as per guideline */
+  color: #E52D20; /* Red Light color */
+  line-height: 1.2;
+}
+
+h2 {
+  font-family: 'CringeSans', sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #3F81C3; /* Azure color */
+  line-height: 1.3;
+}
+
+h3, h4, h5 {
+  font-family: 'CringeSans', sans-serif;
+  font-weight: bold; /* Consistent bold style for subheadings */
+  text-transform: uppercase;
+  line-height: 1.4;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.75rem;
+}
+
+h5 {
+  font-size: 1.5rem;
+}
+
+/* Paragraphs */
+p {
+  font-family: 'CringeSans', sans-serif;
+  font-size: 1rem; /* Matches the body font size */
+  font-weight: normal; /* Regular weight for paragraphs */
+  color: #222221; /* Off-black for easy reading */
+  margin-bottom: 1.2rem; /* Space between paragraphs */
+}
+
+/* Lists */
+ul, ol {
+  font-family: 'CringeSans', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+li {
+  margin-bottom: 0.5rem; /* Space between list items */
+}
+
+/* Links */
+a {
+  font-family: 'CringeSans', sans-serif;
+  font-weight: bold;
+  color: #3F81C3; /* Azure color for links */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline; /* Underline on hover for clarity */
 }
