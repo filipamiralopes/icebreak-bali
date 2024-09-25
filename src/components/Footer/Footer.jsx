@@ -3,10 +3,10 @@ import "./Footer.css";
 
 function Footer() {
   return (
-    <nav>
-      <h3>Contact us</h3>
-      <h3>Visit us</h3>
-      <h3>Find us</h3>
+    <nav className="navbar">
+      <h5>Contact us</h5>
+      <h5>Visit us</h5>
+      <h5>Find us</h5>
     </nav>
   );
 }

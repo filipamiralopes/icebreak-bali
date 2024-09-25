@@ -35,10 +35,20 @@
 }
 
 
+/* Colors */
+:root {
+  --verdigris: #6FBABC;
+  --azure: #3F81C3;
+  --stone: #EAEAEA;
+  --off-black: #222221;
+  --red-light: #E52D20;
+}
+
+
 /* General Styles */
 body {
   font-family: "CringeSans Regular", sans-serif;
-  color: #222221; /* Off-black from the brand */
+  color: var(--off-black); /* Off-black from the brand */
   font-size: 16px; /* Base font size for easy scaling */
   line-height: 1.6; /* Improve readability */
 }
@@ -48,28 +58,31 @@ h1 {
   font-family: "CringeSans Regular", sans-serif;
   font-size: 3rem; /* Large for main titles */
   text-transform: uppercase; /* All caps as per guideline */
-  color: #e52d20; /* Red Light color */
   line-height: 1.2;
+  text-align: left;
 }
 
 h2 {
   font-family: "CringeSans Regular", sans-serif;
   font-size: 2.5rem;
   text-transform: uppercase;
-  color: #3f81c3; /* Azure color */
   line-height: 1.3;
+  text-align: left;
 }
 
-h3,
+h3 {
+  font-family: "CringeSans Regular", sans-serif;
+  font-size: 2rem;
+  text-transform: uppercase;
+  line-height: 1.4;
+  text-align: left;
+}
+
 h4,
 h5 {
   font-family: "CringeSans Black", sans-serif; /* Consistent bold style for subheadings */
   text-transform: uppercase;
   line-height: 1.4;
-}
-
-h3 {
-  font-size: 2rem;
 }
 
 h4 {
@@ -86,6 +99,7 @@ p {
   font-size: 1rem; /* Matches the body font size */
   color: #222221; /* Off-black for easy reading */
   margin-bottom: 1.2rem; /* Space between paragraphs */
+  text-align: left;
 }
 
 /* Lists */
