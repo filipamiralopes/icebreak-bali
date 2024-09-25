@@ -17,11 +17,21 @@
     left: 0; /* Moves it into view */
 }
 
-/* Menu button */
+/* Menu icon */
 .menu-icon {
     position: absolute;
     top: 20px;
     left: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 1100;
+}
+
+/* Close icon inside the sidebar */
+.close-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
     font-size: 30px;
     cursor: pointer;
     z-index: 1100;

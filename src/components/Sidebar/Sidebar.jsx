@@ -1,4 +1,5 @@
 import menuIcon from "../../assets/icons/menu-icon.png";
+import closeIcon from "../../assets/icons/close-icon.png";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Sidebar.css";
@@ -23,6 +24,15 @@ const Sidebar = () => {
       )}
 
       <div className={`sidebar ${isOpen ? "open" : ""}`}>
+        {isOpen && (
+          <div className="close-icon" onClick={toggleSidebar}>
+            <img
+              src={closeIcon}
+              alt="Close icon"
+              style={{ width: "70px", height: "auto" }}
+            />
+          </div>
+        )}
         <Link to="/">
           <h4>Home</h4>
         </Link>
