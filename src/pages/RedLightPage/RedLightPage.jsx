@@ -3,8 +3,16 @@ import "./RedLightPage.css";
 function RedLightPage() {
   return (
     <div>
-      <h2>RED LIGHT THERAPY PROMOTES HEALING AND WELLBEING</h2>
-      <h3>RED LIGHT STIMULATES ENERGY PRODUCTION IN CELLS</h3>
+      <h2>
+        RED LIGHT THERAPY
+        <br /> PROMOTES HEALING
+        <br /> AND WELLBEING
+      </h2>
+      <h3>
+        RED LIGHT STIMULATES
+        <br /> ENERGY PRODUCTION
+        <br /> IN CELLS
+      </h3>
       <p>
         Red light therapy enhances the function
         <br /> of mitochondria, boosting energy production

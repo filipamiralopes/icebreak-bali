@@ -3,8 +3,16 @@ import "./IceBathPage.css";
 function IceBathPage() {
   return (
     <div>
-      <h2>ICE BATHS IMPROVE MOOD AND FEELINGS OF WELLBEING</h2>
-      <h3>COLD EXPOSURE CAUSES THE RELEASE OF DOPAMINE</h3>
+      <h2>
+        ICE BATHS
+        <br /> IMPROVE MOOD
+        <br /> AND FEELINGS
+        <br /> OF WELLBEING
+      </h2>
+      <h3>
+        COLD EXPOSURE CAUSES
+        <br /> THE RELEASE OF DOPAMINE
+      </h3>
       <p>
         Dopamine is a powerful molecule
         <br /> capable of elevating mood, enhancing
