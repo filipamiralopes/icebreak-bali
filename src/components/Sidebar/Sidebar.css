@@ -9,12 +9,13 @@
     transition: left 0.4s ease; /* Smooth slide */
     padding-top: 60px;
     z-index: 1000;
-    border-right: 1px solid var(--off-black);
+    border-right: none; /* Start with no border */
 }
 
 /* Sidebar open - slide it in */
 .sidebar.open {
     left: 0; /* Moves it into view */
+    border-right: 1px solid var(--off-black);
 }
 
 /* Menu icon */
