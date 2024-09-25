@@ -1,26 +1,41 @@
-import menuIcon from "../../assets/icons/menu-icon.png"
+import menuIcon from "../../assets/icons/menu-icon.png";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Sidebar.css";
 
+const Sidebar = () => {
+  const [isOpen, setIsOpen] = useState(false);
 
-function Sidebar() {
+  const toggleSidebar = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
-    <nav className="sidebar">
-      <img src={menuIcon} alt="Location icon" style={{ width: "50px", height: "auto" }} className="location-icon"/>
-      <Link to="/">
-        <h4>Home</h4>
-      </Link>
-      <Link to="/icebath">
-        <h4>Ice Bath</h4>
-      </Link>  
-      <Link to="/redlight">
-        <h4>Red Light</h4>
-      </Link>  
-      <Link to="/about">
-        <h4>About Us</h4>
-      </Link>      
-    </nav>
+    <>
+      <div className="menu-icon" onClick={toggleSidebar}>
+        <img
+          src={menuIcon}
+          alt="Location icon"
+          style={{ width: "50px", height: "auto" }}
+        />
+      </div>
+
+      <div className={`sidebar ${isOpen ? "open" : ""}`}>
+        <Link to="/">
+          <h4>Home</h4>
+        </Link>
+        <Link to="/icebath">
+          <h4>Ice Bath</h4>
+        </Link>
+        <Link to="/redlight">
+          <h4>Red Light</h4>
+        </Link>
+        <Link to="/about">
+          <h4>About Us</h4>
+        </Link>
+      </div>
+    </>
   );
-}
+};
 
 export default Sidebar;
