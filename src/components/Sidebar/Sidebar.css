@@ -5,10 +5,11 @@
     left: -250px; /* Start off-screen */
     width: 250px;
     height: 100%;
-    background-color: #222221; /* Customize this */
+    background-color: var(--stone); /* Customize this */
     transition: left 0.4s ease; /* Smooth slide */
-    padding-top: 20px;
+    padding-top: 60px;
     z-index: 1000;
+    border-right: 1px solid var(--off-black);
 }
 
 /* Sidebar open - slide it in */
@@ -28,7 +29,7 @@
 
 /* Optional: Styling for sidebar links */
 .sidebar a {
-    padding: 5px 15px;
+    padding: 5px 30px;
     text-decoration: none;
     font-size: 18px;
     color: var(--verdigris);

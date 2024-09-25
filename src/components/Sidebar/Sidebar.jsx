@@ -12,13 +12,15 @@ const Sidebar = () => {
 
   return (
     <>
-      <div className="menu-icon" onClick={toggleSidebar}>
-        <img
-          src={menuIcon}
-          alt="Location icon"
-          style={{ width: "50px", height: "auto" }}
-        />
-      </div>
+      {!isOpen && (
+        <div className="menu-icon" onClick={toggleSidebar}>
+          <img
+            src={menuIcon}
+            alt="Location icon"
+            style={{ width: "50px", height: "auto" }}
+          />
+        </div>
+      )}
 
       <div className={`sidebar ${isOpen ? "open" : ""}`}>
         <Link to="/">
