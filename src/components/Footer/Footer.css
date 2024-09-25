@@ -1,4 +1,6 @@
-.navbar {
+.footer {
     display: flex;
-    justify-content: space-evenly
+    justify-content: space-around;
+    border-top: 1px solid var(--off-black);
+    margin-left: -4em;
 }
