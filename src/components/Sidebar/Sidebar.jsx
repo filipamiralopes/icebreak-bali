@@ -1,15 +1,30 @@
 import menuIcon from "../../assets/icons/menu-icon.png";
 import closeIcon from "../../assets/icons/close-icon.png";
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import "./Sidebar.css";
 
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const sidebarRef = useRef(null);
 
   const toggleSidebar = () => {
     setIsOpen(!isOpen);
   };
+
+  // Close sidebar when clicking outside of it
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (isOpen && sidebarRef.current && !sidebarRef.current.contains(event.target)) {
+        setIsOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [isOpen]);
 
   return (
     <>
@@ -17,13 +32,17 @@ const Sidebar = () => {
         <div className="menu-icon" onClick={toggleSidebar}>
           <img
             src={menuIcon}
-            alt="Location icon"
+            alt="Menu icon"
             style={{ width: "50px", height: "auto" }}
           />
         </div>
       )}
 
-      <div className={`sidebar ${isOpen ? "open" : ""}`}>
+      <div
+        ref={sidebarRef}
+        className={`sidebar ${isOpen ? "open" : ""}`}
+        onClick={(e) => e.stopPropagation()}
+      >
         {isOpen && (
           <div className="close-icon" onClick={toggleSidebar}>
             <img
