@@ -1,3 +1,4 @@
+import menuIcon from "../../assets/icons/menu-icon.png"
 import { Link } from "react-router-dom";
 import "./Sidebar.css";
 
@@ -5,17 +6,18 @@ import "./Sidebar.css";
 function Sidebar() {
   return (
     <nav className="sidebar">
+      <img src={menuIcon} alt="Location icon" style={{ width: "50px", height: "auto" }} className="location-icon"/>
       <Link to="/">
-        <button>Home</button>
+        <h4>Home</h4>
       </Link>
       <Link to="/icebath">
-        <button>Ice Bath</button>
+        <h4>Ice Bath</h4>
       </Link>  
       <Link to="/redlight">
-        <button>Red Light</button>
+        <h4>Red Light</h4>
       </Link>  
       <Link to="/about">
-        <button>About Us</button>
+        <h4>About Us</h4>
       </Link>      
     </nav>
   );

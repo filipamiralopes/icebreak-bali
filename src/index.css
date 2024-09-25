@@ -40,6 +40,7 @@
   --verdigris: #6FBABC;
   --azure: #3F81C3;
   --stone: #EAEAEA;
+  --white: #FFFFFF;
   --off-black: #222221;
   --red-light: #E52D20;
 }
@@ -100,8 +101,8 @@ h5 {
 }
 
 .headline-highlight {
-  color: #EAEAEA;
-  background-color: #222221;
+  color: var(--stone);
+  background-color: var(--off-black);
   line-height: 0;
   padding: 0.1em 0.1em 0 0.1em;
   padding-bottom: 0;
@@ -129,11 +130,12 @@ li {
 
 /* Links */
 a {
-  font-family: "CringeSans Black", sans-serif;
-  color: #3f81c3; /* Azure color for links */
+  font-family: "CringeSans Light", sans-serif;
+  color: var(--verdigris); /* Verdigris color for links */
   text-decoration: none;
 }
 
 a:hover {
   text-decoration: underline; /* Underline on hover for clarity */
+  text-underline-offset: 0.25em;
 }
