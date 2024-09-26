@@ -10,7 +10,7 @@ function IceBathPage() {
         <h4>Cold exposure causes the release of dopamine</h4>
         <p>
           Dopamine is a powerful molecule capable of elevating mood, enhancing focus, attention, and goal-directed behavior. 
-          Even short bouts of cold exposure can cause a lasting increase in dopamine and sustained elevation of mood, energy, and focus.
+          Even short baths of cold exposure can cause a lasting increase in dopamine and sustained elevation of mood, energy, and focus.
         </p>
       </section>
     </div>
