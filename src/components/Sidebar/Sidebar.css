@@ -2,8 +2,8 @@
 .sidebar {
     position: fixed;
     top: 0;
-    left: -250px; /* Start off-screen */
-    width: 250px;
+    left: -20%; /* Start off-screen */
+    width: 20%;
     height: 100%;
     background-color: var(--stone); /* Customize this */
     transition: left 0.4s ease; /* Smooth slide */

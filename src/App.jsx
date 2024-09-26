@@ -12,9 +12,8 @@ import { Routes, Route } from "react-router-dom";
 function App() {
   return (
     <div className="page-container">
+      <Sidebar />
       <div className="landing-page">
-        <Sidebar />
-
         <Routes>
           <Route path="/" element={<HomePage />} />
 
