@@ -6,4 +6,5 @@
     background-color: var(--stone);
     height: 20vh;
     box-sizing: border-box;
+    margin-top: auto; /* Push the footer to the bottom */
 }
