@@ -1,4 +1,4 @@
-import './App.css';
+import "./App.css";
 import Sidebar from "./components/Sidebar/Sidebar";
 import HomePage from "./pages/HomePage/HomePage";
 import IceBathPage from "./pages/IceBathPage/IceBathPage";
@@ -11,24 +11,24 @@ import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <>
-    <div className="landing-page">
-      <Sidebar />
-      
-      <Routes>
-        <Route  path="/" element={<HomePage />} />
+    <div className="page-container">
+      <div className="landing-page">
+        <Sidebar />
 
-        <Route path="/icebath" element={<IceBathPage />} />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
 
-        <Route path="/redlight" element={<RedLightPage />} />
+          <Route path="/icebath" element={<IceBathPage />} />
 
-        <Route path="/about" element={<AboutPage />} />
+          <Route path="/redlight" element={<RedLightPage />} />
 
-        <Route path="*" element={<NotFoundPage />} />
-      </Routes>      
+          <Route path="/about" element={<AboutPage />} />
+
+          <Route path="*" element={<NotFoundPage />} />
+        </Routes>
+      </div>
+      <Footer />
     </div>
-    <Footer />
-    </>
   );
 }
 

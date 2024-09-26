@@ -34,31 +34,33 @@
     url("/src/assets/fonts/BNCringeSans-Regular.otf") format("opentype");
 }
 
-
 /* Colors */
 :root {
-  --verdigris: #6FBABC;
-  --azure: #3F81C3;
-  --stone: #EAEAEA;
-  --white: #FFFFFF;
+  --verdigris: #6fbabc;
+  --azure: #3f81c3;
+  --stone: #eaeaea;
+  --white: #ffffff;
   --off-black: #222221;
-  --red-light: #E52D20;
+  --red-light: #e52d20;
 }
 
-
 /* General Styles */
+html,
 body {
   font-family: "CringeSans Regular", sans-serif;
   color: var(--off-black); /* Off-black from the brand */
   font-size: 16px; /* Base font size for easy scaling */
   line-height: 1.6; /* Improve readability */
-  background-color: var(--stone);
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-image: url("/src/assets/images/ice-small-white.png");
+  background-size: cover;
 }
 
 * {
   text-align: left;
 }
-
 
 /* Headings */
 h1,
@@ -66,7 +68,7 @@ h2,
 h3,
 h4,
 h5,
-h6{
+h6 {
   text-transform: uppercase; /* All caps as per guideline */
   letter-spacing: -0.4px;
 }

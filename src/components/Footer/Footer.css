@@ -4,4 +4,6 @@
     border-top: 1px solid var(--off-black);
     margin-left: -4em;
     background-color: var(--stone);
+    height: 20vh;
+    box-sizing: border-box;
 }
