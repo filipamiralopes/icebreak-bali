@@ -52,6 +52,7 @@ body {
   font-size: 16px; /* Base font size for easy scaling */
   line-height: 1.6; /* Improve readability */
   height: 100%;
+  width: 100%;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
