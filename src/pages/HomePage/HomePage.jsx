@@ -3,15 +3,14 @@ import "./HomePage.css";
 function HomePage() {
   return (
     <div className="home-page">
-      <h1>
-        ICE BATH
-        <br/>
-        <br /> RED
-        <br /> LIGHT
-        <br /> THERAPY
-        <br/>
-        <br /> & MORE
-      </h1>
+      <div>
+        <h1 className="icebath">Ice bath</h1>
+        <h1 className="redlight">
+          Red light <br />
+          therapy
+        </h1>
+        <h1 className="and-more">& more</h1>
+      </div>
     </div>
   );
 }

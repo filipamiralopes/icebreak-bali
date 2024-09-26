@@ -1,0 +1,21 @@
+.home-page {
+  width: 80%;
+}
+
+.home-page h1 {
+  font-size: 4rem;
+}
+
+.redlight {
+  display: inline-block;
+  text-align: right;
+  padding-right: 0; 
+  margin-left: 60%;
+}
+
+/* .redlight:hover {
+    color: var(--stone);
+    background-color: var(--off-black);
+    padding: 0.1em 0.1em 0 0.1em;
+    border-radius: 4px;
+} */

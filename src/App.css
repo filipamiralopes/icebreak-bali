@@ -11,6 +11,6 @@
   min-height: 100vh; /* Fallback for older browsers */
   min-height: 100dvh; /* Preferred for modern browsers. Mobile responsive */
   max-width: 100%;
-  margin-left: 25%; /*navbar size + 5% margin*/
+  margin-left: 20%; /* navbar size */
   padding: 3em;
 }
