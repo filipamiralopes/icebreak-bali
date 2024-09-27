@@ -35,7 +35,7 @@ function Footer() {
         <a href="https://maps.app.goo.gl/XN9GBsEXTbyePuGi7">
           Main Road Bingin Uluatu Bali
         </a>
-        <p>daily 7:00am - 9:00pm</p>
+        <p>daily 7:30am - 7:30pm</p>
       </div>
 
       <div className="info">
