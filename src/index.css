@@ -104,6 +104,11 @@ h5 {
   font-family: "CringeSans Black", sans-serif;
 }
 
+h6 {
+  font-size: 1.25rem;
+  font-family: "CringeSans Bold", sans-serif;
+}
+
 .headline-highlight {
   color: var(--stone);
   background-color: var(--off-black);
@@ -135,11 +140,12 @@ li {
 /* Links */
 a {
   font-family: "CringeSans Light", sans-serif;
-  color: var(--verdigris); /* Verdigris color for links */
-  text-decoration: none;
+  color: var(--off-black);
+  text-decoration: underline;
 }
 
 a:hover {
   text-decoration: underline; /* Underline on hover for clarity */
+  color: var(--verdigris);
   text-underline-offset: 0.25em;
 }

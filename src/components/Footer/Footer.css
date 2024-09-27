@@ -4,7 +4,32 @@
     border-top: 1px solid var(--off-black);
     margin-left: -4em;
     background-color: var(--stone);
-    height: 20vh;
+    height: 25vh;
     box-sizing: border-box;
     margin-top: auto; /* Push the footer to the bottom */
+}
+
+.info {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.info h6 {
+    padding: 0;
+    margin: 1rem 0 0 0;
+}
+
+.info a {
+    padding: 0;
+    margin: 0;
+}
+
+.info-icon{
+    display: flex;
+}
+
+.info-icon img{
+    margin-top: 0.25rem;
 }
