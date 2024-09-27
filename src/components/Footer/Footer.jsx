@@ -20,6 +20,7 @@ function Footer() {
           />
         </div>
         <a>+62 999 9999 999</a>
+        <p>icebreak@bali.com</p>
       </div>
 
       <div className="info">
@@ -34,6 +35,7 @@ function Footer() {
         <a href="https://maps.app.goo.gl/XN9GBsEXTbyePuGi7">
           Main Road Bingin Uluatu Bali
         </a>
+        <p>daily 7:00am - 9:00pm</p>
       </div>
 
       <div className="info">
@@ -46,6 +48,7 @@ function Footer() {
           />
         </div>
         <a href="">@icebreakbali</a>
+        <a href="">facebook/iceabreak-bali.com</a>
       </div>
     </nav>
   );

@@ -4,7 +4,7 @@
     border-top: 1px solid var(--off-black);
     margin-left: -4em;
     background-color: var(--stone);
-    height: 25vh;
+    height: 28dvh;
     box-sizing: border-box;
     margin-top: auto; /* Push the footer to the bottom */
 }
@@ -17,19 +17,24 @@
 }
 
 .info h6 {
+    margin-bottom: 0.5rem;
     padding: 0;
-    margin: 1rem 0 0 0;
+    
 }
 
-.info a {
+.info a, p {
+    font-family: "CringeSans Light", sans-serif;
     padding: 0;
-    margin: 0;
+    margin: 0.2rem;
 }
 
 .info-icon{
     display: flex;
+    margin: 0;
+    padding: 0;
+    /* background-color: aqua; */
 }
 
 .info-icon img{
-    margin-top: 0.25rem;
+    margin: 2.2rem 0 0 0;
 }
