@@ -9,6 +9,10 @@
     margin-top: auto; /* Push the footer to the bottom */
 }
 
+.footer > img{
+    margin-top: 1rem;
+}
+
 .info {
     height: 80%;
     display: flex;

@@ -20,7 +20,7 @@ function Footer() {
           />
         </div>
         <a>+62 999 9999 999</a>
-        <p>icebreak@bali.com</p>
+        <p>info@icebreak.com</p>
       </div>
 
       <div className="info">
