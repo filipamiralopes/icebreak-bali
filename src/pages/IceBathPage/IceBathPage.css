@@ -1,0 +1,14 @@
+.icebath-page {
+  display: flex;
+  margin: 0;
+}
+
+.content-section {
+  width: 50%;
+  padding: 0 2rem 2rem 2rem;
+}
+
+.image-section {
+  width: 50%;
+  margin-top: 2rem;
+}
