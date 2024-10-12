@@ -3,8 +3,7 @@ html {
 }
 
 section {
-  padding-top: 3rem;
-  padding-left: 10.5rem;
+  padding: 3rem 15rem;
   min-height: 100dvh; /* Each section takes up the full viewport */
   min-width: 100dvh; /* Each section takes up the full viewport */
 }
@@ -20,34 +19,75 @@ section {
 /* BACKGROUND VIDEO */
 #background-video {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: -25%;
+  left: -25%;
   min-width: 100%; /* Ensures the video covers the full width */
   min-height: 100%; /* Ensures the video covers the full height */
   object-fit: fit;
   z-index: -1; /* Places the video behind other content */
-  transform: scale(1);
+  transform: scale(0.75);
 }
 
 #landing-section h1 {
   position: relative;
   font-size: 4rem;
   z-index: 1; /* Ensures the content stays above the video */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 #landing-redlight {
   display: inline-block;
   text-align: right;
   padding-right: 0;
-  margin-left: 60%;
+  margin-left: 32rem;
 }
 
-/* #landing-redlight:hover {
-    color: var(--stone);
-    background-color: var(--off-black);
-    padding: 0.1em 0.1em 0 0.1em;
-    border-radius: 4px;
-} */
+#and-more {
+  margin-left: 5rem;
+}
+
+/* ICE BATH SECTION */
+#icebath-section {
+  background-color: var(--white);
+  background-image: url("/src/assets/images/backgrounds/ice-isolated-2.png");
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+  justify-content: center; /* Horizontal alignment */
+  align-items: center;     /* Vertical alignment */
+}
+
+#icebath-content-section{
+  width: 80%;
+  padding: 2rem;
+  border: 0.9px solid var(--off-black);
+}
+
+/* RED LIGHT SECTION */
+#redlight-section {
+  background-color: var(--stone);
+  /* background-image: url("/src/assets/images/backgrounds/ice-red-2.png");
+  background-size: cover; */
+  display: flex;
+  justify-content: center; /* Horizontal alignment */
+  align-items: center;     /* Vertical alignment */
+}
+
+#redlight-content-section{
+  width: 80%;
+  padding: 2rem;
+  border: 0.9px solid var(--off-black);
+}
+
+
+/* MORE SECTION */
+#more-section {
+  background-color: var(--off-black);
+  color: var(--stone);
+}
+
+
+
 
 @media (max-width: 768px) {
   #background-video {
@@ -63,23 +103,4 @@ section {
   #landing-redlight {
     margin-left: 40%;
   }
-}
-
-/* ICE BATH SECTION */
-#icebath-section {
-  /* background-color: var(--verdigris); */
-  background-image: url("/src/assets/images/backgrounds/ice-green-1.png");
-  background-size: cover;
-}
-
-/* RED LIGHT SECTION */
-#redlight-section {
-  /* background-color: var(--red-light); */
-  background-image: url("/src/assets/images/backgrounds/ice-red-2.png");
-  background-size: cover;
-}
-
-/* MORE SECTION */
-#more-section {
-  background-color: var(--stone);
 }

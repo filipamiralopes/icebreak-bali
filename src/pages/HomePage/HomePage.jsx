@@ -15,7 +15,7 @@ function HomePage() {
           Red light <br />
           therapy
         </h1>
-        <h1 className="and-more">& more</h1>
+        <h1 id="and-more">& more</h1>
       </section>
 
       {/* Ice Bath section */}
@@ -23,7 +23,7 @@ function HomePage() {
         <div id="icebath-content-section">
           <header>
             <h1>
-              <span className="headline-highlight">Ice bath</span> improves mood
+              Ice bath<br/> improves mood
               and feelings of wellbeing
             </h1>
           </header>
@@ -49,7 +49,7 @@ function HomePage() {
         <div id="redlight-content-section">
           <header>
             <h1>
-              <span className="headline-highlight">Red light therapy</span>{" "}
+              Red light therapy
               promotes healing and wellbeing
             </h1>
           </header>
