@@ -10,7 +10,4 @@
   justify-content: left;
   min-height: 100vh; /* Fallback for older browsers */
   min-height: 100dvh; /* Preferred for modern browsers. Mobile responsive */
-  max-width: 100%;
-  margin-left: 10%;
-  padding: 3em;
 }

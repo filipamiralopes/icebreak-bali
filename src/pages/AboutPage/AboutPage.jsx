@@ -4,7 +4,9 @@ import "./AboutPage.css";
 function AboutPage() {
   return (
     <div>
-      <h1>About page</h1>
+      <section>
+        <h1>About page</h1>
+      </section>
     </div>
   );
 }

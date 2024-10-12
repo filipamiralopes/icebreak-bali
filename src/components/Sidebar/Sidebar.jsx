@@ -55,12 +55,16 @@ const Sidebar = () => {
         <Link to="/">
           <h4>Home</h4>
         </Link>
-        <Link to="/icebath">
+
+        
+
+        <a href="#icebath-section">
           <h4>Ice Bath</h4>
-        </Link>
-        <Link to="/redlight">
+        </a>
+        <a href="#redlight-section">
           <h4>Red Light</h4>
-        </Link>
+        </a>
+
         <Link to="/about">
           <h4>About Us</h4>
         </Link>
