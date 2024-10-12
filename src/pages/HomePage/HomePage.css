@@ -50,15 +50,15 @@ section {
 } */
 
 @media (max-width: 768px) {
-  /* #background-video {
+  #background-video {
     display: none;
-  } */
+  }
 
-  /* #landing-section{
+  #landing-section{
     background-image: url("/src/assets/images/backgrounds/ice-white-2-vertical.png");
     background-size: cover;
     transform: scale(1);
-  } */
+  }
 
   #landing-redlight {
     margin-left: 40%;
