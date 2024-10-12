@@ -46,6 +46,7 @@ section {
   margin-left: 5rem;
 }
 
+
 /* ICE BATH SECTION */
 #icebath-section {
   background-color: var(--white);
@@ -55,35 +56,40 @@ section {
   display: flex;
   justify-content: center; /* Horizontal alignment */
   align-items: center;     /* Vertical alignment */
+  padding: 0
 }
 
 #icebath-content-section{
-  width: 80%;
+  width: 40%;
   padding: 2rem;
-  border: 0.9px solid var(--off-black);
+  border-left: 1px solid var(--off-black);
 }
 
 /* RED LIGHT SECTION */
 #redlight-section {
-  background-color: var(--stone);
-  /* background-image: url("/src/assets/images/backgrounds/ice-red-2.png");
-  background-size: cover; */
+  background-color: #0B0000;
+  color: var(--stone);
   display: flex;
   justify-content: center; /* Horizontal alignment */
   align-items: center;     /* Vertical alignment */
+  padding: 0
 }
 
 #redlight-content-section{
-  width: 80%;
+  width: 40%;
   padding: 2rem;
-  border: 0.9px solid var(--off-black);
+  border-right: 1px solid var(--stone);
+}
+
+#redlight-image {
+  padding-left: 0;
+  margin-left: 0;
 }
 
 
 /* MORE SECTION */
 #more-section {
-  background-color: var(--off-black);
-  color: var(--stone);
+  background-color: var(--stone);
 }
 
 

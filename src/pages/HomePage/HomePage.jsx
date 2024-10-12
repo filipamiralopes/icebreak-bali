@@ -1,4 +1,5 @@
 import "./HomePage.css";
+import placeholder2 from "../../assets/images/content/redlight-image.png"
 
 function HomePage() {
   return (
@@ -39,13 +40,11 @@ function HomePage() {
             </article>
           </div>
         </div>
-        {/* <div id="icebath-image">
-          <img src={placeholder1} alt="Placeholder 1" height="450px" />
-        </div> */}
       </section>
 
       {/* Red Light section */}
       <section id="redlight-section">
+       
         <div id="redlight-content-section">
           <header>
             <h1>
@@ -67,9 +66,9 @@ function HomePage() {
             </article>
           </div>
         </div>
-        {/* <div id="icebath-image">
-          <img src={placeholder1} alt="Placeholder 1" height="450px" />
-        </div> */}
+        <div id="redlight-image">
+          <img src={placeholder2} alt="Redlight therapy" height="450px" />
+        </div>
       </section>
 
       {/* Other sections as needed */}
