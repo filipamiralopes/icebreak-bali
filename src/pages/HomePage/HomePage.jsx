@@ -5,6 +5,11 @@ function HomePage() {
     <div className="home-page">
       {/* Main section */}
       <section id="landing-section">
+        {/* Video background */}
+        <video autoPlay muted loop id="background-video">
+          <source src="/src/assets/videos/ice-white-2.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
         <h1 id="landing-icebath">Ice bath</h1>
         <h1 id="landing-redlight">
           Red light <br />
