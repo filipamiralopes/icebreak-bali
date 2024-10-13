@@ -14,6 +14,7 @@ section {
   background-size: cover; */
   position: relative;
   overflow: hidden;
+  padding: 0 15rem;
 }
 
 /* BACKGROUND VIDEO */
@@ -28,11 +29,22 @@ section {
   transform: scale(0.75);
 }
 
-#landing-section h1 {
+#landing-section {
   position: relative;
-  font-size: 4rem;
   z-index: 1; /* Ensures the content stays above the video */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+#landing-section h1 {
+  font-size: 4rem;
+  margin-bottom: 0;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+#landing-section h6 {
+  align-items: right;
+  text-align: right;
 }
 
 #landing-redlight {
@@ -40,12 +52,8 @@ section {
   text-align: right;
   padding-right: 0;
   margin-left: 32rem;
+  line-height: 5rem;
 }
-
-#and-more {
-  margin-left: 5rem;
-}
-
 
 /* ICE BATH SECTION */
 #icebath-section {
@@ -55,11 +63,11 @@ section {
   background-position: bottom;
   display: flex;
   justify-content: center; /* Horizontal alignment */
-  align-items: center;     /* Vertical alignment */
-  padding: 0
+  align-items: center; /* Vertical alignment */
+  padding: 0;
 }
 
-#icebath-content-section{
+#icebath-content-section {
   width: 40%;
   padding: 2rem;
   border-left: 1px solid var(--off-black);
@@ -67,15 +75,15 @@ section {
 
 /* RED LIGHT SECTION */
 #redlight-section {
-  background-color: #0B0000;
+  background-color: #0b0000;
   color: var(--stone);
   display: flex;
   justify-content: center; /* Horizontal alignment */
-  align-items: center;     /* Vertical alignment */
-  padding: 0
+  align-items: center; /* Vertical alignment */
+  padding: 0;
 }
 
-#redlight-content-section{
+#redlight-content-section {
   width: 40%;
   padding: 2rem;
   border-right: 1px solid var(--stone);
@@ -86,21 +94,17 @@ section {
   margin-left: 0;
 }
 
-
 /* MORE SECTION */
 #more-section {
   background-color: var(--stone);
 }
-
-
-
 
 @media (max-width: 768px) {
   #background-video {
     display: none;
   }
 
-  #landing-section{
+  #landing-section {
     background-image: url("/src/assets/images/backgrounds/ice-white-2-vertical.png");
     background-size: cover;
     transform: scale(1);

@@ -142,6 +142,7 @@ a {
   font-family: "CringeSans Light", sans-serif;
   color: var(--off-black);
   text-decoration: underline;
+  transition: color 0.3s ease, text-underline-offset 0.3s ease; /* Smooth transition for both color and underline */
 }
 
 a:hover {

@@ -1,5 +1,5 @@
 import "./HomePage.css";
-import placeholder2 from "../../assets/images/content/redlight-image.png"
+import placeholder2 from "../../assets/images/content/redlight-image.png";
 
 function HomePage() {
   return (
@@ -11,12 +11,17 @@ function HomePage() {
           <source src="/src/assets/videos/ice-white-2.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-        <h1 id="landing-icebath">Ice bath</h1>
-        <h1 id="landing-redlight">
-          Red light <br />
-          therapy
-        </h1>
-        <h1 id="and-more">& more</h1>
+        <div>
+          <h1 id="landing-icebath">Ice bath</h1>
+          <h1 id="landing-redlight">
+            Red light <br />
+            therapy
+          </h1>
+          <h1 id="and-more">& more</h1>
+        </div>
+        <div>
+          <h6>Main Road, Bingin<br/> Uluatu, Bali</h6>
+        </div>
       </section>
 
       {/* Ice Bath section */}
@@ -24,8 +29,8 @@ function HomePage() {
         <div id="icebath-content-section">
           <header>
             <h1>
-              Ice bath<br/> improves mood
-              and feelings of wellbeing
+              Ice bath
+              <br /> improves mood and feelings of wellbeing
             </h1>
           </header>
           <div>
@@ -44,13 +49,9 @@ function HomePage() {
 
       {/* Red Light section */}
       <section id="redlight-section">
-       
         <div id="redlight-content-section">
           <header>
-            <h1>
-              Red light therapy
-              promotes healing and wellbeing
-            </h1>
+            <h1>Red light therapy promotes healing and wellbeing</h1>
           </header>
           <div>
             <h4>Red light stimulates energy production in cells</h4>
