@@ -8,6 +8,30 @@ section {
   min-width: 100dvh; /* Each section takes up the full viewport */
 }
 
+.content-section {
+  width: 40%;
+  padding: 2rem;
+  position: relative; /* Needed for absolute positioning of the border */
+}
+
+.content-section::before {
+  content: "";
+  position: absolute;
+  height: 0;
+  width: 1px;
+  background-color: var(--off-black);
+  animation: slideDown 7s ease forwards;
+}
+
+@keyframes slideDown {
+  from {
+    height: 0;
+  }
+  to {
+    height: 100%;
+  }
+}
+
 /* LANDING SECTION */
 #landing-section {
   /* background-image: url("/src/assets/images/backgrounds/ice-white-2.png");
@@ -67,10 +91,10 @@ section {
   padding: 0;
 }
 
-#icebath-content-section {
-  width: 40%;
-  padding: 2rem;
-  border-left: 1px solid var(--off-black);
+#icebath-content-section::before {
+  bottom: 0;
+  left: 0;
+  background-color: var(--off-black);
 }
 
 /* RED LIGHT SECTION */
@@ -83,10 +107,11 @@ section {
   padding: 0;
 }
 
-#redlight-content-section {
-  width: 40%;
-  padding: 2rem;
-  border-right: 1px solid var(--stone);
+#redlight-content-section::before {
+  top: 0;
+  right: 0; /* Border on the right */
+  background-color: var(--stone);
+  animation: slideDown 12s ease forwards;
 }
 
 #redlight-image {

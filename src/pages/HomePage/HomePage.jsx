@@ -26,7 +26,7 @@ function HomePage() {
 
       {/* Ice Bath section */}
       <section id="icebath-section">
-        <div id="icebath-content-section">
+        <div className="content-section" id="icebath-content-section">
           <header>
             <h1>
               Ice bath
@@ -49,7 +49,7 @@ function HomePage() {
 
       {/* Red Light section */}
       <section id="redlight-section">
-        <div id="redlight-content-section">
+        <div className="content-section" id="redlight-content-section">
           <header>
             <h1>Red light therapy promotes healing and wellbeing</h1>
           </header>
