@@ -23,6 +23,16 @@ section {
   animation: slideDown 7s ease forwards;
 }
 
+.content-section-left::before{
+  bottom: 0;
+  left: 0;
+}
+
+.content-section-right::before{
+  top: 0;
+  right: 0;
+}
+
 @keyframes slideDown {
   from {
     height: 0;
@@ -92,8 +102,6 @@ section {
 }
 
 #icebath-content-section::before {
-  bottom: 0;
-  left: 0;
   background-color: var(--off-black);
 }
 
@@ -108,8 +116,6 @@ section {
 }
 
 #redlight-content-section::before {
-  top: 0;
-  right: 0; /* Border on the right */
   background-color: var(--stone);
   animation: slideDown 12s ease forwards;
 }
