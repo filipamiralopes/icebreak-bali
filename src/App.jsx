@@ -1,6 +1,7 @@
 import "./App.css";
 import Sidebar from "./components/Sidebar/Sidebar";
 import HomePage from "./pages/HomePage/HomePage";
+import FAQPage from "./pages/FAQ/FAQPage";
 import AboutPage from "./pages/AboutPage/AboutPage";
 import Footer from "./components/Footer/Footer";
 import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
@@ -14,9 +15,8 @@ function App() {
       <div className="landing-page">
         <Routes>
           <Route path="/" element={<HomePage />} />
-
+          <Route path="/faq" element={<FAQPage />} />
           <Route path="/about" element={<AboutPage />} />
-
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </div>
