@@ -1,80 +1,82 @@
 /* General FAQ Page Styling */
 .faq-page {
-    padding: 2rem;
-  }
-  
-  /* Header Styling */
-  .faq-header {
-    text-align: center;
-    margin-bottom: 3rem;
-    background-image: url("/src/assets/images/backgrounds/ice-isolated-2.png");
-    background-size: cover;
-    padding: 5rem 0;
-  }
-  
-  .faq-header h1 {
-    font-size: 4rem;
-    color: var(--off-black);
-  }
-  
-  /* FAQ List Styling */
-  .faq-list {
-    width: 80%;
-    margin: 0 auto;
-  }
-  
-  /* FAQ Item Styling */
-  .faq-item {
-    background-color: rgba(255, 255, 255, 0.8);
-    border-bottom: 1px solid var(--off-black);
-    margin-bottom: 1.5rem;
-    padding: 1.5rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  /* When a FAQ item is active */
-  .faq-item.active {
-    background-color: rgba(255, 255, 255, 1);
-  }
-  
-  .faq-item h2 {
-    font-size: 2rem;
-    margin: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  /* Arrow Styling */
-  .arrow {
-    font-size: 1.5rem;
-    transition: transform 0.3s ease;
-  }
-  
-  /* Rotate the arrow when FAQ is active */
-  .rotate {
-    transform: rotate(180deg); /* Rotate 180 degrees */
-  }
-  
-  /* Hidden Answer Section */
-  .faq-answer {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.4s ease, opacity 0.4s ease;
-    opacity: 0;
-  }
-  
-  /* Display the Answer when the FAQ item is active */
-  .faq-item.active .faq-answer {
-    max-height: 500px; /* Adjust based on the expected content size */
-    opacity: 1;
-  }
-  
-  .faq-answer p {
-    font-size: 1.2rem;
-    margin: 1rem 0 0;
-    line-height: 1.5;
-    color: var(--off-black);
-  }
-  
+  padding: 2rem;
+  margin-bottom: 5rem;
+}
+
+/* Header Styling */
+.faq-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  background-image: url("/src/assets/images/backgrounds/ice-isolated-2.png");
+  background-size: cover;
+  padding: 5rem 0;
+}
+
+.faq-header h1 {
+  font-size: 4rem;
+  color: var(--off-black);
+  text-align: center;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* FAQ List Styling */
+.faq-list {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* FAQ Item Styling */
+.faq-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-bottom: 1px solid var(--off-black);
+  margin-bottom: 1.5rem;
+  padding: 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* When a FAQ item is active */
+.faq-item.active {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.faq-item h2 {
+  font-size: 1.2rem;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Arrow Styling */
+.arrow {
+  font-size: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+/* Rotate the arrow when FAQ is active */
+.rotate {
+  transform: rotate(180deg); /* Rotate 180 degrees */
+}
+
+/* Hidden Answer Section */
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+  opacity: 0;
+}
+
+/* Display the Answer when the FAQ item is active */
+.faq-item.active .faq-answer {
+  max-height: 500px; /* Adjust based on the expected content size */
+  opacity: 1;
+}
+
+.faq-answer p {
+  font-size: 1.2rem;
+  margin: 1rem 0 0;
+  line-height: 1.5;
+  color: var(--off-black);
+}

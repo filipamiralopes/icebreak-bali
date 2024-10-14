@@ -54,7 +54,7 @@ function FAQPage() {
   return (
     <div className="faq-page">
       <header className="faq-header">
-        <h1>FAQ</h1>
+        <h1>The science behind it</h1>
       </header>
 
       <div className="faq-list">
@@ -72,7 +72,7 @@ function FAQPage() {
                 <img
                   src={arrowDown}
                   alt="Arrow down icon"
-                  style={{ width: "50px", height: "auto" }}
+                  style={{ width: "30px", height: "auto" }}
                 />
               </span>{" "}
               {/* Arrow icon */}
