@@ -1,7 +1,6 @@
 /* General styling for About Us page */
 .about-page {
   width: 100%;
-  padding-bottom: 2rem;
 }
 
 /* Section styling */
@@ -9,9 +8,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 10rem;
+  padding: 0 10rem;
   min-height: 100vh;
   position: relative;
+  margin-bottom: 2rem;
 }
 
 /* Alternating sections - Image on the right */

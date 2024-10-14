@@ -11,10 +11,10 @@ function AboutUPage() {
       <section className="about-section">
         <div className="content-section content-section-right about-content-section">
           <header>
-            <h1>Our Mission</h1>
+            <h1>Our Philosophy</h1>
           </header>
           <div>
-            <h4>Building a Healthier Tomorrow</h4>
+            <h4>Your Wellness, Our Mission</h4>
             <article>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
