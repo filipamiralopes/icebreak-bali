@@ -81,6 +81,27 @@ function AboutUPage() {
           <img src={placeholderImage3} alt="Our values"/>
         </div>
       </section>
+
+      {/* Founder's Note Section */}
+      <section className="about-section founder-section">
+        <div className="full-width-section">
+          <header>
+            <h1>Founder's Note</h1>
+          </header>
+          <article>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+              Proin eget quam a massa vehicula sollicitudin. Suspendisse potenti. 
+              Maecenas malesuada, eros sit amet pulvinar gravida, lectus erat dapibus orci, 
+              eget convallis lectus erat sit amet dui.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+              Proin eget quam a massa vehicula sollicitudin. Suspendisse potenti. 
+              Maecenas malesuada, eros sit amet pulvinar gravida, lectus erat dapibus orci, 
+              eget convallis lectus erat sit amet dui.
+            </p>
+          </article>
+        </div>
+      </section>
     </div>
   );
 }

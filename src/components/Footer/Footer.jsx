@@ -1,4 +1,4 @@
-import logoBlack from "../../assets/logos/logo.png";
+import logoBlack from "../../assets/logos/logo-black-long.png";
 import contactIcon from "../../assets/icons/contact-icon.png";
 import locationIcon from "../../assets/icons/location-icon.png";
 import heartIcon from "../../assets/icons/heart-icon.png";

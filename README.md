@@ -1,1 +1,1 @@
-<img src="src/assets/logos/logo.png" alt="Icebreak Logo" width="200"/>
+<img src="src/assets/logos/logo-black.png" alt="Icebreak Logo" width="200"/>

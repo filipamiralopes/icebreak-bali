@@ -11,7 +11,6 @@
   padding: 0 10rem;
   min-height: 100vh;
   position: relative;
-  margin-bottom: 2rem;
 }
 
 /* Alternating sections - Image on the right */
@@ -30,7 +29,7 @@
 .about-image img {
   width: 100%;
   height: 500px;
-  object-fit: cover; 
+  object-fit: cover;
 }
 
 /* Fade-in effect using keyframes */
@@ -47,6 +46,42 @@
   animation: fadeIn 1.2s ease-out forwards; /* Automatically triggers fade on page load */
 }
 
+/* Founder's Note */
+.founder-section .full-width-section {
+  width: 80%; /* Takes up both the content and image area */
+  padding: 3rem;
+  position: relative;
+}
+
+/* Border line on the top of the Founder's Note section */
+.founder-section .full-width-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 0;
+  height: 1px;
+  background-color: var(--off-black);
+  animation: growBorder 15s ease forwards; /* Animation to grow border */
+}
+
+/* Keyframe to grow the border from center outwards */
+@keyframes growBorder {
+  0% {
+    left: 50%;
+    width: 0;
+  }
+  100% {
+    left: 0;
+    width: 100%;
+  }
+}
+
+/* Justify text */
+.full-width-section p {
+  text-align: justify;
+}
+
 /* Responsive styles */
 @media (max-width: 768px) {
   .about-section {
@@ -54,8 +89,9 @@
     padding: 2rem;
   }
 
-  .about-content-section,
-  .about-image {
+  .content-section,
+  .about-image,
+  .full-width-section {
     width: 100%;
     padding: 1rem;
   }
