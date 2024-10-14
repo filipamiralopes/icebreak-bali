@@ -68,7 +68,7 @@ function HomePage() {
           </div>
         </div>
         <div id="redlight-image">
-          <img src={placeholder2} alt="Redlight therapy" height="450px" />
+          <img src={placeholder2} alt="Redlight therapy" height="500px" />
         </div>
       </section>
 

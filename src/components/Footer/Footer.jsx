@@ -47,7 +47,7 @@ function Footer() {
             height="50"
           />
         </div>
-        <a href="">@icebreakbali</a>
+        <a href="https://www.instagram.com/icebreakbali/">@icebreakbali</a>
         <a href="">facebook/iceabreak-bali.com</a>
       </div>
     </nav>

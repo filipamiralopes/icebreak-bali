@@ -12,6 +12,7 @@ section {
   width: 40%;
   padding: 2rem;
   position: relative; /* Needed for absolute positioning of the border */
+  text-align: justify;
 }
 
 .content-section::before {
@@ -42,16 +43,19 @@ section {
   }
 }
 
+
 /* LANDING SECTION */
+
+
 #landing-section {
-  /* background-image: url("/src/assets/images/backgrounds/ice-white-2.png");
-  background-size: cover; */
   position: relative;
   overflow: hidden;
-  padding: 0 15rem;
+  padding: 3rem 15rem;
 }
 
+
 /* BACKGROUND VIDEO */
+
 #background-video {
   position: absolute;
   top: -25%;
@@ -89,7 +93,9 @@ section {
   line-height: 5rem;
 }
 
+
 /* ICE BATH SECTION */
+
 #icebath-section {
   background-color: var(--white);
   background-image: url("/src/assets/images/backgrounds/ice-isolated-2.png");
@@ -103,7 +109,9 @@ section {
 
 #icebath-content-section::before {
   background-color: var(--off-black);
+  animation: slideDown 8s ease forwards;
 }
+
 
 /* RED LIGHT SECTION */
 #redlight-section {
@@ -117,7 +125,7 @@ section {
 
 #redlight-content-section::before {
   background-color: var(--stone);
-  animation: slideDown 12s ease forwards;
+  animation: slideDown 13s ease forwards;
 }
 
 #redlight-image {
