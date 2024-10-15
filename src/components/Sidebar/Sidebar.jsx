@@ -50,15 +50,16 @@ const Sidebar = () => {
             style={{ width: "70px", height: "auto" }}
           />
         </div>
-        <Link to="/">
+
+        <Link to="/" onClick={toggleSidebar}>
           <h4>Home</h4>
         </Link>
 
-        <Link to="/faq">
+        <Link to="/faq" onClick={toggleSidebar}>
           <h4>FAQ</h4>
         </Link>
 
-        <Link to="/about">
+        <Link to="/about" onClick={toggleSidebar}>
           <h4>About Us</h4>
         </Link>
       </div>
