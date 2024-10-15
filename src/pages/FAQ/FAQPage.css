@@ -8,9 +8,10 @@
 .faq-header {
   text-align: center;
   margin-bottom: 3rem;
-  background-image: url("/src/assets/images/backgrounds/ice-isolated-3.png");
+  background-image: url("/src/assets/images/backgrounds/ice-isolated-2.png");
   background-size: cover;
-  padding: 5rem 0;
+  padding: 4rem 0;
+
 }
 
 .faq-header h1 {
