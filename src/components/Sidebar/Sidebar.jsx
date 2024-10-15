@@ -43,15 +43,13 @@ const Sidebar = () => {
         className={`sidebar ${isOpen ? "open" : ""}`}
         onClick={(e) => e.stopPropagation()}
       >
-        {isOpen && (
-          <div className="close-icon" onClick={toggleSidebar}>
-            <img
-              src={closeIcon}
-              alt="Close icon"
-              style={{ width: "70px", height: "auto" }}
-            />
-          </div>
-        )}
+        <div className="close-icon" onClick={toggleSidebar}>
+          <img
+            src={closeIcon}
+            alt="Close icon"
+            style={{ width: "70px", height: "auto" }}
+          />
+        </div>
         <Link to="/">
           <h4>Home</h4>
         </Link>

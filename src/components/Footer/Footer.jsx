@@ -32,7 +32,7 @@ function Footer() {
             height="50"
           />
         </div>
-        <a href="https://maps.app.goo.gl/XN9GBsEXTbyePuGi7">
+        <a href="https://maps.app.goo.gl/XN9GBsEXTbyePuGi7" target="_blank" rel="noopener noreferrer">
           Main Road Bingin Uluatu Bali
         </a>
         <p>daily 7:30am - 7:30pm</p>
