@@ -72,10 +72,19 @@ function HomePage() {
         </div>
       </section>
 
-      {/* Other sections as needed */}
       <section id="more-section">
-        <h1>Explore More</h1>
-        <p>Discover all that we offer in our center.</p>
+        <p>Follow us to discover all that we offer in our center!</p>
+        
+        <div className="instagram-feed">
+          <iframe
+            src="https://lightwidget.com/widgets/your-widget-id.html"
+            scrolling="no"
+            allowtransparency="true"
+            className="instagram-embed"
+            style={{ border: "none", overflow: "hidden", width: "100%", height: "500px" }}
+            title="Instagram Feed"
+          ></iframe>
+        </div>
       </section>
     </div>
   );

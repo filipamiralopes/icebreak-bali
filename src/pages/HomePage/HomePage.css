@@ -135,8 +135,20 @@ section {
 
 /* MORE SECTION */
 #more-section {
-  background-color: var(--stone);
+  background-color: var(--white);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centers vertically */
+  align-items: center; /* Centers horizontally */
+  padding: 2rem;
+  text-align: center;
 }
+
+.instagram-feed {
+  width: 70%;
+}
+
 
 @media (max-width: 768px) {
   #background-video {
