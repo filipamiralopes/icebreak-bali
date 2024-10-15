@@ -1,0 +1,33 @@
+/* Header container for logo */
+.header {
+    position: absolute; /* Stays at the top of the layout, but not with scroll */
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 80px; /* Adjust this height based on your design */
+    display: flex;
+    justify-content: flex-end; /* Aligns logo to the right */
+    align-items: center; /* Vertically centers the logo */
+    z-index: 1000; /* Keeps it above other content */
+    padding: 1rem;
+  }
+  
+  /* Logo styling */
+  .logo-link {
+    text-decoration: none;
+  }
+  
+  .logo {
+    height: 40px; /* Adjust height as needed */
+    width: auto;
+    cursor: pointer;
+    padding-right: 2rem; /* Space from the right edge */
+  }
+  
+  @media (max-width: 768px) {
+    .logo {
+      height: 30px; /* Adjust for mobile responsiveness */
+      padding-right: 1rem;
+    }
+  }
+  

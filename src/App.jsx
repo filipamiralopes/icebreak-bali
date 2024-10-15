@@ -1,5 +1,6 @@
 import "./App.css";
 import Sidebar from "./components/Sidebar/Sidebar";
+import Header from "./components/Header/Header";
 import HomePage from "./pages/HomePage/HomePage";
 import FAQPage from "./pages/FAQ/FAQPage";
 import AboutPage from "./pages/AboutPage/AboutPage";
@@ -8,10 +9,12 @@ import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
 
 import { Routes, Route } from "react-router-dom";
 
+
 function App() {
   return (
     <div className="page-container">
       <Sidebar />
+      <Header />
       <div className="landing-page">
         <Routes>
           <Route path="/" element={<HomePage />} />
