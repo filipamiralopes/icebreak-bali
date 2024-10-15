@@ -15,7 +15,7 @@
 /* Sidebar open - slide it in */
 .sidebar.open {
     left: 0; /* Moves it into view */
-    border-right: 1px solid var(--off-black);
+    /* border-right: 1px solid var(--off-black); */
 }
 
 /* Menu icon */
