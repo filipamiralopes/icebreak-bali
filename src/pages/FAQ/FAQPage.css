@@ -8,7 +8,7 @@
 .faq-header {
   text-align: center;
   margin-bottom: 3rem;
-  background-image: url("/src/assets/images/backgrounds/ice-isolated-2.png");
+  background-image: url("/src/assets/images/backgrounds/ice-isolated-3.png");
   background-size: cover;
   padding: 5rem 0;
 }
@@ -18,6 +18,7 @@
   color: var(--off-black);
   text-align: center;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  z-index: -1;
 }
 
 /* FAQ List Styling */
