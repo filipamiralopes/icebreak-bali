@@ -150,3 +150,51 @@ a:hover {
   color: var(--verdigris);
   text-underline-offset: 0.25em;
 }
+
+/* Global Responsive Media Queries */
+
+/* Smartphones and Tablets Portrait */
+@media (max-width: 1024px) {
+  :root {
+    --font-size-base: var(--font-size-mobile); /* Scale down for mobile */
+  }
+
+  h1 {
+    font-size: 2.5rem; /* Smaller titles for mobile */
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.75rem;
+  }
+
+  body {
+    padding: 0 1rem; /* Add some padding for mobile content */
+  }
+}
+
+/* Large Screens (min-width: 1800px) */
+@media (min-width: 1800px) {
+  h1 {
+    font-size: 4rem; /* Increase heading size for large screens */
+  }
+
+  h2 {
+    font-size: 3.5rem;
+  }
+
+  h3 {
+    font-size: 3rem;
+  }
+
+  body {
+    font-size: 18px; /* Increase base font size for larger screens */
+  }
+
+  p, ul, ol {
+    font-size: 1.1rem;
+  }
+}
