@@ -12,7 +12,6 @@ section {
   width: 40%;
   padding: 2rem;
   position: relative; /* Needed for absolute positioning of the border */
-  text-align: justify;
 }
 
 .content-section::before {

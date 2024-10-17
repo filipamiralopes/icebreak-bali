@@ -78,10 +78,6 @@
   }
 }
 
-/* Justify text */
-.full-width-section p {
-  text-align: justify;
-}
 
 /* Responsive styles */
 @media (max-width: 768px) {

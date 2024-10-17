@@ -60,10 +60,6 @@ body {
   background-size: cover; */
 }
 
-* {
-  text-align: left;
-}
-
 /* Headings */
 h1,
 h2,
@@ -73,6 +69,7 @@ h5,
 h6 {
   text-transform: uppercase; /* All caps as per guideline */
   letter-spacing: -0.4px;
+  text-align: left;
 }
 
 h1 {
@@ -122,6 +119,7 @@ h6 {
 p {
   font-size: 1rem; /* Matches the body font size */
   margin-bottom: 1.2rem; /* Space between paragraphs */
+  text-align: justify;
 }
 
 /* Lists */
@@ -131,10 +129,12 @@ ol {
   font-size: 1rem;
   line-height: 1.6;
   margin-bottom: 1rem;
+  text-align: justify;
 }
 
 li {
   margin-bottom: 0.5rem; /* Space between list items */
+  text-align: justify;
 }
 
 /* Links */
