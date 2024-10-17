@@ -28,9 +28,9 @@
 }
 
 .about-image img {
-  width: 80%;
-  height: 400px;
   object-fit: cover;
+  max-width: 100%;
+  height: auto;
 }
 
 /* Fade-in effect using keyframes */

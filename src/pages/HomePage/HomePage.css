@@ -58,13 +58,13 @@ section {
 
 #background-video {
   position: absolute;
-  top: -25%;
-  left: -25%;
-  min-width: 100%; /* Ensures the video covers the full width */
-  min-height: 100%; /* Ensures the video covers the full height */
+  top: 0;
+  left: 0;
   object-fit: fit;
   z-index: -1; /* Places the video behind other content */
-  transform: scale(0.75);
+  transform: scale(1);
+  max-width: 100%;
+  height: auto;
 }
 
 #landing-section {
@@ -147,21 +147,4 @@ section {
 
 .instagram-feed {
   width: 70%;
-}
-
-
-@media (max-width: 768px) {
-  #background-video {
-    display: none;
-  }
-
-  #landing-section {
-    background-image: url("/src/assets/images/backgrounds/ice-white-2-vertical.png");
-    background-size: cover;
-    transform: scale(1);
-  }
-
-  #landing-redlight {
-    margin-left: 40%;
-  }
 }

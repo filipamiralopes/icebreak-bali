@@ -1,5 +1,5 @@
 import "./HomePage.css";
-import placeholder2 from "../../assets/images/content/redlight-image.png";
+import placeholder1 from "../../assets/images/content/redlight-image-crop.png";
 
 function HomePage() {
   return (
@@ -68,7 +68,7 @@ function HomePage() {
           </div>
         </div>
         <div id="redlight-image">
-          <img src={placeholder2} alt="Redlight therapy" height="500px" />
+          <img src={placeholder1} alt="Redlight therapy" height="500px" />
         </div>
       </section>
 
