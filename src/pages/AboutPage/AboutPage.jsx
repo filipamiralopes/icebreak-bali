@@ -1,7 +1,7 @@
 import React from 'react';
-import placeholderImage1 from "../../assets/images/content/about-image1.png";
-import placeholderImage2 from "../../assets/images/content/about-image2.png";
-import placeholderImage3 from "../../assets/images/content/about-image3.png";
+import image1 from "../../assets/images/content/about-image1.png";
+import image2 from "../../assets/images/content/about-image2.png";
+import image3 from "../../assets/images/content/about-image3.png";
 import './AboutPage.css';
 
 function AboutUPage() {
@@ -28,14 +28,14 @@ function AboutUPage() {
           </div>
         </div>
         <div className="about-image fade-background">
-          <img src={placeholderImage1} alt="Our mission"/>
+          <img src={image1} alt="Our mission"/>
         </div>
       </section>
 
       {/* Section 2 */}
       <section className="about-section">
         <div className="about-image fade-background">
-          <img src={placeholderImage2} alt="Our vision" />
+          <img src={image2} alt="Our vision" />
         </div>
         <div className="content-section content-section-left about-content-section">
           <header>
@@ -78,7 +78,7 @@ function AboutUPage() {
           </div>
         </div>
         <div className="about-image fade-background">
-          <img src={placeholderImage3} alt="Our values"/>
+          <img src={image3} alt="Our values"/>
         </div>
       </section>
 

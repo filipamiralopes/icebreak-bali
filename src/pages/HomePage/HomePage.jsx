@@ -1,5 +1,6 @@
 import "./HomePage.css";
-import placeholder1 from "../../assets/images/content/redlight-image.png";
+import redlightImg from "../../assets/images/content/redlight-image.png";
+import iceVideo from "../../assets/videos/ice-white-1.mp4"
 
 function HomePage() {
   return (
@@ -8,7 +9,7 @@ function HomePage() {
       <section id="landing-section">
         {/* Video background */}
         <video autoPlay muted loop id="background-video">
-          <source src="/src/assets/videos/ice-white-1.mp4" type="video/mp4" />
+          <source src={iceVideo} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         <div>
@@ -68,7 +69,7 @@ function HomePage() {
           </div>
         </div>
         <div id="redlight-image">
-          <img src={placeholder1} alt="Redlight therapy" height="500px" />
+          <img src={redlightImg} alt="Redlight therapy" height="500px" />
         </div>
       </section>
 
