@@ -170,9 +170,15 @@
   }
 
   /* Image styling */
-  .about-image {
-    width: 80%;
-    max-width: 80%;
+  #image1-mobile,
+  #image2-mobile,
+  #image3-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+    padding: 2rem 0;
   }
 
   .founder-section .full-width-section::before {

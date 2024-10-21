@@ -201,6 +201,7 @@ section {
 
   #icebath-section {
     background-image: url("/src/assets/images/backgrounds/ice-isolated-2.1.png");
+    background-size: 55%;
   }
 
   .content-section {
