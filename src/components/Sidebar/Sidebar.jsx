@@ -16,7 +16,7 @@ const Sidebar = () => {
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (isOpen && sidebarRef.current && !sidebarRef.current.contains(event.target)) {
-        setIsOpen(false);
+        setIsOpen(false);  // Close sidebar smoothly
       }
     };
 
@@ -40,7 +40,7 @@ const Sidebar = () => {
 
       <div
         ref={sidebarRef}
-        className={`sidebar ${isOpen ? "open" : ""}`}
+        className={`sidebar ${isOpen ? "open" : ""}`}  // Applies the "open" class for transition
         onClick={(e) => e.stopPropagation()}
       >
         <div className="close-icon" onClick={toggleSidebar}>

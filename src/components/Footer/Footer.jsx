@@ -50,6 +50,7 @@ function Footer() {
         <a href="" target="_blank" rel="noopener noreferrer">
           facebook/iceabreak-bali.com
         </a>
+        <br/>
       </div>
     </nav>
   );

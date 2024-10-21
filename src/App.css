@@ -1,13 +1,33 @@
+/* General Layout */
 .page-container {
   display: flex;
   flex-direction: column;
   min-height: 100%;
   max-width: 100%;
+  overflow: hidden;
+  justify-content: center; /* Horizontal alignment */
 }
 
+/* Landing page layout */
 .landing-page {
   display: flex;
-  justify-content: left;
+  justify-content: flex-start;
   min-height: 100vh; /* Fallback for older browsers */
-  min-height: 100dvh; /* Preferred for modern browsers. Mobile responsive */
+  min-height: 100dvh; /* Preferred for modern browsers */
+}
+
+/* Responsive Design */
+
+/* Mobile and Tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+
+  .landing-page {
+    flex-direction: column; /* Stack content vertically for smaller screens */
+    justify-content: center; /* Center the content */
+    align-items: center; /* Center content horizontally */
+  }
+}
+
+/* Large Screens (min-width: 1800px) */
+@media (min-width: 1800px) {
 }

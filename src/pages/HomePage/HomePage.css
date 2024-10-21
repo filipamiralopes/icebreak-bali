@@ -23,12 +23,12 @@ section {
   animation: slideDown 7s ease forwards;
 }
 
-.content-section-left::before{
+.content-section-left::before {
   bottom: 0;
   left: 0;
 }
 
-.content-section-right::before{
+.content-section-right::before {
   top: 0;
   right: 0;
 }
@@ -42,16 +42,12 @@ section {
   }
 }
 
-
 /* LANDING SECTION */
-
 
 #landing-section {
   position: relative;
-  overflow: hidden;
   padding: 3rem 15rem;
 }
-
 
 /* BACKGROUND VIDEO */
 
@@ -92,7 +88,6 @@ section {
   line-height: 5rem;
 }
 
-
 /* ICE BATH SECTION */
 
 #icebath-section {
@@ -111,10 +106,9 @@ section {
   animation: slideDown 8s ease forwards;
 }
 
-
 /* RED LIGHT SECTION */
 #redlight-section {
-  background-color: #0b0000;
+  background-color: #03000b;
   color: var(--stone);
   display: flex;
   justify-content: center; /* Horizontal alignment */
@@ -132,9 +126,12 @@ section {
   margin-left: 0;
 }
 
+#redlight-image-mobile {
+  display: none;
+}
+
 /* MORE SECTION */
 #more-section {
-  background-color: var(--white);
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -146,4 +143,111 @@ section {
 
 .instagram-feed {
   width: 70%;
+}
+
+/* Responsive Design */
+
+/* Mobile and Tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+  section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 1rem;
+    min-height: auto;
+    text-align: center;
+  }
+
+  /* Landing Section */
+
+  #landing-headings {
+    padding: 3rem 0 2rem 0;
+  }
+
+  #landing-section > div > h1 {
+    font-size: 3.1rem; /* Adjust font size for smaller screens */
+    line-height: 1;
+    text-align: left;
+    margin: 1rem 0;
+    padding: 1rem 0;
+  }
+
+  #location-landing {
+    padding-bottom: 1rem;
+  }
+
+  #landing-section h6 {
+    text-align: center;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  #location-br {
+    display: none;
+  }
+
+  /* Ice Bath and Red Light Section */
+  #icebath-section,
+  #redlight-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #icebath-section {
+    background-image: url("/src/assets/images/backgrounds/ice-isolated-2.1.png");
+  }
+
+  .content-section {
+    width: 40%; /* Full width for mobile */
+  }
+
+  .content-section > header > h1 {
+    font-size: 2rem; /* Smaller font size for mobile */
+    text-align: left;
+  }
+
+  .content-section > div > h4 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: left;
+  }
+
+  .content-section article p {
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: 1rem 0;
+  }
+
+  /* Image styling */
+  #redlight-image {
+    display: none;
+  }
+
+  #redlight-image-mobile {
+    display: inline-block;
+  }
+  #redlight-image-mobile img{
+    width: 500px;
+    height: auto;
+    max-width: 100%;
+  }
+
+  /* More Section */
+  #more-section {
+    background-color: var(--stone);
+    padding: 5rem 1rem 0rem 1rem;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .instagram-feed {
+    width: 45%; /* Adjust the Instagram feed width for mobile */
+    margin: 0 auto;
+  }
 }

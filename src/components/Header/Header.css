@@ -1,33 +1,47 @@
 /* Header container for logo */
 .header {
-    position: absolute; /* Stays at the top of the layout, but not with scroll */
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 80px; /* Adjust this height based on your design */
-    display: flex;
-    justify-content: flex-end; /* Aligns logo to the right */
-    align-items: center; /* Vertically centers the logo */
-    z-index: 1000; /* Keeps it above other content */
-    padding: 1rem;
+  position: absolute; /* Ensure it's fixed */
+  top: 0;
+  right: 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 100; /* Ensure it’s on top of all content */
+  background-color: transparent; /* Optional: Add color if needed */
+  box-sizing: border-box;
+  pointer-events: none; /* Avoid interference with clicks (just a test, remove later) */
+}
+
+/* Ensure the logo can still be clicked */
+.logo-link {
+  pointer-events: all;
+  text-decoration: none;
+}
+
+.logo {
+  height: 40px;
+  width: auto;
+  cursor: pointer;
+  padding: 2rem;
+}
+
+/* Mobile and Tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .header {
+    justify-content: center;
   }
-  
-  /* Logo styling */
-  .logo-link {
-    text-decoration: none;
-  }
-  
+
   .logo {
-    height: 40px; /* Adjust height as needed */
+    height: 40px;
     width: auto;
-    cursor: pointer;
-    padding-right: 2rem; /* Space from the right edge */
+    padding: 1.5rem;
   }
-  
-  @media (max-width: 768px) {
-    .logo {
-      height: 30px; /* Adjust for mobile responsiveness */
-      padding-right: 1rem;
-    }
+}
+
+/* Large Screens (min-width: 1800px) */
+@media (min-width: 1800px) {
+  .logo {
+    height: 50px;
+    width: auto;
   }
-  
+}

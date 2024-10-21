@@ -10,7 +10,6 @@
   background-image: url("/src/assets/images/backgrounds/ice-isolated-2.png");
   background-size: cover;
   padding: 4rem 0;
-
 }
 
 .faq-header h1 {
@@ -19,6 +18,8 @@
   text-align: center;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
   z-index: -1;
+  margin: 3.5rem 0 0 2rem;
+  text-align: center;
 }
 
 /* FAQ List Styling */
@@ -48,6 +49,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  text-align: center;
 }
 
 /* Arrow Styling */
@@ -79,4 +81,15 @@
   margin: 1rem 0 0;
   line-height: 1.5;
   color: var(--off-black);
+  text-align: justify;
+}
+
+/* Responsive Design */
+
+/* Mobile and Tablets (max-width: 1024px) */
+
+@media (max-width: 1024px) {
+  .faq-header {
+    background-size: 170%;
+  }
 }

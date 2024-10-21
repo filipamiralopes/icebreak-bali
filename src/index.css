@@ -34,6 +34,7 @@
     url("/src/assets/fonts/BNCringeSans-Regular.otf") format("opentype");
 }
 
+
 /* Colors */
 :root {
   --verdigris: #6fbabc;
@@ -48,16 +49,14 @@
 html,
 body {
   font-family: "CringeSans Regular", sans-serif;
-  color: var(--off-black); /* Off-black from the brand */
+  color: var(--off-black);
   font-size: 16px; /* Base font size for easy scaling */
-  line-height: 1.6; /* Improve readability */
+  line-height: 1.6;
   height: 100%;
   width: 100%;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* background-image: url("/src/assets/images/ice-small-white.png");
-  background-size: cover; */
 }
 
 /* Headings */
@@ -67,13 +66,12 @@ h3,
 h4,
 h5,
 h6 {
-  text-transform: uppercase; /* All caps as per guideline */
+  text-transform: uppercase;
   letter-spacing: -0.4px;
-  text-align: left;
 }
 
 h1 {
-  font-size: 3rem; /* Large for main titles */
+  font-size: 3rem;
   line-height: 1.2;
 }
 
@@ -109,16 +107,14 @@ h6 {
 .headline-highlight {
   color: var(--stone);
   background-color: var(--off-black);
-  line-height: 0;
-  padding: 0.1em 0.1em 0 0.1em;
-  padding-bottom: 0;
+  padding: 0.1em;
   border-radius: 4px;
 }
 
 /* Paragraphs */
 p {
-  font-size: 1rem; /* Matches the body font size */
-  margin-bottom: 1.2rem; /* Space between paragraphs */
+  font-size: 1rem;
+  margin-bottom: 1.2rem;
   text-align: justify;
 }
 
@@ -133,8 +129,7 @@ ol {
 }
 
 li {
-  margin-bottom: 0.5rem; /* Space between list items */
-  text-align: justify;
+  margin-bottom: 0.5rem;
 }
 
 /* Links */
@@ -142,11 +137,11 @@ a {
   font-family: "CringeSans Light", sans-serif;
   color: var(--off-black);
   text-decoration: underline;
-  transition: color 0.3s ease, text-underline-offset 0.3s ease; /* Smooth transition for both color and underline */
+  transition: color 0.3s ease, text-underline-offset 0.3s ease;
 }
 
 a:hover {
-  text-decoration: underline; /* Underline on hover for clarity */
+  text-decoration: underline;
   color: var(--verdigris);
   text-underline-offset: 0.25em;
 }
@@ -155,31 +150,34 @@ a:hover {
 
 /* Smartphones and Tablets Portrait */
 @media (max-width: 1024px) {
-  :root {
-    --font-size-base: var(--font-size-mobile); /* Scale down for mobile */
-  }
-
   h1 {
-    font-size: 2.5rem; /* Smaller titles for mobile */
+    font-size: 2.5rem;
+    text-align: center; /* Center headlines */
   }
 
   h2 {
     font-size: 2rem;
+    text-align: center; /* Center headlines */
   }
 
   h3 {
     font-size: 1.75rem;
+    text-align: center; /* Center headlines */
   }
 
-  body {
-    padding: 0 1rem; /* Add some padding for mobile content */
+  p {
+    padding: 0 1rem; /* Add padding for better readability on mobile */
+  }
+
+  ul, ol {
+    padding-left: 1rem; /* Ensure list items fit on small screens */
   }
 }
 
 /* Large Screens (min-width: 1800px) */
 @media (min-width: 1800px) {
   h1 {
-    font-size: 4rem; /* Increase heading size for large screens */
+    font-size: 4rem;
   }
 
   h2 {
@@ -191,10 +189,12 @@ a:hover {
   }
 
   body {
-    font-size: 18px; /* Increase base font size for larger screens */
+    font-size: 18px; /* Increase base font size for large screens */
   }
 
-  p, ul, ol {
+  p,
+  ul,
+  ol {
     font-size: 1.1rem;
   }
 }

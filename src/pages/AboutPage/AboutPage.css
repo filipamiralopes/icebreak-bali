@@ -4,6 +4,12 @@
   padding-top: 2rem;
 }
 
+#image1-mobile,
+#image2-mobile,
+#image3-mobile {
+  display: none;
+}
+
 /* Section styling */
 .about-section {
   display: flex;
@@ -78,22 +84,102 @@
   }
 }
 
+/* Responsive Design */
 
-/* Responsive styles */
-@media (max-width: 768px) {
-  .about-section {
+/* Mobile and Tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+  #image1-desktop,
+  #image2-desktop,
+  #image3-desktop {
+    display: none;
+  }
+
+  #image1-mobile,
+  #image2-mobile,
+  #image3-mobile {
+    display: inline-block;
+  }
+
+  .about-section,
+  .about-page {
+    display: flex;
     flex-direction: column;
-    padding: 2rem;
-  }
-
-  .content-section,
-  .about-image,
-  .full-width-section {
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 1rem 1rem 1rem; /* Smaller padding for mobile */
+    text-align: center;
     width: 100%;
-    padding: 1rem;
+    text-align: center;
   }
 
-  .about-image img {
+  .content-section::before {
+    display: none;
+  }
+
+  .about-section > .content-section > header > h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 0 auto;
+  }
+
+  .about-section > .content-section > div > h4 {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .about-content-section {
+    width: 70%;
+    position: relative;
+    padding-bottom: 3rem;
+  }
+
+  .about-content-section::after {
+    content: "";
+    position: absolute;
+    bottom: 0; /* Position the border at the bottom */
+    left: 50%; /* Start from the middle */
+    width: 0; /* Initial width of the border */
+    height: 1px;
+    background-color: var(--off-black);
+  }
+  #section1::after {
+    animation: growBorder 7s ease forwards;
+  }
+  #section2::after {
+    animation: growBorder 14s ease forwards;
+  }
+  #section3::after {
+    animation: growBorder 21s ease forwards;
+  }
+  @keyframes growBorder {
+    0% {
+      width: 0;
+      left: 50%; /* Start from the center */
+    }
+    100% {
+      width: 85%; /* The final width of the line */
+      left: 10%; /* Offset to center the line */
+    }
+  }
+
+  /* Image styling */
+  .about-image {
+    width: 80%;
+    max-width: 100%;
+  }
+
+  .founder-section .full-width-section::before {
+    display: none;
+  }
+}
+
+/* Large Screens (min-width: 1800px) */
+@media (min-width: 1800px) {
+  .about-image {
+    width: 30%;
+  }
+  .about-image > img {
+    width: 400px;
     height: auto;
   }
 }

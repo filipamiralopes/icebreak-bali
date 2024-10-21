@@ -1,6 +1,7 @@
 import "./HomePage.css";
 import redlightImg from "../../assets/images/content/redlight-image.png";
-import iceVideo from "../../assets/videos/ice-white-1.mp4"
+import redlightImgSq from "../../assets/images/content/redlight-image-sq.png";
+import iceVideo from "../../assets/videos/ice-white-1.mp4";
 
 function HomePage() {
   return (
@@ -12,7 +13,7 @@ function HomePage() {
           <source src={iceVideo} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-        <div>
+        <div id="landing-headings">
           <h1 id="landing-icebath">Ice bath</h1>
           <h1 id="landing-redlight">
             Red light <br />
@@ -20,14 +21,20 @@ function HomePage() {
           </h1>
           <h1 id="and-more">& more</h1>
         </div>
-        <div>
-          <h6>Main Road, Bingin<br/> Uluatu, Bali</h6>
+        <div id="location-landing">
+          <h6>
+            Main Road, Bingin
+            <br id="location-br" /> Uluatu, Bali
+          </h6>
         </div>
       </section>
 
       {/* Ice Bath section */}
       <section id="icebath-section">
-        <div className="content-section content-section-left" id="icebath-content-section">
+        <div
+          className="content-section content-section-left"
+          id="icebath-content-section"
+        >
           <header>
             <h1>
               Ice bath
@@ -50,9 +57,14 @@ function HomePage() {
 
       {/* Red Light section */}
       <section id="redlight-section">
-        <div className="content-section content-section-right" id="redlight-content-section">
+        <div
+          className="content-section content-section-right"
+          id="redlight-content-section"
+        >
           <header>
-            <h1>Red light therapy promotes healing and wellbeing</h1>
+            <h1>
+              Red light therapy <br /> promotes healing and wellbeing
+            </h1>
           </header>
           <div>
             <h4>Red light stimulates energy production in cells</h4>
@@ -71,18 +83,26 @@ function HomePage() {
         <div id="redlight-image">
           <img src={redlightImg} alt="Redlight therapy" height="500px" />
         </div>
+        <div id="redlight-image-mobile">
+          <img src={redlightImgSq} alt="Redlight therapy" />
+        </div>
       </section>
 
       <section id="more-section">
         <p>Follow us to discover all that we offer in our center!</p>
-        
+
         <div className="instagram-feed">
           <iframe
             src="https://lightwidget.com/widgets/your-widget-id.html"
             scrolling="no"
             allowtransparency="true"
             className="instagram-embed"
-            style={{ border: "none", overflow: "hidden", width: "100%", height: "500px" }}
+            style={{
+              border: "none",
+              overflow: "hidden",
+              width: "100%",
+              height: "500px",
+            }}
             title="Instagram Feed"
           ></iframe>
         </div>

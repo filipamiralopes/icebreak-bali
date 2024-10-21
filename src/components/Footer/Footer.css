@@ -1,49 +1,102 @@
+/* Footer container */
 .footer {
-    display: flex;
-    justify-content: space-around;
-    /* border-top: 1px solid var(--off-black); */
-    margin-left: -4em;
-    background-color: var(--off-black);
-    height: 28dvh;
-    box-sizing: border-box;
-    margin-top: auto; /* Push the footer to the bottom */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--off-black);
+  height: auto; /* Change height to auto for better flexibility */
+  box-sizing: border-box;
+  padding: 2rem 0; /* Add some padding for better spacing */
+  flex-wrap: wrap; /* Ensure wrapping on smaller screens */
+  margin-top: auto; /* Push the footer to the bottom */
 }
 
-.footer > img{
-    padding: 2.5rem 2rem 2rem 2rem;
+/* Footer logo */
+.footer > img {
+  padding: 2.5rem 2rem;
+  max-width: 200px;
+  width: 200px;
+  height: auto;
 }
 
+/* Footer info sections */
 .info {
-    height: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    color: var(--stone);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  color: var(--stone);
+  margin-bottom: 1rem; /* Add spacing between sections */
 }
 
 .info h6 {
-    margin-bottom: 0.5rem;
-    padding: 0;
-    color: var(--stone);
+  margin-bottom: 0.5rem;
+  color: var(--stone);
 }
 
-.info a, p {
-    font-family: "CringeSans Light", sans-serif;
-    padding: 0;
-    margin: 0.2rem;
+.info a,
+p {
+  font-family: "CringeSans Light", sans-serif;
+  margin: 0.2rem;
 }
 
 .info > a {
-    color: var(--stone);
+  color: var(--stone);
 }
 
-.info-icon{
-    display: flex;
-    margin: 0;
-    padding: 0;
-    /* background-color: aqua; */
+/* Flexbox icon alignment */
+.info-icon {
+  display: flex;
+  flex-direction: column; /* Stack icons vertically */
+  align-items: center;
+  margin-bottom: 1rem;
 }
 
-.info-icon img{
-    margin: 2.2rem 0 0 0;
+.info-icon img {
+  margin-top: 0.5rem;
+}
+
+/* Responsive Design */
+
+/* Mobile and Tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .footer {
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem 0;
+  }
+
+  .footer > img {
+    max-width: 150px;
+    width: 150px;
+    height: auto;
+  }
+
+  .info {
+    text-align: center;
+    margin-bottom: 1.5rem; /* Add spacing between info sections */
+  }
+
+  .info-icon img {
+    margin: 0; /* No margin on icons for mobile */
+  }
+}
+
+/* Large Screens (min-width: 1800px) */
+@media (min-width: 1800px) {
+  .footer {
+    padding: 3rem 5rem;
+  }
+
+  .footer > img {
+    max-width: 250px; 
+    width: 250px;
+    height: auto;
+  }
+
+  .info {
+    text-align: left; /* Align left for large screens */
+  }
 }
