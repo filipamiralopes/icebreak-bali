@@ -129,6 +129,7 @@
 
   .about-content-section {
     width: 70%;
+    max-width: 70%;
     position: relative;
     padding-bottom: 3rem;
   }
@@ -165,7 +166,7 @@
   /* Image styling */
   .about-image {
     width: 80%;
-    max-width: 100%;
+    max-width: 80%;
   }
 
   .founder-section .full-width-section::before {
@@ -177,6 +178,7 @@
 @media (min-width: 1800px) {
   .about-image {
     width: 30%;
+    max-width: 30%;
   }
   .about-image > img {
     width: 400px;

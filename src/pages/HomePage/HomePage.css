@@ -203,7 +203,8 @@ section {
   }
 
   .content-section {
-    width: 40%; /* Full width for mobile */
+    width: 40%;
+    max-width: 40%;
   }
 
   .content-section > header > h1 {
@@ -248,6 +249,7 @@ section {
 
   .instagram-feed {
     width: 45%; /* Adjust the Instagram feed width for mobile */
+    max-width: 45%;
     margin: 0 auto;
   }
 }
