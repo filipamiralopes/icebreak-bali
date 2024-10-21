@@ -128,8 +128,8 @@
   }
 
   .about-content-section {
-    width: 70%;
-    max-width: 70%;
+    width: 40%;
+    max-width: 40%;
     position: relative;
     padding-bottom: 3rem;
   }
@@ -161,6 +161,12 @@
       width: 85%; /* The final width of the line */
       left: 10%; /* Offset to center the line */
     }
+  }
+
+  .founder-section .full-width-section {
+    width: 40%;
+    max-width: 40%;
+    padding: 0 2rem;
   }
 
   /* Image styling */
