@@ -2,6 +2,7 @@ import "./HomePage.css";
 import redlightImg from "../../assets/images/content/redlight-image.png";
 import redlightImgSq from "../../assets/images/content/redlight-image-sq.png";
 import iceVideo from "../../assets/videos/ice-white-1.mp4";
+import iceVideoMobile from "../../assets/videos/ice-white-1-converted.mp4";
 
 function HomePage() {
   return (
@@ -9,7 +10,8 @@ function HomePage() {
       {/* Main section */}
       <section id="landing-section">
         {/* Video background */}
-        <video autoPlay muted loop id="background-video">
+        <video playsinline autoPlay muted loop id="background-video">
+          <source src={iceVideoMobile} type="video/mp4" media="(max-width: 768px)"/>
           <source src={iceVideo} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
