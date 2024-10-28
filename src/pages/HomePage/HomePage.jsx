@@ -26,7 +26,7 @@ function HomePage() {
         <div id="location-landing">
           <h6>
             Main Road, Bingin
-            <br id="location-br" /> Uluatu, Bali
+            <br id="location-br" /> Uluwatu, Bali
           </h6>
         </div>
       </section>
