@@ -1,0 +1,110 @@
+/* General styling for Ice Bath Page */
+.ice-bath-page {
+  width: 100%;
+}
+
+/* Call to Action Section */
+.cta-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--stone);
+  text-align: center;
+  padding: 2rem;
+}
+
+.cta-section h1 {
+  font-size: 3rem;
+  color: var(--off-black);
+}
+
+/* Info Section */
+.info-section {
+  background-image: url("/src/assets/images/backgrounds/ice-bath-info.jpg");
+  background-size: cover;
+  color: var(--stone);
+  padding: 3rem;
+  text-align: center;
+}
+
+.info-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Benefits Section */
+.benefit-section {
+  display: flex;
+  align-items: center;
+  padding: 4rem 2rem;
+  gap: 2rem;
+}
+
+.benefit-section .benefit-image {
+  flex: 1;
+}
+
+.benefit-section .benefit-image img {
+  width: 100%;
+  height: auto;
+}
+
+.benefit-section .benefit-content {
+  flex: 1;
+}
+
+.benefit-section.reverse {
+  flex-direction: row-reverse;
+}
+
+.benefit-content h3 {
+  font-size: 1.8rem;
+  color: var(--verdigris);
+}
+
+/* Responsive Design */
+
+/* Mobile (max-width: 768px) */
+@media (max-width: 768px) {
+  /* CTA adjustments */
+  .cta-section h1 {
+    font-size: 2.2rem;
+    padding: 0 1rem;
+  }
+
+  /* Stacked layout for benefits */
+  .benefit-section {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+
+  .benefit-image, .benefit-content {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .benefit-image {
+    order: 1; /* Image is displayed first on mobile */
+  }
+
+  .benefit-content {
+    order: 2;
+  }
+
+  /* Adjust other sections */
+  .info-section, .expect-section, .first-time-section, .learn-more-section {
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+
+  .expect-steps .step {
+    padding: 0.8rem;
+  }
+
+  .video-grid {
+    grid-template-columns: 1fr;
+  }
+}
