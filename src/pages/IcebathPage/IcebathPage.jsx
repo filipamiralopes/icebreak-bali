@@ -102,22 +102,21 @@ function IceBathPage() {
       <section className="expect-section">
         <h2>What to Expect?</h2>
         <div className="expect-steps">
-          <div className="step">
+          <div className="step" style={{ "--step-index": 0 }}>
             Bring your swimwear (you can change in our cabins)
           </div>
-          <div className="step">Check-in at the counter with our team</div>
-          <div className="step">Get your towel</div>
-          <div className="step">Take a quick rinse in our shower</div>
-          <div className="step">
+          <div className="step" style={{ "--step-index": 1 }}>Check-in at the counter with our team</div>
+          <div className="step" style={{ "--step-index": 2 }}>Get your towel</div>
+          <div className="step" style={{ "--step-index": 3 }}>Take a quick rinse in our shower</div>
+          <div className="step" style={{ "--step-index": 4 }}>
             Get into the ice! Our team can help you control your time or pep
             talk you
           </div>
-          <div className="step">
+          <div className="step" style={{ "--step-index": 5 }}>
             Feel free to rinse again in our shower once you are out
           </div>
-          <div className="step">Go out there and warm up in the sun</div>
-          <div className="step">Enjoy the boost!</div>
-          {/* Additional steps */}
+          <div className="step" style={{ "--step-index": 6 }}>Go out there and warm up in the sun</div>
+          <div className="step" style={{ "--step-index": 7 }}>Enjoy the boost!</div>
         </div>
       </section>
 
