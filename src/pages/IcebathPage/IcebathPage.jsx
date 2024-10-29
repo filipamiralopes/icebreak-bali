@@ -4,9 +4,9 @@ import benefitImage2 from "../../assets/images/content/about-image2-sq.png";
 import benefitImage3 from "../../assets/images/content/about-image3-sq.png";
 import benefitImage4 from "../../assets/images/content/about-image1-sq.png";
 import benefitImage5 from "../../assets/images/content/about-image2-sq.png";
-import "./IceBathPage.css";
+import "./IcebathPage.css";
 
-function IceBathPage() {
+function IcebathPage() {
   return (
     <div className="ice-bath-page">
       {/* Call to Action Section */}
@@ -147,4 +147,4 @@ function IceBathPage() {
   );
 }
 
-export default IceBathPage;
+export default IcebathPage;
