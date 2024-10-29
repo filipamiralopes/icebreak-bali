@@ -12,8 +12,8 @@
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: var(--verdigris);
-  color: var(--stone);
+  background-color: var(--stone);
+  color: var(--off-black);
   text-align: center;
   padding: 2rem;
 }
@@ -46,8 +46,9 @@
 .benefit-section {
   display: flex;
   align-items: center;
-  padding: 4rem 2rem;
-  gap: 2rem;
+  justify-content: space-between;
+  padding: 0 4rem;
+  margin: 0;
 }
 
 .benefit-section .benefit-image {
@@ -70,7 +71,11 @@
 
 .benefit-content h3 {
   font-size: 1.8rem;
-  color: var(--verdigris);
+  color: var(--off-black);
+}
+
+.benefit-content p {
+ font-size: 20px;
 }
 
 /* What to Expect Section */
