@@ -105,9 +105,15 @@ function IcebathPage() {
           <div className="step" style={{ "--step-index": 0 }}>
             Bring your swimwear (you can change in our cabins)
           </div>
-          <div className="step" style={{ "--step-index": 1 }}>Check-in at the counter with our team</div>
-          <div className="step" style={{ "--step-index": 2 }}>Get your towel</div>
-          <div className="step" style={{ "--step-index": 3 }}>Take a quick rinse in our shower</div>
+          <div className="step" style={{ "--step-index": 1 }}>
+            Check-in at the counter with our team
+          </div>
+          <div className="step" style={{ "--step-index": 2 }}>
+            Get your towel
+          </div>
+          <div className="step" style={{ "--step-index": 3 }}>
+            Take a quick rinse in our shower
+          </div>
           <div className="step" style={{ "--step-index": 4 }}>
             Get into the ice! Our team can help you control your time or pep
             talk you
@@ -115,8 +121,12 @@ function IcebathPage() {
           <div className="step" style={{ "--step-index": 5 }}>
             Feel free to rinse again in our shower once you are out
           </div>
-          <div className="step" style={{ "--step-index": 6 }}>Go out there and warm up in the sun</div>
-          <div className="step" style={{ "--step-index": 7 }}>Enjoy the boost!</div>
+          <div className="step" style={{ "--step-index": 6 }}>
+            Go out there and warm up in the sun
+          </div>
+          <div className="step" style={{ "--step-index": 7 }}>
+            Enjoy the boost!
+          </div>
         </div>
       </section>
 
@@ -134,13 +144,46 @@ function IcebathPage() {
       <section className="learn-more-section">
         <h2>The Science Behind</h2>
         <div className="video-grid">
-          <img src="/path/to/youtube-thumbnail1.jpg" alt="YouTube video 1" />
-          <img src="/path/to/youtube-thumbnail2.jpg" alt="YouTube video 2" />
-          <img src="/path/to/youtube-thumbnail1.jpg" alt="YouTube video 1" />
-          <img src="/path/to/youtube-thumbnail2.jpg" alt="YouTube video 2" />
-          <img src="/path/to/youtube-thumbnail1.jpg" alt="YouTube video 1" />
-          <img src="/path/to/youtube-thumbnail2.jpg" alt="YouTube video 2" />
-          {/* Additional video thumbnails */}
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/pq6WHJzOkno?si=YkJysmryG_6OOcyJ"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/x3MgDtZovks?si=Llz3T_IHhrY_H5xB"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/2XecbuI-9QE?si=hoTcqcJh00OVrlxq"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/XaLd5w6zF7A?si=ggqhtgKrRXXwGzbF"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
         </div>
       </section>
     </div>

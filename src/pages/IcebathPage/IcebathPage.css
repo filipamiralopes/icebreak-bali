@@ -75,7 +75,7 @@
 }
 
 .benefit-content p {
- font-size: 20px;
+  font-size: 20px;
 }
 
 /* What to Expect Section */
@@ -199,13 +199,23 @@
   padding: 3rem;
   text-align: center;
   min-height: 80vh;
+  padding-bottom: 5rem;
+}
+
+.learn-more-section h2{
+  padding-bottom: 3rem;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  gap: 1rem;
 }
 
 /* Responsive Design */
 
 /* Mobile (max-width: 768px) */
 @media (max-width: 768px) {
-
   /* CTA adjustments */
   .cta-section h1 {
     font-size: 2.2rem;
@@ -260,6 +270,7 @@
   }
 
   .video-grid {
+    gap: 2rem;
     grid-template-columns: 1fr;
   }
 }
