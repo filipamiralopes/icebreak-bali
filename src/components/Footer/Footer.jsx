@@ -30,7 +30,7 @@ function Footer() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Main Road Bingin Uluatu Bali
+          Main Road Bingin Uluwatu Bali
         </a>
         <p>daily 7:30am - 7:30pm</p>
       </div>
