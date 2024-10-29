@@ -29,11 +29,15 @@
   padding: 3rem;
   text-align: center;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.info-section h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
+.info-section h6 {
+    margin: 1.5rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 /* Benefits Section */
@@ -49,8 +53,9 @@
 }
 
 .benefit-section .benefit-image img {
-  width: 100%;
+  width: 70%;
   height: auto;
+  padding: 4rem;
 }
 
 .benefit-section .benefit-content {
@@ -66,102 +71,129 @@
   color: var(--verdigris);
 }
 
-
 /* What to Expect Section */
 .expect-section {
-    position: relative;
-    padding: 4rem 2rem;
-    text-align: center;
-    background-color: var(--verdigris);
-    color: var(--stone);
-  }
-  
-  .expect-section h2 {
-    margin-bottom: 3rem;
-    font-size: 2.5rem;
-  }
-  
-  /* Vertical timeline styling */
-  .expect-steps {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .expect-steps::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 50%; /* Center line */
-    width: 2px;
-    background-color: var(--stone);
-    z-index: 1;
-  }
-  
-  /* Individual steps styling */
-  .step {
-    position: relative;
-    width: 40%; /* Reduced width for better alignment */
-    padding: 1.5rem;
-    margin: 2rem 0;
-    background-color: transparent; /* Adjust if background color needed */
-    color: var(--stone);
-    border-radius: 8px;
-    z-index: 2;
-    opacity: 0;
-    animation: fadeInTop 1s ease forwards;
-    animation-delay: calc(var(--step-index) * 0.2s);
-    transform: translateX(-50%); /* Center align each step */
-  }
-  
-  /* Align odd/even steps without offsetting */
-  .step:nth-child(odd) {
-    text-align: right;
-    margin-right: 2rem; /* Adjust space from the line */
-  }
-  
-  .step:nth-child(even) {
-    text-align: left;
-    margin-left: 2rem; /* Adjust space from the line */
-  }
-  
-  /* Circle for each step */
-  .step::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: var(--stone);
-    z-index: 3;
-  }
-  
-  /* Circle positioning for each side */
-  .step:nth-child(odd)::before {
-    right: -10px; /* Position closer to the step */
-  }
-  
-  .step:nth-child(even)::before {
-    left: -10px; /* Position closer to the step */
-  }
-  
-  /* Fade-in from the top animation */
-  @keyframes fadeInTop {
-    0% {
-      opacity: 0;
-      transform: translateY(-20px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
+  position: relative;
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: var(--verdigris);
+  color: var(--stone);
+}
 
+.expect-section h2 {
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+}
+
+/* Vertical timeline styling */
+.expect-steps {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.expect-steps::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%; /* Center line */
+  width: 2px;
+  background-color: var(--stone);
+  z-index: 1;
+}
+
+/* Individual steps styling */
+.step {
+  position: relative;
+  width: 40%; /* Reduced width for better alignment */
+  padding: 1.5rem;
+  margin: 0;
+  background-color: transparent; /* Adjust if background color needed */
+  color: var(--stone);
+  border-radius: 8px;
+  z-index: 2;
+  opacity: 0;
+  animation: fadeInTop 1s ease forwards;
+  animation-delay: calc(var(--step-index) * 0.2s);
+  transform: translateX(-50%); /* Center align each step */
+}
+
+/* Align odd/even steps without offsetting */
+.step:nth-child(odd) {
+  text-align: right;
+  margin-right: 2rem; /* Adjust space from the line */
+  right: 20.75%;
+}
+
+.step:nth-child(even) {
+  text-align: left;
+  margin-left: 2rem; /* Adjust space from the line */
+  left: 20.75%;
+}
+
+/* Circle for each step */
+.step::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--stone);
+  z-index: 3;
+}
+
+/* Circle positioning for each side */
+.step:nth-child(odd)::before {
+  right: -10px; /* Position closer to the step */
+}
+
+.step:nth-child(even)::before {
+  left: -10px; /* Position closer to the step */
+}
+
+/* Fade-in from the top animation */
+@keyframes fadeInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.first-time-section {
+  background-image: url("/src/assets/images/backgrounds/ice-green-3.png");
+  background-size: cover;
+  color: var(--stone);
+  padding: 3rem;
+  text-align: center;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.first-time-section p {
+    font-size: 20px;
+    padding: 0 20rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+
+}
+
+.learn-more-section {
+  background-color: var(--stone);
+  color: var(--off-black);
+  padding: 3rem;
+  text-align: center;
+  min-height: 80vh;
+}
 
 /* Responsive Design */
 
@@ -203,8 +235,22 @@
     text-align: center;
   }
 
+  .first-time-section p {
+    padding: 0 5rem;
+    font-size: 16px;
+}
+
+
   .expect-steps .step {
     padding: 0.8rem;
+  }
+
+  .step:nth-child(odd) {
+    right: 19%;
+  }
+  
+  .step:nth-child(even) {
+    left: 19.5%;
   }
 
   .video-grid {

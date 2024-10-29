@@ -17,10 +17,10 @@ function IceBathPage() {
 
       {/* What is it? */}
       <section className="info-section">
-        <h2>What is it?</h2>
-        <p>Literally an ice bath with temperatures ranging 0-4o C/ 32-40 F</p>
-        <p>Typically you stay for 1-5min</p>
-        <p>All it takes is 11 minutes per week</p>
+        <h1>What is it?</h1>
+        <h6>Literally an ice bath with temperatures ranging 0-4o C/ 32-40 F</h6>
+        <h6>Typically you stay for 1-5min</h6>
+        <h6>All it takes is 11 minutes per week</h6>
       </section>
 
       {/* Benefit Sections */}
@@ -134,6 +134,10 @@ function IceBathPage() {
       <section className="learn-more-section">
         <h2>The Science Behind</h2>
         <div className="video-grid">
+          <img src="/path/to/youtube-thumbnail1.jpg" alt="YouTube video 1" />
+          <img src="/path/to/youtube-thumbnail2.jpg" alt="YouTube video 2" />
+          <img src="/path/to/youtube-thumbnail1.jpg" alt="YouTube video 1" />
+          <img src="/path/to/youtube-thumbnail2.jpg" alt="YouTube video 2" />
           <img src="/path/to/youtube-thumbnail1.jpg" alt="YouTube video 1" />
           <img src="/path/to/youtube-thumbnail2.jpg" alt="YouTube video 2" />
           {/* Additional video thumbnails */}
