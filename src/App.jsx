@@ -6,7 +6,8 @@ import FAQPage from "./pages/FAQ/FAQPage";
 import AboutPage from "./pages/AboutPage/AboutPage";
 import Footer from "./components/Footer/Footer";
 import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
-
+import IcebathPage from "./pages/IcebathPage/IcebathPage";
+import RedlightPage from "./pages/RedlightPage/RedlightPage";
 import { Routes, Route } from "react-router-dom";
 
 
@@ -18,6 +19,8 @@ function App() {
       <div className="landing-page">
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/icebath" element={<IcebathPage/>}/>
+          <Route path="/redlight" element={<RedlightPage/>}/>
           <Route path="/faq" element={<FAQPage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="*" element={<NotFoundPage />} />
