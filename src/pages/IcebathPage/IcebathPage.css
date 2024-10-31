@@ -61,6 +61,15 @@
   padding: 4rem;
 }
 
+.text-left {
+  margin-right: 2rem;
+  min-height: 80vh;
+}
+.text-right {
+  margin-left: 2rem;
+  min-height: 80vh;
+}
+
 .benefit-section .benefit-content {
   flex: 1;
 }
@@ -180,7 +189,7 @@
   color: var(--stone);
   padding: 3rem;
   text-align: center;
-  min-height: 50vh;
+  min-height: 60vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -269,6 +278,15 @@
 
   .benefit-content p {
     font-size: 16px;
+  }
+
+  .text-left {
+    margin-right: 0;
+    min-height: 100vh;
+  }
+  .text-right {
+    margin-left: 0;
+    min-height: 100vh;
   }
 
   /* Adjust other sections */

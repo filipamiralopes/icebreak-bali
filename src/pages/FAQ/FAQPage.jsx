@@ -74,6 +74,14 @@ const faqData = [
     },
   },
   {
+    question:
+      "What if I feel unconfortable and need to stop the session early?",
+    answer: {
+      text: "Our ice bath space is wide and open, you will have our team watching you the whole time. You can leave the bath at any time and if you need any help you just need to call out",
+      list: [],
+    },
+  },
+  {
     question: "Other considerations",
     answer: {
       text: "Good to know:",
@@ -82,14 +90,6 @@ const faqData = [
         "Ice baths while intoxicated - Not a good idea. Alcohol dulls your senses, making it harder to gauge cold and pain, which can be risky",
         "Strength and hypertrophy training - Cold therapy right after can limit muscle growth. It's recommended to do your ice bath before the workout or wait 2-3 hours after",
       ],
-    },
-  },
-  {
-    question:
-      "What if I feel unconfortable and need to stop the session early?",
-    answer: {
-      text: "Our ice bath space is wide and open, you will have our team watching you the whole time. You can leave the bath at any time and if you need any help you just need to call out",
-      list: [],
     },
   },
 ];
@@ -102,9 +102,10 @@ function FAQPage() {
   };
 
   return (
-    <div className="faq-page">
+    <div className="faq-page icebath">
       <header className="faq-header">
-        <h1>The science behind it</h1>
+        <h2>Frequently asked questions</h2>
+        <h1>Ice bath</h1>
       </header>
 
       <div className="faq-list">
