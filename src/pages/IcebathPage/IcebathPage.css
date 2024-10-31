@@ -297,4 +297,9 @@
     gap: 2rem;
     grid-template-columns: 1fr;
   }
+
+  .video-grid iframe {
+    width: 370px;
+    height: 315px;
+  }
 }
