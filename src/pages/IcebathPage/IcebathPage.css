@@ -231,11 +231,13 @@
   .info-section > *,
   .benefit-section > *,
   .expect-section > * {
-    width: 60%;
+    width: 50%;
+    max-width: 50%;
     text-align: center;
   }
   .first-time-section > * {
-    width: 40%;
+    width: 30%;
+    max-width: 30%;
   }
 
   /* CTA adjustments */
