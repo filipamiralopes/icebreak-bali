@@ -8,7 +8,7 @@ import "./IcebathPage.css";
 
 function IcebathPage() {
   return (
-    <div className="ice-bath-page">
+    <div className="treatment-page">
       {/* Call to Action Section */}
       <section className="cta-section">
         <h4>Try something new or keep up with your healthy routine</h4>

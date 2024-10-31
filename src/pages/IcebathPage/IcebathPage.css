@@ -1,5 +1,5 @@
 /* General styling for Ice Bath Page */
-.ice-bath-page {
+.treatment-page {
   width: 100%;
   max-width: 100%;
   overflow-x: hidden;
@@ -183,6 +183,8 @@
   }
 }
 
+/* First time section */
+
 .first-time-section {
   background-image: url("/src/assets/images/backgrounds/ice-green-3.png");
   background-size: cover;
@@ -225,7 +227,7 @@
 
 /* Mobile */
 @media (max-width: 1024px) {
-  .ice-bath-page {
+  .treatment-page {
     display: flex;
     flex-direction: column;
     justify-content: center;

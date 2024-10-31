@@ -1,9 +1,159 @@
-import React from 'react'
+import React from "react";
+import benefitImage1 from "../../assets/images/content/about-image1-sq.png";
+import benefitImage2 from "../../assets/images/content/about-image2-sq.png";
+import benefitImage3 from "../../assets/images/content/about-image3-sq.png";
+import benefitImage4 from "../../assets/images/content/about-image1-sq.png";
+import benefitImage5 from "../../assets/images/content/about-image2-sq.png";
+import "./RedlightPage.css";
 
-const RedlightPage = () => {
+function RedlightPage() {
   return (
-    <div>RedlightPage</div>
-  )
+    <div className="treatment-page">
+      {/* Call to Action Section */}
+      <section className="cta-section-red">
+        <h4>The only step missing in your daily routine</h4>
+        <h1>Come and try the first red light in town</h1>
+      </section>
+
+      {/* What is it? */}
+      <section className="info-section-redlight">
+        <h1>What is it?</h1>
+        <h6>
+          A LED panel that emits specific wavelengths of red and near-infrared
+          light to your whole body
+        </h6>
+        <h6>Typically the sessions range from 10-20min</h6>
+      </section>
+
+      {/* Benefit Sections */}
+      <section className="benefit-section-red text-left">
+        <div className="benefit-image">
+          <img src={benefitImage1} alt="Benefit 1" />
+        </div>
+        <div className="benefit-content-red">
+          <h3>Improves skin quality and appearance</h3>
+          <ul className="custom-icon-list">
+            <li>Reduction of wrinkles, fine lines, and age spots</li>
+            <li>More firmness and elasticity</li>
+            <li>Improvement of scar appearance</li>
+            <li>Improvement of acne</li>
+            <li>Less redness</li>
+            <li>Improvement of sun-damaged skin</li>
+          </ul>
+        </div>
+      </section>
+
+      <section className="benefit-section-red text-right">
+        <div className="benefit-content-red">
+          <h3> Unlock your body's natural potential</h3>
+          <ul className="custom-icon-list">
+            <li>Stimulates collagen production</li>
+            <li>
+              Increases blood circulation, stimulating healing for faster
+              recovery
+            </li>
+            <li>Reduces inflammation in cells</li>
+            <li>Aids in pain reduction</li>
+            <li>Stimulates hair growth</li>
+            <li>Heals age-related degeneration of the eyes</li>
+          </ul>
+        </div>
+        <div className="benefit-image">
+          <img src={benefitImage2} alt="Benefit 2" />
+        </div>
+      </section>
+
+      {/* What to Expect Section */}
+      <section className="expect-section-red">
+        <h2>What to Expect?</h2>
+        <div className="expect-steps">
+          <div className="step" style={{ "--step-index": 0 }}>
+            Check-in at the counter with our team and choose your program
+          </div>
+          <div className="step" style={{ "--step-index": 1 }}>
+            The team will guide you to the private room
+          </div>
+          <div className="step" style={{ "--step-index": 2 }}>
+            Get as naked as you are comfortable (the more exposed skin the
+            better)
+          </div>
+          <div className="step" style={{ "--step-index": 3 }}>
+            Tip: best if your skin is clean of any oils, lotions, make-up and
+            sunscreen, feel free to use our shower or bathroom
+          </div>
+          <div className="step" style={{ "--step-index": 4 }}>
+            Connect to our soundsystem and play your favorite tunes
+          </div>
+          <div className="step" style={{ "--step-index": 5 }}>
+            Enjoy the light!
+          </div>
+          <div className="step" style={{ "--step-index": 6 }}>
+            Make sure you turn to cover your whole body
+          </div>
+          <div className="step" style={{ "--step-index": 7 }}>
+            When the program is done, the light will turn off automatically
+          </div>
+        </div>
+      </section>
+
+      {/* First Time Section */}
+      <section className="first-time-section-red">
+        <h2>First Time?</h2>
+        <p>
+          Don't worry! Our staff will let you know all the details and setup the
+          session for you. If you have any questions during the session, give
+          them a shout (you are right behind the counter)
+        </p>
+      </section>
+
+      {/* Learn More Section */}
+      <section className="learn-more-section">
+        <h2>The Science Behind</h2>
+        <div className="video-grid">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/watch?v=UF0nqolsNZc&ab_channel=AndrewHuberman"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/watch?v=jnbGuZIPljs&ab_channel=DoctorEyeHealth"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/2XecbuI-9QE?si=hoTcqcJh00OVrlxq"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/watch?v=AkvpcziY7GY&ab_channel=ModernHealthspan"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+    </div>
+  );
 }
 
-export default RedlightPage
+export default RedlightPage;
