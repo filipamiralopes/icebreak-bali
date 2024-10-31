@@ -2,7 +2,7 @@ import arrowDown from "../../assets/icons/arrow-down.png";
 import React, { useState } from "react";
 import "./FAQPage.css";
 
-const faqData = [
+const faqDataIce = [
   {
     question: "How long should I stay in the cold?",
     answer: {
@@ -94,6 +94,73 @@ const faqData = [
   },
 ];
 
+const faqDataRed = [
+  {
+    question: "How long are the sessions?",
+    answer: {
+      text: "The sessions typically run for 10-20 minutes",
+      list: [],
+    },
+  },
+  {
+    question: "Can I book a session?",
+    answer: {
+      text: "We are currently not taking formal appointments. However, drop us a message if you have aspecific time and we will find a solution",
+      list: [],
+    },
+  },
+  {
+    question: "Is it safe for everybody?",
+    answer: {
+      text: "Red Light Therapy is generally considered safe for most people when used correctly, with no reported side effects. This therapy is non-invasive and not toxic. However, if you are pregnant, have photosensitivity or history of skin cancer, please consult with your healhcare provider prior to doing a session.",
+      list: [],
+    },
+  },
+  {
+    question: "What can I do to pass the time?",
+    answer: {
+      text: "We are sure you will find a way to pass 20 min but you can:",
+      list: [
+        "Connect your phone to the speakers and enjoy your favourite tune",
+        "Meditate",
+        "Use your phone (while on your back)",
+        "Read (while on your back)",
+      ],
+    },
+  },
+  {
+    question: "Can I look into the light?",
+    answer: {
+      text: "You should use the eye protection provided in the room when facing the panel, as to not stare directly into the LED panels",
+      list: [],
+    },
+  },
+];
+
+const faqDataGeneral = [
+  {
+    question: "Do I need to bring anything for my session?",
+    answer: {
+      text: "For the ice bath, you need to have your swimwear, we will give you a towel. For the red light therapy you don't need anything.",
+      list: [],
+    },
+  },
+  {
+    question: "Can I bring a friend?",
+    answer: {
+      text: "Of course! You can bring your friend for emotional support, they are free to hang around the shop",
+      list: [],
+    },
+  },
+  {
+    question: "What is your refund policy?",
+    answer: {
+      text: "Purchased service packages and merchandise are non-refundable.",
+      list: [],
+    },
+  },
+];
+
 function FAQPage() {
   const [activeIndex, setActiveIndex] = useState(null); // State to keep track of the open FAQ
 
@@ -102,14 +169,95 @@ function FAQPage() {
   };
 
   return (
-    <div className="faq-page icebath">
+    <div className="faq-page">
       <header className="faq-header">
         <h2>Frequently asked questions</h2>
+      </header>
+
+      <header className="faq-header-h1">
+        <h1>General</h1>
+      </header>
+
+      <div className="faq-list">
+        {faqDataGeneral.map((item, index) => (
+          <div
+            key={index}
+            className={`faq-item ${activeIndex === index ? "active" : ""}`}
+            onClick={() => toggleFAQ(index)}
+          >
+            <h2>
+              {item.question}
+              <span
+                className={`arrow ${activeIndex === index ? "rotate" : ""}`}
+              >
+                <img
+                  src={arrowDown}
+                  alt="Arrow down icon"
+                  style={{ width: "30px", height: "auto" }}
+                />
+              </span>{" "}
+              {/* Arrow icon */}
+            </h2>
+            <div className="faq-answer">
+              <p>{item.answer.text}</p>
+              {/* Render list if it exists */}
+              {item.answer.list && (
+                <ul>
+                  {item.answer.list.map((point, i) => (
+                    <li key={i}>{point}</li>
+                  ))}
+                </ul>
+              )}
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <header className="faq-header-h1">
         <h1>Ice bath</h1>
       </header>
 
       <div className="faq-list">
-        {faqData.map((item, index) => (
+        {faqDataIce.map((item, index) => (
+          <div
+            key={index}
+            className={`faq-item ${activeIndex === index ? "active" : ""}`}
+            onClick={() => toggleFAQ(index)}
+          >
+            <h2>
+              {item.question}
+              <span
+                className={`arrow ${activeIndex === index ? "rotate" : ""}`}
+              >
+                <img
+                  src={arrowDown}
+                  alt="Arrow down icon"
+                  style={{ width: "30px", height: "auto" }}
+                />
+              </span>{" "}
+              {/* Arrow icon */}
+            </h2>
+            <div className="faq-answer">
+              <p>{item.answer.text}</p>
+              {/* Render list if it exists */}
+              {item.answer.list && (
+                <ul>
+                  {item.answer.list.map((point, i) => (
+                    <li key={i}>{point}</li>
+                  ))}
+                </ul>
+              )}
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <header className="faq-header-h1">
+        <h1>Red Light Therapy</h1>
+      </header>
+
+      <div className="faq-list">
+        {faqDataRed.map((item, index) => (
           <div
             key={index}
             className={`faq-item ${activeIndex === index ? "active" : ""}`}

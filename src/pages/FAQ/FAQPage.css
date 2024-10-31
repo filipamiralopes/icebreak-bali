@@ -11,21 +11,27 @@
   background-size: cover;
   padding: 4rem 0 1rem 0;
   text-align: center;
+  min-height: 30dvh;
 }
 
-.faq-header h1 {
-  font-size: 4rem;
+.faq-header h2 {
+  font-size: 2.3rem;
   color: var(--off-black);
   text-align: center;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
   z-index: -1;
-  margin: 3.5rem 0 0 2rem;
+  margin-top: 3.5rem;
+}
+
+.faq-header-h1 {
+  text-align: center;
 }
 
 /* FAQ List Styling */
 .faq-list {
   width: 80%;
   margin: 0 auto;
+  padding: 2rem 0;
 }
 
 /* FAQ Item Styling */
