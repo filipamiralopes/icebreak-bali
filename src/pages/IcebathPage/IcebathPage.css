@@ -202,7 +202,7 @@
   padding-bottom: 5rem;
 }
 
-.learn-more-section h2{
+.learn-more-section h2 {
   padding-bottom: 3rem;
 }
 
@@ -214,12 +214,37 @@
 
 /* Responsive Design */
 
-/* Mobile (max-width: 768px) */
-@media (max-width: 768px) {
+/* Mobile */
+@media (max-width: 1024px) {
+  .ice-bath-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    min-height: auto;
+    text-align: center;
+  }
+
+  .cta-section > *,
+  .info-section > *,
+  .benefit-section > *,
+  .expect-section > * {
+    width: 60%;
+    text-align: center;
+  }
+  .first-time-section > * {
+    width: 40%;
+  }
+
   /* CTA adjustments */
+  
+  .cta-section h4 {
+    font-size: 1.5rem;
+  }
   .cta-section h1 {
-    font-size: 2.2rem;
-    padding: 0 1rem;
+    font-size: 2.5rem;
   }
 
   /* Stacked layout for benefits */
@@ -229,31 +254,28 @@
     text-align: center;
   }
 
-  .benefit-image,
-  .benefit-content {
-    width: 100%;
-    max-width: 100%;
-    margin: 0 auto;
-  }
-
   .benefit-image {
     order: 1; /* Image is displayed first on mobile */
+    width: 120%;
+    height: auto;
+    max-width: 120%;
   }
 
   .benefit-content {
     order: 2;
   }
 
+  .benefit-content p {
+    font-size: 16px;
+  }
+
   /* Adjust other sections */
-  .info-section,
-  .first-time-section,
-  .learn-more-section {
-    padding: 2rem 1rem;
-    text-align: center;
+
+  .first-time-section {
+    min-height: 100dvh;
   }
 
   .first-time-section p {
-    padding: 0 5rem;
     font-size: 16px;
   }
 
