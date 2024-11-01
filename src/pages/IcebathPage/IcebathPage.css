@@ -140,13 +140,13 @@
 .step:nth-child(odd) {
   text-align: right;
   margin-right: 2rem; /* Adjust space from the line */
-  right: 20.75%;
+  right: 20%;
 }
 
 .step:nth-child(even) {
   text-align: left;
   margin-left: 2rem; /* Adjust space from the line */
-  left: 20.75%;
+  left: 20%;
 }
 
 /* Circle for each step */
@@ -155,10 +155,12 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-color: var(--stone);
+  width: 35px;
+  height: 35px;
+  background-image: url("../../assets/icons/hexa-icon-stone.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   z-index: 3;
 }
 
@@ -252,7 +254,7 @@
   }
 
   /* CTA adjustments */
-  
+
   .cta-section h4 {
     font-size: 1.5rem;
   }
@@ -311,6 +313,15 @@
 
   .step:nth-child(even) {
     left: 19.5%;
+  }
+
+  /* Circle positioning for each side */
+  .step:nth-child(odd)::before {
+    right: -18px;
+  }
+
+  .step:nth-child(even)::before {
+    left: -20px; 
   }
 
   .video-grid {

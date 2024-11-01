@@ -1,5 +1,5 @@
 import React from "react";
-import benefitImage1 from "../../assets/images/content/redlight-image.png";;
+import benefitImage1 from "../../assets/images/content/redlight-image-sq.png";;
 import "./RedlightPage.css";
 
 function RedlightPage() {
@@ -22,7 +22,7 @@ function RedlightPage() {
       </section>
 
       {/* Benefit Sections */}
-      <section className="benefit-section-red text-left">
+      <section className="benefit-section-red text-left-red">
         <div className="benefit-image">
           <img src={benefitImage1} alt="Benefit 1" />
         </div>
@@ -39,7 +39,7 @@ function RedlightPage() {
         </div>
       </section>
 
-      <section className="benefit-section-red text-right">
+      <section className="benefit-section-red text-right-red">
         <div className="benefit-content-red">
           <h3> Unlock your body's natural potential</h3>
           <ul className="custom-icon-list">

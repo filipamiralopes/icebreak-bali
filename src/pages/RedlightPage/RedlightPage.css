@@ -57,6 +57,42 @@
 .benefit-section-red.reverse {
   flex-direction: row-reverse;
 }
+.text-left-red {
+    padding-right: 4rem;
+    min-height: 80vh;
+  }
+  .text-right-red {
+    padding-left: 4rem;
+    min-height: 80vh;
+  }
+.custom-icon-list {
+  font-size: 1.25rem;
+}
+.custom-icon-list {
+  list-style: none; /* Removes default bullets */
+  padding: 0;
+  margin: 0;
+}
+
+.custom-icon-list li {
+  position: relative;
+  padding-left: 2rem; /* Space for the custom icon */
+  margin-bottom: 0.7rem;
+  line-height: 1.5;
+}
+
+/* Custom icon */
+.custom-icon-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1.8rem;
+  height: 1.8rem;
+  background-image: url("../../assets/icons/hexa-icon-stone.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
 /* What to Expect Section */
 .expect-section-red {
@@ -132,16 +168,23 @@
   .benefit-content-red {
     order: 2;
   }
-  .benefit-content-red p {
-    font-size: 16px;
+  .custom-icon-list {
+    font-size: 1rem;
   }
-
+  .custom-icon-list li::before {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  
   .expect-section-red {
     background-image: url("/src/assets/images/backgrounds/ice-red-2-vertical.png");
   }
 
   .first-time-section-red > * {
-    width: 40%;
-    max-width: 40%;
+    width: 35%;
+    max-width: 35%;
+  }
+  .first-time-section-red p {
+    font-size: 16px;
   }
 }
