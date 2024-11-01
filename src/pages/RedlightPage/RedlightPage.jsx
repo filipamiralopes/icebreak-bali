@@ -1,9 +1,5 @@
 import React from "react";
-import benefitImage1 from "../../assets/images/content/about-image1-sq.png";
-import benefitImage2 from "../../assets/images/content/about-image2-sq.png";
-import benefitImage3 from "../../assets/images/content/about-image3-sq.png";
-import benefitImage4 from "../../assets/images/content/about-image1-sq.png";
-import benefitImage5 from "../../assets/images/content/about-image2-sq.png";
+import benefitImage1 from "../../assets/images/content/redlight-image.png";;
 import "./RedlightPage.css";
 
 function RedlightPage() {
@@ -59,7 +55,7 @@ function RedlightPage() {
           </ul>
         </div>
         <div className="benefit-image">
-          <img src={benefitImage2} alt="Benefit 2" />
+          <img src={benefitImage1} alt="Benefit 2" />
         </div>
       </section>
 
@@ -113,7 +109,7 @@ function RedlightPage() {
           <iframe
             width="560"
             height="315"
-            src="https://www.youtube.com/watch?v=UF0nqolsNZc&ab_channel=AndrewHuberman"
+            src="https://www.youtube.com/embed/UF0nqolsNZc?si=sqJ8UuAUG8lzqqDX"
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -123,7 +119,7 @@ function RedlightPage() {
           <iframe
             width="560"
             height="315"
-            src="https://www.youtube.com/watch?v=jnbGuZIPljs&ab_channel=DoctorEyeHealth"
+            src="https://www.youtube.com/embed/aMLso7-yRUc?si=IoTDG4xoehjsSGeF"
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -133,7 +129,7 @@ function RedlightPage() {
           <iframe
             width="560"
             height="315"
-            src="https://www.youtube.com/embed/2XecbuI-9QE?si=hoTcqcJh00OVrlxq"
+            src="https://www.youtube.com/embed/jnbGuZIPljs?si=YXH8R7i-ih0A7cKg"
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -143,7 +139,7 @@ function RedlightPage() {
           <iframe
             width="560"
             height="315"
-            src="https://www.youtube.com/watch?v=AkvpcziY7GY&ab_channel=ModernHealthspan"
+            src="https://www.youtube.com/embed/AkvpcziY7GY?si=JhHp5nWnJinxjzEO"
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
