@@ -16,8 +16,8 @@ function Footer() {
           <h6>Contact us</h6>
           <img src={contactIcon} alt="Contact icon" height="50px" />
         </div>
-        <a>+62 999 9999 999</a>
-        <p>info@icebreak.com</p>
+        <a>+62 851 9011 9381</a>
+        <p>general@icebreakbali.com</p>
       </div>
 
       <div className="info">
@@ -47,8 +47,8 @@ function Footer() {
         >
           @icebreakbali
         </a>
-        <a href="" target="_blank" rel="noopener noreferrer">
-          facebook/iceabreak-bali.com
+        <a href="https://www.facebook.com/profile.php?id=61564166350908" target="_blank" rel="noopener noreferrer">
+          facebook
         </a>
         <br/>
       </div>
