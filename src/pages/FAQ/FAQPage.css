@@ -95,6 +95,9 @@
 /* Mobile and Tablets (max-width: 1024px) */
 
 @media (max-width: 1024px) {
+  .faq-page {
+    padding: 2rem 0;
+  }
   .faq-header {
     background-size: 250%;
   }
