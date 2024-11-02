@@ -16,7 +16,7 @@ const AboutPage = () => {
         </header>
         <article>
           <p>
-            We are M and V— both from a small corner of Europe known for some of
+            We are M and V — both from a small corner of Europe known for some of
             the biggest waves ever surfed - Portugal. We are college sweethearts
             with a nerdy background in physics, who spent (too) many years in the
             corporate world. After years of living fast, we yearned to go back to

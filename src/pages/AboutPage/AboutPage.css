@@ -89,8 +89,8 @@
   .header-section > *,
   .founder-note > *,
   .final-thought > * {
-    width: 60%;
-    max-width: 60%;
+    width: 50%;
+    max-width: 50%;
   }
   .header-section {
     background-image: url("/src/assets/images/backgrounds/ice-isolated-2.2-vertical.png");
