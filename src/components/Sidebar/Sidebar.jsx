@@ -18,7 +18,14 @@ const Sidebar = () => {
     setIsKnowMoreOpen(!isKnowMoreOpen);
   };
 
-  // Close sidebar when clicking outside of it
+  const handleContactClick = () => {
+    window.scrollTo({
+      top: document.body.scrollHeight,
+      behavior: "smooth"
+    });
+    setIsOpen(false); // Close the sidebar after clicking
+  };
+
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (
@@ -86,7 +93,7 @@ const Sidebar = () => {
           )}
         </div>
 
-        <Link to="/contact" onClick={toggleSidebar}>
+        <Link onClick={handleContactClick}>
           <h4>Contact Us</h4>
         </Link>
       </div>
