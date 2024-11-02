@@ -150,7 +150,11 @@ section {
 /* Mobile and Tablets (max-width: 1024px) */
 @media (max-width: 1024px) {
   #background-video {
-    transform: scale(1.5);
+    display: none;
+  }
+  #landing-section {
+    background-image: url("/src/assets/images/backgrounds/ice-white-2.png");
+    background-size: 90%;
   }
   section {
     display: flex;
@@ -237,7 +241,7 @@ section {
   #redlight-image-mobile {
     display: inline-block;
   }
-  #redlight-image-mobile img{
+  #redlight-image-mobile img {
     width: 500px;
     height: auto;
     max-width: 100%;
