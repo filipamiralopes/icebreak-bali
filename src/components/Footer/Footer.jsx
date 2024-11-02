@@ -1,9 +1,7 @@
-import logoBlack from "../../assets/logos/logo-black-long.png";
 import logoGreen from "../../assets/logos/logo-green-long.png";
 import contactIcon from "../../assets/icons/contact-icon-rmb.png";
 import locationIcon from "../../assets/icons/location-icon-rmb.png";
 import heartIcon from "../../assets/icons/heart-icon-rmb.png";
-import { Link } from "react-router-dom";
 import "./Footer.css";
 
 function Footer() {
