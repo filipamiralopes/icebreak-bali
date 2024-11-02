@@ -153,8 +153,8 @@ section {
     display: none;
   }
   #landing-section {
-    background-image: url("/src/assets/images/backgrounds/ice-white-2.png");
-    background-size: 90%;
+    background-image: url("/src/assets/images/backgrounds/ice-isolated-1.png");
+    background-size: 70%;
   }
   section {
     display: flex;
