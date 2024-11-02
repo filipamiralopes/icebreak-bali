@@ -3,6 +3,7 @@ import redlightImg from "../../assets/images/content/redlight-image.png";
 import redlightImgSq from "../../assets/images/content/redlight-image-sq.png";
 import iceVideo from "../../assets/videos/ice-white-1.mp4";
 import iceVideoMobile from "../../assets/videos/ice-white-1-converted.mp4";
+import { ElfsightWidget } from "react-elfsight-widget";
 
 function HomePage() {
   return (
@@ -11,7 +12,11 @@ function HomePage() {
       <section id="landing-section">
         {/* Video background */}
         <video playsinline autoPlay muted loop id="background-video">
-          <source src={iceVideoMobile} type="video/mp4" media="(max-width: 768px)"/>
+          <source
+            src={iceVideoMobile}
+            type="video/mp4"
+            media="(max-width: 768px)"
+          />
           <source src={iceVideo} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
@@ -91,10 +96,10 @@ function HomePage() {
       </section>
 
       <section id="more-section">
-        <p>Follow us to discover all that we offer in our center!</p>
+        {/* <p>Follow us to discover all that we offer in our center!</p> */}
 
         <div className="instagram-feed">
-          <iframe
+          {/* <iframe
             src="https://lightwidget.com/widgets/your-widget-id.html"
             scrolling="no"
             allowtransparency="true"
@@ -106,7 +111,14 @@ function HomePage() {
               height: "500px",
             }}
             title="Instagram Feed"
-          ></iframe>
+          ></iframe> */}
+
+          {/* Note for Filipa: when free Elfsight widget reaches 200 website views and gets disable, switch to lightwidget (10$ one time fee per widget) and ask M&V to create account, connect IG and add me as dev*/}
+
+          <ElfsightWidget
+            widgetId={"db065442-8db8-4e6f-8cc2-fd090a285493"}
+            lazy
+          />
         </div>
       </section>
     </div>
