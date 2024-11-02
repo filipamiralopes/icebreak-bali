@@ -324,6 +324,11 @@
     left: -20px; 
   }
 
+  .learn-more-section h2 {
+    font-size: 3rem;
+    width: 30%;
+  }
+
   .video-grid {
     gap: 2rem;
     grid-template-columns: 1fr;

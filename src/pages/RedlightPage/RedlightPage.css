@@ -132,11 +132,13 @@
 /* Mobile */
 @media (max-width: 1024px) {
   .cta-section-red > *,
-  .benefit-section-red > .benefit-content-red,
   .expect-section-red > * {
     width: 55%;
     max-width: 55%;
     text-align: center;
+  }
+  .benefit-section-red > .benefit-content-red {
+    width: 50%;
   }
   .cta-section-red h4 {
     font-size: 1.5rem;
