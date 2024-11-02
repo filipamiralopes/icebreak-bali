@@ -1,6 +1,6 @@
 /* Header container for logo */
 .header {
-  position: absolute; /* Ensure it's fixed */
+  position: fixed;
   top: 0;
   right: 0;
   width: 100%;
