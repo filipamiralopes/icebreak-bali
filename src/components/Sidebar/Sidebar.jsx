@@ -60,7 +60,7 @@ const Sidebar = () => {
           <img src={closeIcon} alt="Close icon" style={{ width: "70px", height: "auto" }} />
         </div>
 
-        <Link to="/" onClick={toggleSidebar}>
+        <Link to="/" onClick={() => { toggleSidebar(); window.scrollTo(0, 0); }}>
           <h4>Home</h4>
         </Link>
 
