@@ -1,199 +1,119 @@
-/* General styling for About Us page */
+/* General styling for the AboutPage */
 .about-page {
   width: 100%;
   padding-top: 2rem;
 }
 
-#image1-mobile,
-#image2-mobile,
-#image3-mobile {
-  display: none;
-}
-
 /* Section styling */
-.about-section {
+.section {
+  padding: 4rem 2rem;
+  text-align: center;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 10rem;
-  min-height: 100vh;
-  position: relative;
+  flex-direction: column;
+  justify-content: center;
 }
 
-/* Alternating sections - Image on the right */
-.about-content-section {
-  width: 40%;
-  padding: 2rem;
-  position: relative;
+/* Section 1: Centered header */
+.header-section {
+  background-image: url("/src/assets/images/backgrounds/ice-isolated-2.2.png");
+  background-size: 100%;
+  
+}
+.header-section h1 {
+  font-size: 2.5rem;
+  color: var(--verdigris);
+  margin: 0;
+  margin-bottom: 5rem;
 }
 
-/* Image styling */
-.about-image {
-  width: 40%;
-  padding: 2rem;
+/* Section 2: Founders' Note */
+.founder-note {
+  text-align: left;
+  padding: 2rem 10%;
+  background-color: var(--stone);
+  color: var(--off-black);
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.about-image img {
-  object-fit: cover;
-  max-width: 100%;
-  height: auto;
+.founder-note h2 {
+  font-size: 2rem;
+  color: var(--verdigris);
+  text-align: center;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
 }
 
-/* Fade-in effect using keyframes */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+.founder-note p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  text-align: justify;
 }
 
-.fade-background {
-  animation: fadeIn 1.2s ease-out forwards; /* Automatically triggers fade on page load */
+/* Section 3: Final Thought */
+.final-thought {
+  padding: 4rem 2rem;
+  min-height: 30dvh;
+  align-items: left;
 }
 
-/* Founder's Note */
-.founder-section .full-width-section {
-  width: 80%; /* Takes up both the content and image area */
-  padding: 3rem;
-  position: relative;
-}
-
-/* Border line on the top of the Founder's Note section */
-.founder-section .full-width-section::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 0;
-  height: 1px;
-  background-color: var(--off-black);
-  animation: growBorder 15s ease forwards; /* Animation to grow border */
-}
-
-/* Keyframe to grow the border from center outwards */
-@keyframes growBorder {
-  0% {
-    left: 50%;
-    width: 0;
-  }
-  100% {
-    left: 0;
-    width: 100%;
-  }
+.final-thought p {
+  font-size: 1.5rem;
+  font-style: italic;
+  color: var(--verdigris);
+  margin: 0;
 }
 
 /* Responsive Design */
 
-/* Mobile and Tablets (max-width: 1024px) */
-@media (max-width: 1024px) {
-  #image1-desktop,
-  #image2-desktop,
-  #image3-desktop {
-    display: none;
-  }
+/* Mobile and Tablets (max-width: 768px) */
+@media (max-width: 768px) {
 
-  #image1-mobile,
-  #image2-mobile,
-  #image3-mobile {
-    display: inline-block;
-  }
-
-  .about-section,
   .about-page {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 4rem 1rem 1rem 1rem; /* Smaller padding for mobile */
     text-align: center;
     width: 100%;
+    min-height: auto;
     text-align: center;
   }
 
-  .content-section::before {
-    display: none;
+  .header-section,
+  .founder-note,
+  .final-thought {
+    min-height: 100dvh;
+    padding: 0 1.5rem;
+  }
+  .header-section > *,
+  .founder-note > *,
+  .final-thought > * {
+    width: 60%;
+    max-width: 60%;
+  }
+  .header-section {
+    background-image: url("/src/assets/images/backgrounds/ice-isolated-2.2-vertical.png");
+    background-size: 80%
   }
 
-  .about-section > .content-section > header > h1 {
-    text-align: center;
-    font-size: 2.5rem;
-    margin: 0 auto;
+  .header-section h1 {
+    font-size: 2rem;
   }
 
-  .about-section > .content-section > div > h4 {
-    text-align: center;
-    margin: 0 auto;
+  .founder-note {
+    padding: 2rem;
   }
 
-  .about-content-section {
-    width: 40%;
-    max-width: 40%;
-    position: relative;
-    padding-bottom: 3rem;
+  .founder-note h2 {
+    font-size: 1.8rem;
   }
 
-  .about-content-section::after {
-    content: "";
-    position: absolute;
-    bottom: 0; /* Position the border at the bottom */
-    left: 50%; /* Start from the middle */
-    width: 0; /* Initial width of the border */
-    height: 1px;
-    background-color: var(--off-black);
-  }
-  #section1::after {
-    animation: growBorder 7s ease forwards;
-  }
-  #section2::after {
-    animation: growBorder 14s ease forwards;
-  }
-  #section3::after {
-    animation: growBorder 21s ease forwards;
-  }
-  @keyframes growBorder {
-    0% {
-      width: 0;
-      left: 50%; /* Start from the center */
-    }
-    100% {
-      width: 85%; /* The final width of the line */
-      left: 10%; /* Offset to center the line */
-    }
+  .founder-note p {
+    font-size: 1rem;
   }
 
-  .founder-section .full-width-section {
-    width: 40%;
-    max-width: 40%;
-    padding: 0 2rem;
-  }
-
-  /* Image styling */
-  #image1-mobile,
-  #image2-mobile,
-  #image3-mobile {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    max-width: 100%;
-    padding: 2rem 0;
-  }
-
-  .founder-section .full-width-section::before {
-    display: none;
-  }
-}
-
-/* Large Screens (min-width: 1800px) */
-@media (min-width: 1800px) {
-  .about-image {
-    width: 30%;
-    max-width: 30%;
-  }
-  .about-image > img {
-    width: 400px;
-    height: auto;
+  .final-thought p {
+    font-size: 1.3rem;
   }
 }

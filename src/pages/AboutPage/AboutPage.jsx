@@ -1,123 +1,63 @@
 import React from "react";
-import image1 from "../../assets/images/content/about-image1.png";
-import image2 from "../../assets/images/content/about-image2.png";
-import image3 from "../../assets/images/content/about-image3.png";
-import image1Sq from "../../assets/images/content/about-image1-sq.png";
-import image2Sq from "../../assets/images/content/about-image2-sq.png";
-import image3Sq from "../../assets/images/content/about-image3-sq.png";
 import "./AboutPage.css";
 
-function AboutUPage() {
+const AboutPage = () => {
   return (
-    <div className="about-page">
+    <main className="about-page">
       {/* Section 1 */}
-      <section className="about-section">
-        <div className="content-section content-section-right about-content-section section1" id="section1">
-          <header>
-            <h1>Our Philosophy</h1>
-          </header>
-          <div className="about-image fade-background" id="image1-mobile">
-            <img src={image1Sq} alt="Our mission" />
-          </div>
-          <div>
-            <h4>Your Wellness, Our Mission</h4>
-            <article>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-                ac convallis felis. Cras pharetra velit non lorem laoreet, non
-                tincidunt lorem hendrerit. Quisque in felis sed metus tincidunt
-                bibendum. Lorem ipsum dolor sit amet, consectetur adipiscing
-                elit. Nulla ac convallis felis. Cras pharetra velit non lorem
-                laoreet, non tincidunt lorem hendrerit. Quisque in felis sed
-                metus tincidunt bibendum.
-              </p>
-            </article>
-          </div>
-        </div>
-        <div className="about-image fade-background" id="image1-desktop">
-          <img src={image1} alt="Our mission" />
-        </div>
+      <section className="section header-section" aria-labelledby="header-title">
+        <h1 id="header-title">Discomfort might just be the cure</h1>
       </section>
 
       {/* Section 2 */}
-      <section className="about-section">
-        <div className="about-image fade-background" id="image2-desktop">
-          <img src={image2} alt="Our vision" />
-        </div>
-        <div className="content-section content-section-left about-content-section" id="section2">
-          <header>
-            <h1>Our Vision</h1>
-          </header>
-          <div className="about-image fade-background" id="image2-mobile">
-            <img src={image2Sq} alt="Our vision" />
-          </div>
-          <div>
-            <h4>Leading the Future of Wellness</h4>
-            <article>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Vestibulum finibus tortor non purus iaculis condimentum. Fusce
-                id sapien quis libero fermentum posuere a ac metus. Lorem ipsum
-                dolor sit amet, consectetur adipiscing elit. Vestibulum finibus
-                tortor non purus iaculis condimentum. Fusce id sapien quis
-                libero fermentum posuere a ac metus.
-              </p>
-            </article>
-          </div>
-        </div>
+      <section className="section founder-note" aria-labelledby="founder-title">
+        <header>
+          <h2 id="founder-title">A brief note from the founders</h2>
+        </header>
+        <article>
+          <p>
+            We are M and V— both from a small corner of Europe known for some of
+            the biggest waves ever surfed - Portugal. We are college sweethearts
+            with a nerdy background in physics, who spent (too) many years in the
+            corporate world. After years of living fast, we yearned to go back to
+            basics and reconnect with nature - and with ourselves.
+            <br />
+            <br />
+            While ocean dips were frequent back home (and the ocean can be
+            cruelly cold), plunging into truly icy waters had a profound effect on
+            us. Each time we emerged stronger—mentally sharper, physically more
+            resilient, and emotionally more centered. Through these experiences we
+            found that pushing our boundaries in the cold created a sense of
+            clarity and empowerment that is hard to achieve anywhere else.
+            <br />
+            <br />
+            We miss those icy waters here in Bali. So, we envisioned a space
+            where people (including ourselves!) could experience those same
+            benefits - a place that merges efficiency, honesty, challenge and
+            community. That is the foundation of Ice Break, a place where you can
+            transform through safe discomfort.
+            <br />
+            <br />
+            Whether you are sore from surfing or working out, hangover or just
+            want to challenge yourself - we want to be a part of your daily
+            routine, helping you push your limits and find your inner strength.
+            First timers or cold-therapy enthusiasts, we are here to support you
+            or leave you to it, with care and a smile!
+            <br />
+            <br />
+            With warmth (and a bit of chill),
+            <br />
+            M and V
+          </p>
+        </article>
       </section>
 
       {/* Section 3 */}
-      <section className="about-section">
-        <div className="content-section content-section-right about-content-section" id="section3">
-          <header>
-            <h1>Our Values</h1>
-          </header>
-          <div className="about-image fade-background" id="image3-mobile">
-            <img src={image3Sq} alt="Our values" />
-          </div>
-          <div>
-            <h4>Commitment to Excellence</h4>
-            <article>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Pellentesque at diam nec urna ullamcorper dignissim nec vel
-                justo. Nulla facilisi. Cras scelerisque risus et eros elementum,
-                ut suscipit purus luctus. Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit. Pellentesque at diam nec urna
-                ullamcorper dignissim nec vel justo. Nulla facilisi. Cras
-                scelerisque risus et eros elementum, ut suscipit purus luctus.
-              </p>
-            </article>
-          </div>
-        </div>
-        <div className="about-image fade-background" id="image3-desktop">
-          <img src={image3} alt="Our values" />
-        </div>
+      <section className="section final-thought" aria-labelledby="final-thought-title">
+        <p id="final-thought-title"><em>If you can face the ice, what else can you do in your life?</em></p>
       </section>
-
-      {/* Founder's Note Section */}
-      <section className="about-section founder-section">
-        <div className="full-width-section">
-          <header>
-            <h1>Founder's Note</h1>
-          </header>
-          <article>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-              eget quam a massa vehicula sollicitudin. Suspendisse potenti.
-              Maecenas malesuada, eros sit amet pulvinar gravida, lectus erat
-              dapibus orci, eget convallis lectus erat sit amet dui. Lorem ipsum
-              dolor sit amet, consectetur adipiscing elit. Proin eget quam a
-              massa vehicula sollicitudin. Suspendisse potenti. Maecenas
-              malesuada, eros sit amet pulvinar gravida, lectus erat dapibus
-              orci, eget convallis lectus erat sit amet dui.
-            </p>
-          </article>
-        </div>
-      </section>
-    </div>
+    </main>
   );
-}
+};
 
-export default AboutUPage;
+export default AboutPage;
