@@ -17,6 +17,8 @@
 .header-section {
   background-image: url("/src/assets/images/backgrounds/ice-isolated-2.2.png");
   background-size: 100%;
+  min-height: 100dvh;
+  padding: 0;
 }
 .header-section h1 {
   font-size: 2.5rem;
