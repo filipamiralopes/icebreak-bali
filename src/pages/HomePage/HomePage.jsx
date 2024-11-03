@@ -1,8 +1,9 @@
 import "./HomePage.css";
-import redlightImg from "../../assets/images/content/redlight-image.png";
-import redlightImgSq from "../../assets/images/content/redlight-image-sq.png";
 import yeahCoolImg from "../../assets/images/content/yeah-cool-green.png";
 import iceVideo from "../../assets/videos/ice-white-1.mp4";
+import benefitImage1 from "../../assets/images/content/about-image1-sq.png";
+import benefitImage2 from "../../assets/images/content/about-image2-sq.png";
+import benefitImage3 from "../../assets/images/content/about-image3-sq.png";
 import { ElfsightWidget } from "react-elfsight-widget";
 
 function HomePage() {
@@ -16,69 +17,68 @@ function HomePage() {
           Your browser does not support the video tag.
         </video>
         <div className="landing-section-content">
-          <img src={yeahCoolImg} alt="Yeah cool img"/>
+          <img src={yeahCoolImg} alt="Yeah cool img" />
           <h5>Ice Break, Uluwatu, Bali</h5>
         </div>
       </section>
 
-      {/* Ice Bath section */}
-      <section id="icebath-section">
-        <div
-          className="content-section content-section-left"
-          id="icebath-content-section"
-        >
+      {/* Motto*/}
+      <section id="motto">
+        <div>
           <header>
-            <h1>
-              Ice bath
-              <br /> improves mood and feelings of wellbeing
-            </h1>
+            <h2>
+              Boost your wellbeing and recovery through a quick, intense and
+              challenging experience while connecting with like-minded people.
+            </h2>
           </header>
-          <div>
-            <h4>Cold exposure causes the release of dopamine</h4>
-            <article>
-              <p>
-                Dopamine is a powerful molecule capable of elevating mood,
-                enhancing focus, attention, and goal-directed behavior. Even
-                short bouts of cold exposure can cause a lasting increase in
-                dopamine and sustained elevation of mood, energy, and focus.
-              </p>
-            </article>
-          </div>
         </div>
       </section>
 
-      {/* Red Light section */}
-      <section id="redlight-section">
-        <div
-          className="content-section content-section-right"
-          id="redlight-content-section"
-        >
-          <header>
-            <h1>
-              Red light therapy <br /> promotes healing and wellbeing
-            </h1>
-          </header>
-          <div>
-            <h4>Red light stimulates energy production in cells</h4>
-            <article>
-              <p>
-                Red light therapy enhances the function of mitochondria,
-                boosting energy production in cells. This increase in cellular
-                energy supports healing, reduces inflammation, and can improve
-                skin health. Even short sessions of red light exposure can lead
-                to long-lasting benefits, such as improved recovery, reduced
-                pain, and enhanced feelings of vitality and wellbeing.
-              </p>
-            </article>
-          </div>
+      {/* Services*/}
+      <section className="benefit-section text-left">
+        <div className="benefit-image">
+          <img src={benefitImage1} alt="Benefit 1" />
         </div>
-        <div id="redlight-image">
-          <img src={redlightImg} alt="Redlight therapy" height="500px" />
-        </div>
-        <div id="redlight-image-mobile">
-          <img src={redlightImgSq} alt="Redlight therapy" />
+        <div className="benefit-content">
+          <h3>Increases energy and focus</h3>
+          <p>
+            Cold exposure triggers the release of adrenaline and norepinephrine,
+            boosting energy, focus, and alertness for up to six hours. You'll
+            definitely feel these effects well beyond the ice bath session.
+          </p>
         </div>
       </section>
+
+      <section className="benefit-section text-right">
+        <div className="benefit-content">
+          <h3>Accelerates recovery and reduces inflammation</h3>
+          <p>
+            Ice baths aid recovery from intense physical activity by activating
+            cold shock proteins, improving blood flow to core organs, and
+            reducing inflammation. They can also help with symptoms like 'Bali
+            Belly' or hangovers.
+          </p>
+        </div>
+        <div className="benefit-image">
+          <img src={benefitImage2} alt="Benefit 2" />
+        </div>
+      </section>
+
+      <section className="benefit-section text-left">
+        <div className="benefit-image">
+          <img src={benefitImage3} alt="Benefit 3" />
+        </div>
+        <div className="benefit-content">
+          <h3>Enhances your mood</h3>
+          <p>
+            Cold immersion prompts a lasting release of dopamine, which enhances
+            mood, energy, and motivation. Even brief full body dips can increase
+            dopamine levels by 200-300%, and you will definitely feel it in your
+            mood.
+          </p>
+        </div>
+      </section>
+
 
       <section id="more-section">
         {/* <p>Follow us to discover all that we offer in our center!</p> */}

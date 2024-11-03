@@ -1,39 +1,6 @@
 html {
   scroll-behavior: smooth;
 }
-.content-section {
-  width: 40%;
-  padding: 2rem;
-  position: relative; /* Needed for absolute positioning of the border */
-}
-
-.content-section::before {
-  content: "";
-  position: absolute;
-  height: 0;
-  width: 1px;
-  background-color: var(--off-black);
-  animation: slideDown 7s ease forwards;
-}
-
-.content-section-left::before {
-  bottom: 0;
-  left: 0;
-}
-
-.content-section-right::before {
-  top: 0;
-  right: 0;
-}
-
-@keyframes slideDown {
-  from {
-    height: 0;
-  }
-  to {
-    height: 100%;
-  }
-}
 
 /* BACKGROUND VIDEO */
 
@@ -45,7 +12,7 @@ html {
   z-index: -1; /* Places the video behind other content */
   transform: scale(1);
   max-width: 100%;
-  height: auto;
+  min-height: 100%;
 }
 
 /* LANDING SECTION */
@@ -66,47 +33,19 @@ html {
   text-align: center;
 }
 
-
-/* ICE BATH SECTION */
-
-#icebath-section {
-  background-color: var(--white);
-  background-image: url("/src/assets/images/backgrounds/ice-isolated-2.png");
-  background-size: cover;
-  background-position: bottom;
+/* MOTTO */
+#motto {
+  min-height: 100dvh;
   display: flex;
-  justify-content: center; /* Horizontal alignment */
-  align-items: center; /* Vertical alignment */
-  padding: 0;
-}
-
-#icebath-content-section::before {
-  background-color: var(--off-black);
-  animation: slideDown 8s ease forwards;
-}
-
-/* RED LIGHT SECTION */
-#redlight-section {
-  background-color: #03000b;
-  color: var(--stone);
-  display: flex;
-  justify-content: center; /* Horizontal alignment */
-  align-items: center; /* Vertical alignment */
-  padding: 0;
-}
-
-#redlight-content-section::before {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   background-color: var(--stone);
-  animation: slideDown 13s ease forwards;
+  padding: 0 10rem;
 }
-
-#redlight-image {
-  padding-left: 0;
-  margin-left: 0;
-}
-
-#redlight-image-mobile {
-  display: none;
+#motto h2 {
+  line-height: 3.5rem;
+  font-style: italic;
 }
 
 /* MORE SECTION */
@@ -118,6 +57,7 @@ html {
   align-items: center; /* Centers horizontally */
   padding: 2rem;
   text-align: center;
+  background-color: var(--off-black);
 }
 
 .instagram-feed {
@@ -199,7 +139,6 @@ html {
 
   /* More Section */
   #more-section {
-    background-color: var(--stone);
     padding: 5rem 2rem 2rem 2rem;
     text-align: center;
     width: 100%;
@@ -210,5 +149,12 @@ html {
     width: 25%; /* Adjust the Instagram feed width for mobile */
     max-width: 25%;
     margin: 0 auto;
+  }
+}
+
+/* Large Screens (min-width: 1800px) */
+@media (min-width: 1280px) {
+  #background-video {
+    transform: scale(1.2);
   }
 }

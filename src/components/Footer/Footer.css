@@ -9,6 +9,7 @@
   padding: 2rem 0; /* Add some padding for better spacing */
   flex-wrap: wrap; /* Ensure wrapping on smaller screens */
   margin-top: auto; /* Push the footer to the bottom */
+  border-top: 1px solid var(--stone);
 }
 
 /* Footer logo */
