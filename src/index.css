@@ -136,7 +136,7 @@ li {
 a {
   font-family: "CringeSans Light", sans-serif;
   color: var(--off-black);
-  text-decoration: underline;
+  text-decoration: none;
   transition: color 0.3s ease, text-underline-offset 0.3s ease;
 }
 
