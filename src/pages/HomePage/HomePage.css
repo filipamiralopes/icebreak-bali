@@ -12,7 +12,7 @@ html {
   z-index: -1; /* Places the video behind other content */
   transform: scale(1);
   max-width: 100%;
-  min-height: 100%;
+  max-height: 100%;
 }
 
 /* LANDING SECTION */
@@ -40,17 +40,31 @@ html {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: var(--stone);
+  background-image: url("/src/assets/images/backgrounds/ice-isolated-2.2.png");
+  background-size: 100%;
+  min-height: 100dvh;
+  background-color: var(--verdigris);
   padding: 0 10rem;
 }
 #motto h2 {
   line-height: 3.5rem;
   font-style: italic;
+  font-size: 2.5rem;
+  color: var(--stone);
+  margin: 0;
+  margin-bottom: 5rem;
+}
+
+/* SERVICES */
+#our-services {
+  text-align: center;
+  padding-top: 3rem;
 }
 
 /* MORE SECTION */
 #more-section {
   width: 100%;
+  min-height: 100dvh;
   display: flex;
   flex-direction: column;
   justify-content: center; /* Centers vertically */
@@ -58,6 +72,19 @@ html {
   padding: 2rem;
   text-align: center;
   background-color: var(--off-black);
+}
+#more-section > h4 {
+  color: var(--stone);
+  margin-bottom: 0;
+}
+#instagram-link {
+  color: var(--stone);
+  text-decoration: none;
+}
+#instagram-link:hover {
+  text-decoration: underline;
+  color: var(--verdigris);
+  text-underline-offset: 0.25em;
 }
 
 .instagram-feed {
@@ -83,58 +110,6 @@ html {
   }
   .landing-section-content h5 {
     font-size: 1.2rem;
-  }
-
-  /* Ice Bath and Red Light Section */
-  #icebath-section,
-  #redlight-section {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 4rem 1rem 1rem 1rem;
-  }
-
-  #icebath-section {
-    background-image: url("/src/assets/images/backgrounds/ice-isolated-2.1.png");
-    background-size: 55%;
-  }
-
-  .content-section {
-    width: 25%;
-    max-width: 25%;
-  }
-
-  .content-section > header > h1 {
-    font-size: 2rem; /* Smaller font size for mobile */
-    text-align: left;
-  }
-
-  .content-section > div > h4 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    text-align: left;
-  }
-
-  .content-section article p {
-    font-size: 1rem;
-    line-height: 1.5;
-    padding: 1rem 1rem 1rem 0;
-  }
-
-  /* Image styling */
-  #redlight-image {
-    display: none;
-  }
-
-  #redlight-image-mobile {
-    display: inline-block;
-  }
-  #redlight-image-mobile img {
-    width: 500px;
-    height: auto;
-    max-width: 100%;
   }
 
   /* More Section */

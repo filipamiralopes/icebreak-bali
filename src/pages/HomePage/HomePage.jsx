@@ -1,4 +1,5 @@
 import "./HomePage.css";
+import { Link } from "react-router-dom";
 import yeahCoolImg from "../../assets/images/content/yeah-cool-green.png";
 import iceVideo from "../../assets/videos/ice-white-1.mp4";
 import benefitImage1 from "../../assets/images/content/about-image1-sq.png";
@@ -35,28 +36,32 @@ function HomePage() {
       </section>
 
       {/* Services*/}
+
+      <section id="our-services">
+        <header>
+          <h2>Our services</h2>
+        </header>
+      </section>
+      
       <section className="benefit-section text-left">
         <div className="benefit-image">
           <img src={benefitImage1} alt="Benefit 1" />
         </div>
         <div className="benefit-content">
-          <h3>Increases energy and focus</h3>
+          <h3><Link to="/icebath" onClick={() => { toggleSidebar(); window.scrollTo(0, 0); }}>Ice bath</Link></h3>
           <p>
-            Cold exposure triggers the release of adrenaline and norepinephrine,
-            boosting energy, focus, and alertness for up to six hours. You'll
-            definitely feel these effects well beyond the ice bath session.
+            Ice baths at 1o C/36 F for first timers and icemans alike. Boost
+            your energy, recovery and mood!
           </p>
         </div>
       </section>
 
       <section className="benefit-section text-right">
         <div className="benefit-content">
-          <h3>Accelerates recovery and reduces inflammation</h3>
+          <h3><Link to="/redlight" onClick={() => { toggleSidebar(); window.scrollTo(0, 0); }}>Red Light Therapy</Link></h3>
           <p>
-            Ice baths aid recovery from intense physical activity by activating
-            cold shock proteins, improving blood flow to core organs, and
-            reducing inflammation. They can also help with symptoms like 'Bali
-            Belly' or hangovers.
+            Private 1.8m red light panel with 5 wavelengths. Improve your skin,
+            muscle recovery and inflammation!
           </p>
         </div>
         <div className="benefit-image">
@@ -69,19 +74,23 @@ function HomePage() {
           <img src={benefitImage3} alt="Benefit 3" />
         </div>
         <div className="benefit-content">
-          <h3>Enhances your mood</h3>
+          <h3>Beverages and merch</h3>
           <p>
-            Cold immersion prompts a lasting release of dopamine, which enhances
-            mood, energy, and motivation. Even brief full body dips can increase
-            dopamine levels by 200-300%, and you will definitely feel it in your
-            mood.
+            Coffee fix, electrolytes refill, protein dose and other drink twists
+            - get your favorite healthy beverage. <br />
+            Cool tees, hats & more - add a new piece to your collection!
           </p>
         </div>
       </section>
 
-
       <section id="more-section">
-        {/* <p>Follow us to discover all that we offer in our center!</p> */}
+        <h4>
+          Follow us on{" "}
+          <a id="instagram-link" href="https://www.instagram.com/icebreakbali">
+            Instagram{" "}
+          </a>
+          for more
+        </h4>
 
         <div className="instagram-feed">
           {/* <iframe
