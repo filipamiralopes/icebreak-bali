@@ -83,6 +83,10 @@ function HomePage() {
         </div>
       </section>
 
+      <section className="no-booking-section">
+        <h5>No booking required, just drop in</h5>
+      </section>
+
       <section id="more-section">
         <h4>
           Follow us on{" "}
