@@ -1,38 +1,23 @@
 import "./HomePage.css";
 import redlightImg from "../../assets/images/content/redlight-image.png";
 import redlightImgSq from "../../assets/images/content/redlight-image-sq.png";
+import yeahCoolImg from "../../assets/images/content/yeah-cool-green.png";
 import iceVideo from "../../assets/videos/ice-white-1.mp4";
-import iceVideoMobile from "../../assets/videos/ice-white-1-converted.mp4";
 import { ElfsightWidget } from "react-elfsight-widget";
 
 function HomePage() {
   return (
     <div className="home-page">
       {/* Main section */}
-      <section id="landing-section">
+      <section className="landing-section">
         {/* Video background */}
         <video playsinline autoPlay muted loop id="background-video">
-          <source
-            src={iceVideoMobile}
-            type="video/mp4"
-            media="(max-width: 768px)"
-          />
           <source src={iceVideo} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-        <div id="landing-headings">
-          <h1 id="landing-icebath">Ice bath</h1>
-          <h1 id="landing-redlight">
-            Red light <br />
-            therapy
-          </h1>
-          <h1 id="and-more">& more</h1>
-        </div>
-        <div id="location-landing">
-          <h6>
-            Main Road, Bingin
-            <br id="location-br" /> Uluwatu, Bali
-          </h6>
+        <div className="landing-section-content">
+          <img src={yeahCoolImg} alt="Yeah cool img"/>
+          <h5>Ice Break, Uluwatu, Bali</h5>
         </div>
       </section>
 

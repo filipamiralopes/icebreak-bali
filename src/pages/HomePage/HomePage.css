@@ -1,13 +1,6 @@
 html {
   scroll-behavior: smooth;
 }
-
-section {
-  padding: 3rem 15rem;
-  min-height: 100dvh; /* Each section takes up the full viewport */
-  min-width: 100dvh; /* Each section takes up the full viewport */
-}
-
 .content-section {
   width: 40%;
   padding: 2rem;
@@ -42,13 +35,6 @@ section {
   }
 }
 
-/* LANDING SECTION */
-
-#landing-section {
-  position: relative;
-  padding: 3rem 15rem;
-}
-
 /* BACKGROUND VIDEO */
 
 #background-video {
@@ -62,31 +48,24 @@ section {
   height: auto;
 }
 
-#landing-section {
-  position: relative;
+/* LANDING SECTION */
+
+.landing-section {
   z-index: 1; /* Ensures the content stays above the video */
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100dvh;
+  padding-top: 3rem;
+}
+.landing-section-content img {
+  height: 500px;
+}
+.landing-section-content h5 {
+  text-align: center;
 }
 
-#landing-section h1 {
-  font-size: 4rem;
-  margin-bottom: 0;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-}
-#landing-section h6 {
-  align-items: right;
-  text-align: right;
-}
-
-#landing-redlight {
-  display: inline-block;
-  text-align: right;
-  padding-right: 0;
-  margin-left: 32rem;
-  line-height: 5rem;
-}
 
 /* ICE BATH SECTION */
 
@@ -152,47 +131,18 @@ section {
   #background-video {
     display: none;
   }
-  #landing-section {
-    background-image: url("/src/assets/images/backgrounds/ice-isolated-1.png");
-    background-size: 70%;
-  }
-  section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 3rem 1rem;
-    min-height: auto;
-    text-align: center;
-  }
 
   /* Landing Section */
-
-  #landing-headings {
-    padding: 4rem 0 2rem 0;
+  .landing-section {
+    background-image: url("/src/assets/images/backgrounds/ice-isolated-1.png");
+    background-size: 180%;
+    justify-content: center;
   }
-
-  #landing-section > div > h1 {
-    font-size: 3.1rem; /* Adjust font size for smaller screens */
-    line-height: 1;
-    text-align: left;
-    margin: 1rem 0;
-    padding: 1rem 0;
+  .landing-section-content img {
+    height: 250px;
   }
-
-  #location-landing {
-    padding-bottom: 1rem;
-  }
-
-  #landing-section h6 {
-    text-align: center;
-    font-size: 1rem;
-    margin: 0;
-    padding: 0;
-  }
-
-  #location-br {
-    display: none;
+  .landing-section-content h5 {
+    font-size: 1.2rem;
   }
 
   /* Ice Bath and Red Light Section */
