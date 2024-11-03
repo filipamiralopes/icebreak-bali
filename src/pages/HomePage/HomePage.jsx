@@ -42,13 +42,23 @@ function HomePage() {
           <h2>Our services</h2>
         </header>
       </section>
-      
+
       <section className="benefit-section text-left">
         <div className="benefit-image">
           <img src={benefitImage1} alt="Benefit 1" />
         </div>
         <div className="benefit-content">
-          <h3><Link to="/icebath" onClick={() => { toggleSidebar(); window.scrollTo(0, 0); }}>Ice bath</Link></h3>
+          <h3>
+            <Link
+              to="/icebath"
+              onClick={() => {
+                toggleSidebar();
+                window.scrollTo(0, 0);
+              }}
+            >
+              Ice bath
+            </Link>
+          </h3>
           <p>
             Ice baths at 1o C/36 F for first timers and icemans alike. Boost
             your energy, recovery and mood!
@@ -58,7 +68,17 @@ function HomePage() {
 
       <section className="benefit-section text-right">
         <div className="benefit-content">
-          <h3><Link to="/redlight" onClick={() => { toggleSidebar(); window.scrollTo(0, 0); }}>Red Light Therapy</Link></h3>
+          <h3>
+            <Link
+              to="/redlight"
+              onClick={() => {
+                toggleSidebar();
+                window.scrollTo(0, 0);
+              }}
+            >
+              Red Light Therapy
+            </Link>
+          </h3>
           <p>
             Private 1.8m red light panel with 5 wavelengths. Improve your skin,
             muscle recovery and inflammation!
@@ -87,7 +107,7 @@ function HomePage() {
         <h5>No booking required, just drop in</h5>
       </section>
 
-      <section id="more-section">
+      <section id="ig-section">
         <h4>
           Follow us on{" "}
           <a id="instagram-link" href="https://www.instagram.com/icebreakbali">
@@ -118,6 +138,23 @@ function HomePage() {
             lazy
           />
         </div>
+      </section>
+
+      <section className="maps-section">
+        <h4>Find us in Bingin Uluwatu, Bali. Every day from 7:30 AM to PM</h4>
+
+        <iframe
+          class="map"
+          width="60%"
+          height="600"
+          frameborder="0"
+          scrolling="no"
+          marginheight="0"
+          marginwidth="0"
+          src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Jl.%20Labuansait,%20Pecatu,%20Kec.%20Kuta%20Sel.,%20Kabupaten%20Badung,%20Bali%2080364,%20Indonesia+(Icebreak)&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+        >
+          <a href="https://www.gps.ie/">gps trackers</a>
+        </iframe>
       </section>
     </div>
   );
