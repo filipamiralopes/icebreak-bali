@@ -101,9 +101,9 @@
   .faq-header {
     background-size: 250%;
   }
-  .faq-header h1 {
+  .faq-header-h1 {
     font-size: 3rem;
-    padding: 3rem 0 0 0;
+    padding: 1rem 2rem;
     margin: 0;
   }
   .faq-header h2 {
