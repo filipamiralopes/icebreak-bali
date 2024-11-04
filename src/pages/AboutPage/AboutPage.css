@@ -53,7 +53,7 @@
 
 /* Section 3: Final Thought */
 .final-thought {
-  padding: 4rem 2rem;
+  padding: 4rem 2rem 4rem 8rem;
   min-height: 30dvh;
   align-items: left;
 }
@@ -69,55 +69,13 @@
 
 /* Mobile and Tablets (max-width: 768px) */
 @media (max-width: 768px) {
-  .about-page {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 100%;
-    min-height: auto;
-    text-align: center;
-  }
-
-  .header-section,
-  .founder-note,
-  .final-thought {
-    min-height: 100dvh;
-    padding: 0 1.5rem;
-  }
-  .header-section > *,
-  .founder-note > * {
-    width: 50%;
-    max-width: 50%;
-  }
-  .final-thought > * {
-    width: 40%;
-    max-width: 40%;
-  }
-
   .header-section {
     background-image: url("/src/assets/images/backgrounds/ice-isolated-2.2-vertical.png");
-    background-size: 80%;
+    background-size: 120%;
+    padding: 0 5rem
   }
-
-  .header-section h1 {
-    font-size: 2rem;
-  }
-
-  .founder-note {
-    padding: 2rem;
-  }
-
-  .founder-note h2 {
-    font-size: 1.8rem;
-  }
-
-  .founder-note p {
-    font-size: 1rem;
-  }
-
-  .final-thought p {
-    font-size: 1.3rem;
+  .final-thought {
+    min-height: 50dvh;
+    padding: 0 2rem;
   }
 }
