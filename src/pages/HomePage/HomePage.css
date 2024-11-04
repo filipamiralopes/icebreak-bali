@@ -137,8 +137,8 @@ html {
 
   /* Landing Section */
   .landing-section {
-    background-image: url("/src/assets/images/backgrounds/ice-isolated-1.png");
-    background-size: 180%;
+    background-image: url("/src/assets/images/backgrounds/ice-white-2-vertical.png");
+    background-size: 100%;
     justify-content: center;
   }
   .landing-section-content img {
@@ -153,16 +153,17 @@ html {
     width: 100%;
     padding: 0;
     background-image: url("/src/assets/images/backgrounds/ice-isolated-2.2-vertical.png");
-    background-size: 110%;
+    background-size: 90%;
   }
   #motto h2 {
-    font-size: 2rem;
-    line-height: 3rem;
-    padding: 1rem 3rem;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    padding: 1rem 8rem;
   }
 
   .no-booking-section h5 {
     padding-top: 0;
+    width: 70%;
     font-size: 2rem;
   }
 
@@ -177,11 +178,17 @@ html {
   }
   #ig-section > h4{
     padding: 2rem 2rem 0 2rem;
+    width: 50%;
+    font-size: 1.5rem;
   }
 
   .maps-section {
     width: 100%;
-    padding: 2rem 0;
+    padding: 0;
+  }
+  .maps-section h4 {
+    padding: 2rem 6rem;
+    font-size: 1.3rem;
   }
 }
 

@@ -70,7 +70,7 @@
 }
 .custom-icon-list {
   list-style: none; /* Removes default bullets */
-  padding: 0;
+  padding: 0 2rem;
   margin: 0;
 }
 
