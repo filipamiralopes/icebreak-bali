@@ -52,8 +52,7 @@ html {
   font-style: italic;
   font-size: 2.5rem;
   color: var(--stone);
-  margin: 0;
-  margin-bottom: 5rem;
+  margin: 0 0 5rem 0;
 }
 
 /* SERVICES */
