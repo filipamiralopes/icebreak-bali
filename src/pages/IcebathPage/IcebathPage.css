@@ -240,17 +240,13 @@
     text-align: center;
   }
 
-  .cta-section > *,
-  .info-section > *,
-  .benefit-section > *,
-  .expect-section > * {
-    width: 50%;
-    max-width: 50%;
-    text-align: center;
-  }
   .first-time-section > * {
-    width: 40%;
-    max-width: 40%;
+    width: 100%;
+  }
+
+  .first-time-section p {
+    font-size: 16px;
+    padding: 0 5rem;
   }
 
   /* CTA adjustments */
@@ -268,20 +264,21 @@
     padding: 2rem 1rem;
     text-align: center;
   }
-
   .benefit-image {
     order: 1; /* Image is displayed first on mobile */
-    width: 120%;
+    width: 100dvh;
     height: auto;
     max-width: 120%;
   }
-
   .benefit-content {
     order: 2;
   }
-
+  .benefit-content h3 {
+    padding: 0 8rem;
+  }
   .benefit-content p {
     font-size: 16px;
+    padding: 0 8rem;
   }
 
   .text-left {
@@ -321,12 +318,11 @@
   }
 
   .step:nth-child(even)::before {
-    left: -20px; 
+    left: -20px;
   }
 
   .learn-more-section h2 {
     font-size: 3rem;
-    width: 30%;
   }
 
   .video-grid {
