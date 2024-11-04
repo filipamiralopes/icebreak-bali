@@ -1,5 +1,6 @@
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 /* BACKGROUND VIDEO */
@@ -79,7 +80,8 @@ html {
 }
 
 /* MORE SECTION */
-#ig-section, .maps-section {
+#ig-section,
+.maps-section {
   width: 100%;
   min-height: 100dvh;
   display: flex;
@@ -94,7 +96,7 @@ html {
 .maps-section h4 {
   color: var(--stone);
   margin-bottom: 0;
-  font-size: 1,5rem;
+  font-size: 1, 5rem;
 }
 #instagram-link {
   color: var(--stone);
@@ -110,15 +112,19 @@ html {
   width: 70%;
 }
 
+.maps-section {
+  background-color: #b0d4dd;
+}
 .maps-section h4 {
-  padding: 3rem;
+  padding: 1rem 3rem 6rem 3rem;
+  color: var(--white);
 }
 .map {
   -webkit-filter: grayscale(50%);
   -moz-filter: grayscale(50%);
   -ms-filter: grayscale(50%);
   -o-filter: grayscale(50%);
-   filter: grayscale(50%);
+  filter: grayscale(50%);
 }
 
 /* Responsive Design */

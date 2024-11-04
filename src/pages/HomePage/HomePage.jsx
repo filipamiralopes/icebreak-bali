@@ -151,7 +151,7 @@ function HomePage() {
           scrolling="no"
           marginheight="0"
           marginwidth="0"
-          src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Jl.%20Labuansait,%20Pecatu,%20Kec.%20Kuta%20Sel.,%20Kabupaten%20Badung,%20Bali%2080364,%20Indonesia+(Icebreak)&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+          src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=-8.827685131398502,%20115.12399631624847+(Icebreak)&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
         >
           <a href="https://www.gps.ie/">gps trackers</a>
         </iframe>
