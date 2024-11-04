@@ -14,7 +14,13 @@ function Footer() {
           <h6>Contact us</h6>
           <img src={contactIcon} alt="Contact icon" height="50px" />
         </div>
-        <a>+62 851 9011 9381</a>
+        <a
+          href="https://api.whatsapp.com/send/?phone=6285190119381&text&type=phone_number&app_absent=0"
+          target="_blank"
+          rel="noopener noreferrer"  
+        >
+          WhatsApp: +62 851 9011 9381
+        </a>
         <p>general@icebreakbali.com</p>
       </div>
 
@@ -45,10 +51,14 @@ function Footer() {
         >
           @icebreakbali
         </a>
-        <a href="https://www.facebook.com/profile.php?id=61564166350908" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://www.facebook.com/profile.php?id=61564166350908"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           facebook
         </a>
-        <br/>
+        <br />
       </div>
     </nav>
   );
