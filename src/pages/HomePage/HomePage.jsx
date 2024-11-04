@@ -141,7 +141,7 @@ function HomePage() {
       </section>
 
       <section className="maps-section">
-        <h4>Find us in Bingin Uluwatu, Bali. Every day from 7:30 AM to PM</h4>
+        <h4>Find us in Bingin Uluwatu, Bali <br/>Every day from 7:30 AM to PM</h4>
 
         <iframe
           class="map"
