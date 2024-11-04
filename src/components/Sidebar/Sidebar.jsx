@@ -64,11 +64,11 @@ const Sidebar = () => {
           <h4>Home</h4>
         </Link>
 
-        <Link to="/icebath" onClick={toggleSidebar}>
+        <Link to="/icebath" onClick={() => { toggleSidebar(); window.scrollTo(0, 0); }}>
           <h4>Ice Bath</h4>
         </Link>
 
-        <Link to="/redlight" onClick={toggleSidebar}>
+        <Link to="/redlight" onClick={() => { toggleSidebar(); window.scrollTo(0, 0); }}>
           <h4>Red Light Therapy</h4>
         </Link>
 
@@ -83,10 +83,10 @@ const Sidebar = () => {
           </h4>
           {isKnowMoreOpen && (
             <div className="submenu">
-              <Link to="/about" onClick={toggleSidebar}>
+              <Link to="/about" onClick={() => { toggleSidebar(); window.scrollTo(0, 0); }}>
                 <h4>About Us</h4>
               </Link>
-              <Link to="/faq" onClick={toggleSidebar}>
+              <Link to="/faq" onClick={() => { toggleSidebar(); window.scrollTo(0, 0); }}>
                 <h4>FAQ</h4>
               </Link>
             </div>
