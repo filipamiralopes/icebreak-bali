@@ -3,9 +3,10 @@
   width: 100%;
   max-width: 100%;
   overflow-x: hidden;
+  text-align: center;
 }
 
-/* Call to Action Section */
+/* Call to Action Section (Mobile-First) */
 .cta-section {
   display: flex;
   flex-direction: column;
@@ -14,13 +15,18 @@
   min-height: 100vh;
   background-color: var(--stone);
   color: var(--off-black);
-  text-align: center;
   padding: 2rem;
 }
 
+.cta-section h4 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
 .cta-section h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  margin-bottom: 0;
 }
 
 /* Info Section */
@@ -29,7 +35,6 @@
   background-size: cover;
   color: var(--stone);
   padding: 3rem;
-  text-align: center;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -38,139 +43,164 @@
 }
 
 .info-section h6 {
-  margin: 1.5rem;
+  margin: 1rem 0;
+  font-size: 1rem;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
-/* Benefits Section */
+/* Benefit Section (Mobile-First) */
 .benefit-section {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  padding: 0 4rem;
-  margin: 0;
+  justify-content: center;
+  padding: 2rem 1rem;
+  text-align: center;
+  gap: 1rem;
 }
 
-.benefit-section .benefit-image {
-  flex: 1;
+.benefit-image {
+  order: 1;
+  width: 100%; /* Full width on mobile */
+  max-width: 90%; /* Slightly reduced for padding effect */
+  margin-bottom: 1rem;
 }
 
-.benefit-section .benefit-image img {
-  width: 70%;
+.benefit-image img {
+  width: 100%;
   height: auto;
-  padding: 4rem;
 }
 
-.text-left {
-  margin-right: 2rem;
-  min-height: 80vh;
-}
-.text-right {
-  margin-left: 2rem;
-  min-height: 80vh;
-}
-
-.benefit-section .benefit-content {
-  flex: 1;
-}
-
-.benefit-section.reverse {
-  flex-direction: row-reverse;
+.benefit-content {
+  order: 2;
 }
 
 .benefit-content h3 {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   color: var(--off-black);
+  margin: 1rem 0;
 }
 
 .benefit-content p {
-  font-size: 20px;
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
 /* What to Expect Section */
 .expect-section {
-  position: relative;
-  padding: 4rem 2rem;
-  text-align: center;
+  padding: 3rem 1rem;
   background-color: var(--verdigris);
   color: var(--stone);
 }
 
 .expect-section h2 {
-  margin-bottom: 3rem;
-  font-size: 2.5rem;
+  font-size: 2rem;
+  margin-bottom: 2rem;
 }
 
-/* Vertical timeline styling */
 .expect-steps {
-  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 1rem;
 }
 
-.expect-steps::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 50%; /* Center line */
-  width: 2px;
-  background-color: var(--stone);
-  z-index: 1;
-}
-
-/* Individual steps styling */
 .step {
+  width: 80%;
+  padding: 1rem;
+  font-size: 1rem;
   position: relative;
-  width: 40%; /* Reduced width for better alignment */
-  padding: 1.5rem;
-  margin: 0;
-  background-color: transparent; /* Adjust if background color needed */
-  color: var(--stone);
-  border-radius: 8px;
-  z-index: 2;
-  opacity: 0;
+  text-align: center;
+  background-color: transparent;
   animation: fadeInTop 1s ease forwards;
-  animation-delay: calc(var(--step-index) * 0.2s);
-  transform: translateX(-50%); /* Center align each step */
 }
 
-/* Align odd/even steps without offsetting */
-.step:nth-child(odd) {
-  text-align: right;
-  margin-right: 2rem; /* Adjust space from the line */
-  right: 20%;
-}
-
-.step:nth-child(even) {
-  text-align: left;
-  margin-left: 2rem; /* Adjust space from the line */
-  left: 20%;
-}
-
-/* Circle for each step */
 .step::before {
   content: "";
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 35px;
-  height: 35px;
+  width: 20px;
+  height: 20px;
   background-image: url("../../assets/icons/hexa-icon-stone.png");
   background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  z-index: 3;
 }
 
-/* Circle positioning for each side */
-.step:nth-child(odd)::before {
-  right: -10px; /* Position closer to the step */
+/* First Time Section */
+.first-time-section {
+  background-image: url("/src/assets/images/backgrounds/ice-green-3.png");
+  background-size: cover;
+  color: var(--stone);
+  padding: 3rem 1rem;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.step:nth-child(even)::before {
-  left: -10px; /* Position closer to the step */
+.first-time-section p {
+  font-size: 1rem;
+  padding: 0 1rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Learn More Section */
+.learn-more-section {
+  background-color: var(--stone);
+  color: var(--off-black);
+  padding: 2rem 1rem;
+  min-height: 60vh;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.video-grid iframe {
+  width: 100%;
+  height: auto;
+}
+
+/* Desktop and Tablet (min-width: 1024px) */
+@media (min-width: 1024px) {
+  .cta-section h1 {
+    font-size: 3rem;
+  }
+
+  .benefit-section {
+    flex-direction: row;
+    padding: 0 4rem;
+    text-align: left;
+  }
+
+  .benefit-image {
+    flex: 1;
+    max-width: 50%;
+  }
+
+  .benefit-content {
+    flex: 1;
+    padding: 0 2rem;
+  }
+
+  .expect-section {
+    padding: 4rem 2rem;
+  }
+
+  .first-time-section {
+    padding: 3rem 2rem;
+  }
+
+  .learn-more-section {
+    padding: 3rem 2rem;
+  }
+
+  .video-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* Fade-in from the top animation */
@@ -182,156 +212,5 @@
   100% {
     opacity: 1;
     transform: translateY(0);
-  }
-}
-
-/* First time section */
-
-.first-time-section {
-  background-image: url("/src/assets/images/backgrounds/ice-green-3.png");
-  background-size: cover;
-  color: var(--stone);
-  padding: 3rem;
-  text-align: center;
-  min-height: 60vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.first-time-section p {
-  font-size: 20px;
-  padding: 0 20rem;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-}
-
-.learn-more-section {
-  background-color: var(--stone);
-  color: var(--off-black);
-  padding: 3rem;
-  text-align: center;
-  min-height: 80vh;
-  padding-bottom: 5rem;
-}
-
-.learn-more-section h2 {
-  padding-bottom: 3rem;
-}
-
-.video-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Two columns */
-  gap: 1rem;
-}
-
-/* Responsive Design */
-
-/* Mobile */
-@media (max-width: 1024px) {
-  .treatment-page {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 100%;
-    min-height: auto;
-    text-align: center;
-  }
-
-  .first-time-section > * {
-    width: 100%;
-  }
-
-  .first-time-section p {
-    font-size: 16px;
-    padding: 0 5rem;
-  }
-
-  /* CTA adjustments */
-
-  .cta-section h4 {
-    font-size: 1.5rem;
-  }
-  .cta-section h1 {
-    font-size: 2.5rem;
-  }
-
-  /* Stacked layout for benefits */
-  .benefit-section {
-    flex-direction: column;
-    padding: 2rem 1rem;
-    text-align: center;
-  }
-  .benefit-image {
-    order: 1; /* Image is displayed first on mobile */
-    width: 100dvh;
-    height: auto;
-    max-width: 120%;
-  }
-  .benefit-content {
-    order: 2;
-  }
-  .benefit-content h3 {
-    padding: 0 10rem;
-  }
-  .benefit-content p {
-    font-size: 12px;
-    padding: 0 10rem;
-  }
-
-  .text-left {
-    margin-right: 0;
-    min-height: 100vh;
-  }
-  .text-right {
-    margin-left: 0;
-    min-height: 100vh;
-  }
-
-  /* Adjust other sections */
-
-  .first-time-section {
-    min-height: 100dvh;
-  }
-
-  .first-time-section p {
-    font-size: 16px;
-  }
-
-  .expect-steps .step {
-    padding: 0.8rem;
-  }
-
-  .step:nth-child(odd) {
-    right: 19%;
-  }
-
-  .step:nth-child(even) {
-    left: 19.5%;
-  }
-
-  /* Circle positioning for each side */
-  .step:nth-child(odd)::before {
-    right: -18px;
-  }
-
-  .step:nth-child(even)::before {
-    left: -20px;
-  }
-
-  .learn-more-section h2 {
-    font-size: 3rem;
-  }
-
-  .video-grid {
-    gap: 2rem;
-    grid-template-columns: 1fr;
-  }
-
-  .video-grid iframe {
-    width: 370px;
-    height: 315px;
   }
 }

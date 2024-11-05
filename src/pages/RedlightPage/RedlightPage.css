@@ -1,4 +1,12 @@
-/* Call to Action Section */
+/* General styling for Redlight Page */
+.treatment-page {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  text-align: center;
+}
+
+/* Call to Action Section (Mobile-First) */
 .cta-section-red {
   display: flex;
   flex-direction: column;
@@ -7,88 +15,91 @@
   min-height: 100vh;
   background-color: var(--off-black);
   color: var(--stone);
-  text-align: center;
   padding: 2rem;
+  text-align: center;
+}
+
+.cta-section-red h4 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .cta-section-red h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 /* Info Section */
 .info-section-redlight {
-  color: var(--stone);
   background-image: url("/src/assets/images/backgrounds/ice-red-1.png");
   background-size: cover;
-  padding: 1.5rem 3rem 3rem 3rem;
-  text-align: center;
+  color: var(--stone);
+  padding: 2rem;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
+
 .info-section-redlight h6 {
+  font-size: 1rem;
+  margin: 1rem 0;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
-/* Benefits Section */
+/* Benefits Section (Mobile-First) */
 .benefit-section-red {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  padding: 0 4rem;
-  margin: 0;
+  justify-content: center;
+  padding: 2rem 1rem;
+  text-align: center;
+  gap: 1rem;
   background-color: var(--off-black);
-  color: var(--stone);
 }
-.benefit-section-red .benefit-image {
-  flex: 1;
+
+.benefit-image {
+  width: 100%; /* Full width on mobile */
+  max-width: 90%; /* Slightly reduced for padding effect */
+  margin-bottom: 1rem;
 }
-.benefit-section-red .benefit-image img {
-  width: 70%;
+
+.benefit-image img {
+  width: 100%;
   height: auto;
-  padding: 4rem;
 }
-.benefit-section-red .benefit-content {
-  flex: 1;
+
+.benefit-content-red h3 {
+  font-size: 1.5rem;
+  color: var(--stone);
+  margin: 1rem 0;
 }
-.benefit-section-red.reverse {
-  flex-direction: row-reverse;
-}
-.text-left-red {
-  padding-right: 4rem;
-  min-height: 80vh;
-}
-.text-right-red {
-  padding-left: 4rem;
-  min-height: 80vh;
-}
-.custom-icon-list {
-  font-size: 1.25rem;
-}
+
 .custom-icon-list {
   list-style: none; /* Removes default bullets */
-  padding: 0 2rem;
+  padding: 0 1.5rem;
   margin: 0;
+  font-size: 1rem;
 }
 
 .custom-icon-list li {
   position: relative;
-  padding-left: 2rem; /* Space for the custom icon */
+  padding-left: 1.5rem; /* Space for custom icon */
   margin-bottom: 0.7rem;
   line-height: 1.5;
+  color: var(--stone);
 }
 
-/* Custom icon */
 .custom-icon-list li::before {
   content: "";
   position: absolute;
   left: 0;
   top: 0;
-  width: 1.8rem;
-  height: 1.8rem;
+  width: 1.5rem;
+  height: 1.5rem;
   background-image: url("../../assets/icons/hexa-icon-stone.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -96,76 +107,118 @@
 
 /* What to Expect Section */
 .expect-section-red {
-  position: relative;
-  padding: 4rem 2rem;
-  text-align: center;
+  padding: 3rem 1rem;
   background-image: url("/src/assets/images/backgrounds/ice-red-2.png");
   background-size: cover;
   color: var(--stone);
 }
+
 .expect-section-red h2 {
-  margin-bottom: 3rem;
-  font-size: 2.5rem;
+  font-size: 2rem;
+  margin-bottom: 2rem;
 }
 
-/* First time section */
+.expect-steps {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
 
+.step {
+  width: 80%;
+  padding: 1rem;
+  font-size: 1rem;
+  position: relative;
+  text-align: center;
+  background-color: transparent;
+  animation: fadeInTop 1s ease forwards;
+}
+
+/* First Time Section */
 .first-time-section-red {
   background-color: var(--off-black);
   color: var(--stone);
-  padding: 3rem;
-  text-align: center;
+  padding: 3rem 1rem;
   min-height: 60vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
 .first-time-section-red p {
-  font-size: 20px;
-  padding: 0 20rem;
+  font-size: 1rem;
+  padding: 0 1rem;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
-/* Responsive Design */
+/* Learn More Section */
+.learn-more-section {
+  background-color: var(--stone);
+  color: var(--off-black);
+  padding: 2rem 1rem;
+  min-height: 60vh;
+}
 
-/* Mobile */
-@media (max-width: 1024px) {
-  .benefit-section-red > .benefit-content-red {
-    width: 50%;
-  }
-  .cta-section-red h4 {
-    font-size: 1.5rem;
-  }
+.video-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.video-grid iframe {
+  width: 100%;
+  height: auto;
+}
+
+/* Desktop and Tablet (min-width: 1024px) */
+@media (min-width: 1024px) {
   .cta-section-red h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
 
   .benefit-section-red {
-    flex-direction: column;
-    padding: 2rem 1rem;
-    text-align: center;
+    flex-direction: row;
+    padding: 0 4rem;
+    text-align: left;
   }
+
+  .benefit-image {
+    flex: 1;
+    max-width: 50%;
+  }
+
   .benefit-content-red {
-    order: 2;
-  }
-  .custom-icon-list {
-    font-size: 1rem;
-  }
-  .custom-icon-list li::before {
-    width: 1.5rem;
-    height: 1.5rem;
+    flex: 1;
+    padding: 0 2rem;
   }
 
   .expect-section-red {
-    background-image: url("/src/assets/images/backgrounds/ice-red-2-vertical.png");
+    padding: 4rem 2rem;
   }
 
-  .first-time-section-red > * {
-    width: 100%;
+  .first-time-section-red {
+    padding: 3rem 2rem;
   }
-  .first-time-section-red p {
-    font-size: 16px;
-    padding: 0 5rem;
+
+  .learn-more-section {
+    padding: 3rem 2rem;
+  }
+
+  .video-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Fade-in from the top animation */
+@keyframes fadeInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

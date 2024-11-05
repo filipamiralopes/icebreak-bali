@@ -1,22 +1,38 @@
-import "./HomePage.css";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import yeahCoolImg from "../../assets/images/content/yeah-cool-green.png";
 import iceVideo from "../../assets/videos/ice-white-1.mp4";
+import landingImageMobile from "../../assets/images/backgrounds/ice-white-2-vertical.png"; // Add mobile background image
 import benefitImage1 from "../../assets/images/content/about-image1-sq.png";
 import benefitImage2 from "../../assets/images/content/about-image2-sq.png";
 import benefitImage3 from "../../assets/images/content/about-image3-sq.png";
 import { ElfsightWidget } from "react-elfsight-widget";
+import "./HomePage.css";
 
 function HomePage() {
+  const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 1024);
+
+  useEffect(() => {
+    const handleResize = () => setIsDesktop(window.innerWidth >= 1024);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <div className="home-page">
       {/* Main section */}
       <section className="landing-section">
-        {/* Video background */}
-        <video playsinline autoPlay muted loop id="background-video">
-          <source src={iceVideo} type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+        {isDesktop ? (
+          <video playsInline autoPlay muted loop id="background-video">
+            <source src={iceVideo} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        ) : (
+          <div
+            className="landing-background-mobile"
+            style={{ backgroundImage: `url(${landingImageMobile})` }}
+          ></div>
+        )}
         <div className="landing-section-content">
           <img src={yeahCoolImg} alt="Yeah cool img" />
           <h5>Ice Break, Uluwatu, Bali</h5>
