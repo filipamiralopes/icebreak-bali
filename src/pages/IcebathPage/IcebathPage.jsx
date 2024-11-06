@@ -135,7 +135,7 @@ function IcebathPage() {
         <h2>First Time?</h2>
         <p>
           Don't worry, we are (almost) certain you will love it! You can get our
-          Discovery session and our team will be right there with you the whole
+          discovery session and our team will be right there with you the whole
           way, guiding you with breathing exercises and positive energy!
         </p>
       </section>
