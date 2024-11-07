@@ -76,6 +76,9 @@ html {
 .p-services {
   padding: 0 4rem;
 }
+.image-transparency{
+  opacity: 0.5;
+}
 
 .no-booking-section {
   background-image: url("/src/assets/images/backgrounds/ice-white-1.png");
@@ -186,17 +189,17 @@ html {
     line-height: 3.8rem;
     padding: 1rem 10rem;
   }
-
   .p-services {
     padding: 0;
   }
-
   #our-services > header > h2 {
     padding: 3rem 0;
   }
-
   .benefit-section-landing {
     max-height: 50vh;
+  }
+  .image-transparency{
+    opacity: 1;
   }
 
   /* No-Booking Section */

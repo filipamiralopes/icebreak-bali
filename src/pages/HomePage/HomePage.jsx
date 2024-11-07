@@ -61,7 +61,7 @@ function HomePage() {
       </section>
 
       <section className="benefit-section text-left benefit-section-landing">
-        <div className="benefit-image">
+        <div className="benefit-image image-transparency">
           <img src={landingImg1} alt="Benefit 1" />
         </div>
         <div className="benefit-content">
@@ -101,13 +101,13 @@ function HomePage() {
             muscle recovery and inflammation!
           </p>
         </div>
-        <div className="benefit-image">
+        <div className="benefit-image image-transparency">
           <img src={landingImg1} alt="Benefit 2" />
         </div>
       </section>
 
       <section className="benefit-section text-left benefit-section-landing">
-        <div className="benefit-image">
+        <div className="benefit-image image-transparency">
           <img src={landingImg1} alt="Benefit 3" style={{width: "500px"}}/>
         </div>
         <div className="benefit-content">
