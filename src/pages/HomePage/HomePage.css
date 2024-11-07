@@ -130,15 +130,13 @@ html {
   color: var(--verdigris);
 }
 
-.maps-section {
-  background-color: #b0d4dd;
-}
-
 .maps-section h4 {
   padding: 2rem 0;
   margin-top: 0;
   font-size: 1.2rem;
-  color: var(--white);
+  width: 50%;
+  font-size: 1.5rem;
+  color: var(--stone);
 }
 
 .map {

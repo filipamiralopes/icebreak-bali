@@ -1,4 +1,4 @@
-import logoGreen from "../../assets/logos/logo-green-long.png";
+import logo from "../../assets/logos/logo-stone-tagline.png";
 import contactIcon from "../../assets/icons/contact-icon-rmb.png";
 import locationIcon from "../../assets/icons/location-icon-rmb.png";
 import heartIcon from "../../assets/icons/heart-icon-rmb.png";
@@ -7,7 +7,7 @@ import "./Footer.css";
 function Footer() {
   return (
     <nav className="footer">
-      <img src={logoGreen} alt="Icebreak Logo" height="100px" />
+      <img src={logo} alt="Icebreak Logo" height="100px" />
 
       <div className="info">
         <div className="info-icon">
