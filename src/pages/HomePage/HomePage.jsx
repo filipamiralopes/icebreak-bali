@@ -1,11 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import yeahCoolImg from "../../assets/images/content/yeah-cool-green.png";
-import iceVideo from "../../assets/videos/ice-white-1.mp4";
-import landingImageMobile from "../../assets/images/backgrounds/ice-white-2-vertical.png"; // Add mobile background image
-import benefitImage1 from "../../assets/images/content/about-image1-sq.png";
-import benefitImage2 from "../../assets/images/content/about-image2-sq.png";
-import benefitImage3 from "../../assets/images/content/about-image3-sq.png";
+import iceVideoMp4 from "../../assets/videos/ice-white.mp4";
+import iceVideoWebm from "../../assets/videos/ice-white.webm";
+import landingImageMobile from "../../assets/images/backgrounds/ice-white-vertical.png";
 import landingImg1 from "../../assets/images/content/landing-img-1.png";
 import { ElfsightWidget } from "react-elfsight-widget";
 import "./HomePage.css";
@@ -25,7 +23,8 @@ function HomePage() {
       <section className="landing-section">
         {isDesktop ? (
           <video playsInline autoPlay muted loop id="background-video">
-            <source src={iceVideo} type="video/mp4" />
+            <source src={iceVideoMp4} type="video/mp4" />
+            <source src={iceVideoWebm} type="video/webm" />
             Your browser does not support the video tag.
           </video>
         ) : (
@@ -62,7 +61,7 @@ function HomePage() {
 
       <section className="benefit-section text-left benefit-section-landing">
         <div className="benefit-image image-transparency">
-          <img src={landingImg1} alt="Benefit 1" />
+          <img src={landingImg1} alt="Benefit 1" loading="lazy"/>
         </div>
         <div className="benefit-content">
           <h3>
@@ -102,13 +101,13 @@ function HomePage() {
           </p>
         </div>
         <div className="benefit-image image-transparency">
-          <img src={landingImg1} alt="Benefit 2" />
+          <img src={landingImg1} alt="Benefit 2" loading="lazy"/>
         </div>
       </section>
 
       <section className="benefit-section text-left benefit-section-landing">
         <div className="benefit-image image-transparency">
-          <img src={landingImg1} alt="Benefit 3" style={{width: "500px"}}/>
+          <img src={landingImg1} alt="Benefit 3" loading="lazy"/>
         </div>
         <div className="benefit-content">
           <h3>Beverages and merch</h3>

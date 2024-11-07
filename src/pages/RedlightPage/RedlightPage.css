@@ -31,7 +31,7 @@
 
 /* Info Section */
 .info-section-bg-red {
-  background-image: url("/src/assets/images/backgrounds/ice-red-1.png");
+  background-image: url("/src/assets/images/backgrounds/ice-red.png");
 }
 
 .info-section-redlight h6 {
@@ -93,7 +93,7 @@
 
 /* What to Expect Section */
 .expect-section-red-bg {
-  background-image: url("/src/assets/images/backgrounds/ice-red-2-vertical.png");
+  background-image: url("/src/assets/images/backgrounds/ice-red-vertical.png");
   background-size: cover;
 }
 

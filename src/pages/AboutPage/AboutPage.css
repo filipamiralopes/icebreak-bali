@@ -15,7 +15,7 @@
 
 /* Section 1: Centered header */
 .header-section {
-  background-image: url("/src/assets/images/backgrounds/ice-isolated-2.2.png");
+  background-image: url("/src/assets/images/backgrounds/ice-isolated.png");
   background-size: 100%;
   min-height: 100dvh;
   padding: 0;
@@ -70,7 +70,7 @@
 /* Mobile and Tablets (max-width: 768px) */
 @media (max-width: 768px) {
   .header-section {
-    background-image: url("/src/assets/images/backgrounds/ice-isolated-2.2-vertical.png");
+    background-image: url("/src/assets/images/backgrounds/ice-isolated-vertical.png");
     background-size: 120%;
     padding: 0 5rem
   }

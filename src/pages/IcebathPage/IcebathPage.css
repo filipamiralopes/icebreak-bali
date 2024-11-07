@@ -198,7 +198,7 @@
   align-items: center;
 }
 .first-time-section-ice-bg {
-  background-image: url("/src/assets/images/backgrounds/ice-green-3.png");
+  background-image: url("/src/assets/images/backgrounds/ice-green-2.png");
   background-size: cover;
   color: var(--stone);
 }

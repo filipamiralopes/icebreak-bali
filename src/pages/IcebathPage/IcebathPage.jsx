@@ -26,7 +26,7 @@ function IcebathPage() {
       {/* Benefit Sections */}
       <section className="benefit-section text-left">
         <div className="benefit-image">
-          <img src={benefitImage1} alt="Benefit 1" />
+          <img src={benefitImage1} alt="Benefit 1" loading="lazy"/>
         </div>
         <div className="benefit-content">
           <h3>Increases energy and focus</h3>
@@ -49,13 +49,13 @@ function IcebathPage() {
           </p>
         </div>
         <div className="benefit-image">
-          <img src={benefitImage2} alt="Benefit 2" />
+          <img src={benefitImage2} alt="Benefit 2" loading="lazy"/>
         </div>
       </section>
 
       <section className="benefit-section text-left">
         <div className="benefit-image">
-          <img src={benefitImage3} alt="Benefit 3" />
+          <img src={benefitImage3} alt="Benefit 3" loading="lazy"/>
         </div>
         <div className="benefit-content">
           <h3>Enhances your mood</h3>
@@ -79,13 +79,13 @@ function IcebathPage() {
           </p>
         </div>
         <div className="benefit-image">
-          <img src={benefitImage4} alt="Benefit 4" />
+          <img src={benefitImage4} alt="Benefit 4" loading="lazy"/>
         </div>
       </section>
 
       <section className="benefit-section text-left">
         <div className="benefit-image">
-          <img src={benefitImage5} alt="Benefit 5" />
+          <img src={benefitImage5} alt="Benefit 5" loading="lazy"/>
         </div>
         <div className="benefit-content">
           <h3>Increases metabolism</h3>
