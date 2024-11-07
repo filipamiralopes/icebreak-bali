@@ -81,7 +81,7 @@ html {
 }
 
 .no-booking-section {
-  background-image: url("/src/assets/images/backgrounds/ice-white.png");
+  background-image: url("/src/assets/images/backgrounds/ice-white.jpg");
   background-size: cover;
   color: var(--off-black);
   padding: 3rem;
@@ -91,6 +91,12 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+/* WebP for supported browsers */
+@supports (background-image: url("image.webp")) {
+  .landing-background {
+    background-image: url("/src/assets/images/backgrounds/ice-white.webp");
+  }
 }
 
 .no-booking-section h5 {
