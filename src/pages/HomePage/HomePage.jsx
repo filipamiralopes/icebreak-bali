@@ -4,7 +4,7 @@ import yeahCoolImg from "../../assets/images/backgrounds/yeah-cool-green.png";
 import iceVideoMp4 from "../../assets/videos/ice-white.mp4";
 import iceVideoWebm from "../../assets/videos/ice-white.webm";
 import landingImageMobile from "../../assets/images/backgrounds/ice-white-vertical.webp";
-import landingImg1 from "../../assets/images/content/landing-img-1.png";
+import landingImg1 from "../../assets/images/content/landing-img-1.jpg";
 import { ElfsightWidget } from "react-elfsight-widget";
 import "./HomePage.css";
 

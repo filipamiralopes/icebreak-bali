@@ -1,5 +1,5 @@
 import React from "react";
-import benefitImage1 from "../../assets/images/content/redlight-image-sq.png";;
+import benefitImage1 from "../../assets/images/content/redlight-image-sq.jpg";;
 import "./RedlightPage.css";
 
 function RedlightPage() {

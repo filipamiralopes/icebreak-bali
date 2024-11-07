@@ -1,9 +1,9 @@
 import React from "react";
-import benefitImage1 from "../../assets/images/content/about-image1-sq.png";
-import benefitImage2 from "../../assets/images/content/about-image2-sq.png";
-import benefitImage3 from "../../assets/images/content/about-image3-sq.png";
-import benefitImage4 from "../../assets/images/content/about-image1-sq.png";
-import benefitImage5 from "../../assets/images/content/about-image2-sq.png";
+import benefitImage1 from "../../assets/images/content/about-image1-sq.jpg";
+import benefitImage2 from "../../assets/images/content/about-image2-sq.jpg";
+import benefitImage3 from "../../assets/images/content/about-image3-sq.jpg";
+import benefitImage4 from "../../assets/images/content/about-image1-sq.jpg";
+import benefitImage5 from "../../assets/images/content/about-image2-sq.jpg";
 import "./IcebathPage.css";
 
 function IcebathPage() {
