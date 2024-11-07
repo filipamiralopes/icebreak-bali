@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import yeahCoolImg from "../../assets/images/content/yeah-cool-green.png";
+import yeahCoolImg from "../../assets/images/backgrounds/yeah-cool-green.png";
 import iceVideoMp4 from "../../assets/videos/ice-white.mp4";
 import iceVideoWebm from "../../assets/videos/ice-white.webm";
 import landingImageMobile from "../../assets/images/backgrounds/ice-white-vertical.webp";
@@ -157,7 +157,7 @@ function HomePage() {
       </section>
 
       <section className="maps-section">
-        <h4>Find us in Bingin Uluwatu, Bali <br/>Every day from 7:30 AM to 7:30PM</h4>
+        <p>Find us in Bingin Uluwatu, Bali <br/>Every day from 7:30 AM to 7:30PM</p>
 
         <iframe
           class="map"

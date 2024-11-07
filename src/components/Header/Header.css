@@ -32,9 +32,9 @@
   }
 
   .logo {
-    height: 40px;
+    height: 60px;
     width: auto;
-    padding: 1.5rem;
+    padding-top: 1rem;
   }
 }
 
