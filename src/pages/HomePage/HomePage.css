@@ -103,7 +103,8 @@ html {
 #ig-section,
 .maps-section {
   width: 100%;
-  min-height: 100vh;
+  min-height: 100dvh;
+  min-width: 100dvw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -209,7 +210,12 @@ html {
   }
 
   /* IG Section */
-
+  #ig-section {
+    min-width: 100dvw;
+  }
+  .instagram-feed {
+    min-width: 80%;
+  }
   #ig-section h4 {
     font-size: 1.5rem;
   }

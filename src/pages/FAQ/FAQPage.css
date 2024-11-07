@@ -17,10 +17,11 @@
 }
 
 .faq-header h2 {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   color: var(--off-black);
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
   margin-top: 2.5rem;
+  width: 50%;
+  padding-top: 2rem;
 }
 
 .faq-header-h1 {
@@ -116,8 +117,8 @@
   }
 
   .faq-header h2 {
-    font-size: 2.3rem;
-    margin-top: 3.5rem;
+    font-size: 1.8rem;
+    margin-top: 1rem;
   }
 
   .faq-header-h1 {
