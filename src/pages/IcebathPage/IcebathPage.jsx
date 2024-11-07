@@ -18,7 +18,7 @@ function IcebathPage() {
       {/* What is it? */}
       <section className="info-section">
         <h1>What is it?</h1>
-        <h6>Literally an ice bath with temperatures ranging 0-4o C/ 32-40 F</h6>
+        <h6>Literally an ice bath with temperatures ranging from 0 to 4℃  / 32-40 F</h6>
         <h6>Typically you stay for 1-5min</h6>
         <h6>All it takes is 11 minutes per week</h6>
       </section>
@@ -131,7 +131,7 @@ function IcebathPage() {
       </section>
 
       {/* First Time Section */}
-      <section className="first-time-section">
+      <section className="first-time-section first-time-section-ice-bg">
         <h2>First Time?</h2>
         <p>
           Don't worry, we are (almost) certain you will love it! You can get our

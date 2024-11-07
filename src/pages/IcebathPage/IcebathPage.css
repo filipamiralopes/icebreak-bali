@@ -54,31 +54,34 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 2rem 1rem;
+  padding: 2rem 0;
   text-align: center;
   gap: 1rem;
 }
 
 .benefit-image {
   order: 1;
-  width: 100%; /* Full width on mobile */
-  max-width: 90%; /* Slightly reduced for padding effect */
-  margin-bottom: 1rem;
+  width: 100vw;
+  max-width: 90vw;
+  margin: 0;
+  padding: 0;
 }
 
 .benefit-image img {
-  width: 100%;
+  width: 100vw;
   height: auto;
 }
 
 .benefit-content {
   order: 2;
+  padding: 0 1rem;
 }
 
 .benefit-content h3 {
   font-size: 1.5rem;
   color: var(--off-black);
   margin: 1rem 0;
+  padding: 0 1.4rem;
 }
 
 .benefit-content p {
@@ -104,6 +107,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0 5rem;
 }
 
 .expect-steps::before {
@@ -184,7 +188,6 @@
 
 /* First Time Section */
 .first-time-section {
-  background-image: url("/src/assets/images/backgrounds/ice-green-3.png");
   background-size: cover;
   color: var(--stone);
   padding: 3rem 1rem;
@@ -193,6 +196,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.first-time-section-ice-bg {
+  background-image: url("/src/assets/images/backgrounds/ice-green-3.png");
+  background-size: cover;
+  color: var(--stone);
 }
 
 .first-time-section p {
@@ -229,6 +237,11 @@
     font-size: 3rem;
   }
 
+  .info-section h6 {
+    font-size: 1.2rem;
+    width: 40%;
+  }
+
   .benefit-section {
     flex-direction: row;
     padding: 0 4rem;
@@ -237,12 +250,38 @@
 
   .benefit-image {
     flex: 1;
-    max-width: 50%;
+    max-height: 40%;
+    margin: 0 auto;
+  }
+  .benefit-image img {
+    width: 40%;
   }
 
   .benefit-content {
     flex: 1;
     padding: 0 2rem;
+  }
+  .benefit-content h3 {
+    padding: 0;
+  }
+  .benefit-section {
+    display: flex;
+    align-items: center;
+    padding: 2rem 4rem;
+    gap: 2rem;
+  }
+  .benefit-section.text-left {
+    flex-direction: row;
+  }
+  .benefit-section.text-right {
+    flex-direction: row-reverse;
+  }
+  .benefit-image {
+    flex: 1;
+    width: 100%;
+  }
+  .benefit-content {
+    flex: 1;
   }
 
   .expect-section {
@@ -258,12 +297,15 @@
   }
 
   .first-time-section {
-    padding: 3rem 2rem;
+    padding: 3rem 25rem;
   }
 
   .learn-more-section {
     padding: 3rem 2rem;
   }
+  .learn-more-section h2 {
+    padding-bottom: 2rem;
+  } 
 
   .video-grid {
     grid-template-columns: repeat(2, 1fr);

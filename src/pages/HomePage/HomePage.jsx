@@ -6,6 +6,7 @@ import landingImageMobile from "../../assets/images/backgrounds/ice-white-2-vert
 import benefitImage1 from "../../assets/images/content/about-image1-sq.png";
 import benefitImage2 from "../../assets/images/content/about-image2-sq.png";
 import benefitImage3 from "../../assets/images/content/about-image3-sq.png";
+import landingImg1 from "../../assets/images/content/landing-img-1.png";
 import { ElfsightWidget } from "react-elfsight-widget";
 import "./HomePage.css";
 
@@ -55,13 +56,13 @@ function HomePage() {
 
       <section id="our-services">
         <header>
-          <h2>Our services</h2>
+          <h1>Our services</h1>
         </header>
       </section>
 
-      <section className="benefit-section text-left">
+      <section className="benefit-section text-left benefit-section-landing">
         <div className="benefit-image">
-          <img src={benefitImage1} alt="Benefit 1" />
+          <img src={landingImg1} alt="Benefit 1" />
         </div>
         <div className="benefit-content">
           <h3>
@@ -82,7 +83,7 @@ function HomePage() {
         </div>
       </section>
 
-      <section className="benefit-section text-right">
+      <section className="benefit-section text-right benefit-section-landing">
         <div className="benefit-content">
           <h3>
             <Link
@@ -101,13 +102,13 @@ function HomePage() {
           </p>
         </div>
         <div className="benefit-image">
-          <img src={benefitImage2} alt="Benefit 2" />
+          <img src={landingImg1} alt="Benefit 2" />
         </div>
       </section>
 
-      <section className="benefit-section text-left">
+      <section className="benefit-section text-left benefit-section-landing">
         <div className="benefit-image">
-          <img src={benefitImage3} alt="Benefit 3" />
+          <img src={landingImg1} alt="Benefit 3" style={{width: "500px"}}/>
         </div>
         <div className="benefit-content">
           <h3>Beverages and merch</h3>
@@ -120,7 +121,7 @@ function HomePage() {
       </section>
 
       <section className="no-booking-section">
-        <h5>No booking required, just drop in</h5>
+        <h5>No booking required, <br/> just drop in</h5>
       </section>
 
       <section id="ig-section">

@@ -30,34 +30,19 @@
 }
 
 /* Info Section */
-.info-section-redlight {
+.info-section-bg-red {
   background-image: url("/src/assets/images/backgrounds/ice-red-1.png");
-  background-size: cover;
-  color: var(--stone);
-  padding: 2rem;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
 }
 
 .info-section-redlight h6 {
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin: 1rem 0;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  width: 50%;
 }
 
 /* Benefits Section (Mobile-First) */
-.benefit-section-red {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem 1rem;
-  text-align: center;
-  gap: 1rem;
+.benefit-section-bg-red {
   background-color: var(--off-black);
 }
 
@@ -76,6 +61,7 @@
   font-size: 1.5rem;
   color: var(--stone);
   margin: 1rem 0;
+  padding: 1.2rem 0;
 }
 
 .custom-icon-list {
@@ -106,11 +92,9 @@
 }
 
 /* What to Expect Section */
-.expect-section-red {
-  padding: 3rem 1rem;
-  background-image: url("/src/assets/images/backgrounds/ice-red-2.png");
+.expect-section-red-bg {
+  background-image: url("/src/assets/images/backgrounds/ice-red-2-vertical.png");
   background-size: cover;
-  color: var(--stone);
 }
 
 .expect-section-red h2 {
@@ -136,21 +120,9 @@
 }
 
 /* First Time Section */
-.first-time-section-red {
+.first-time-section-red-bg {
   background-color: var(--off-black);
   color: var(--stone);
-  padding: 3rem 1rem;
-  min-height: 60vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.first-time-section-red p {
-  font-size: 1rem;
-  padding: 0 1rem;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 /* Learn More Section */
@@ -197,11 +169,7 @@
   .expect-section-red {
     padding: 4rem 2rem;
   }
-
-  .first-time-section-red {
-    padding: 3rem 2rem;
-  }
-
+  
   .learn-more-section {
     padding: 3rem 2rem;
   }

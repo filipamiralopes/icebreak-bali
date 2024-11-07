@@ -12,7 +12,7 @@ function RedlightPage() {
       </section>
 
       {/* What is it? */}
-      <section className="info-section-redlight">
+      <section className="info-section info-section-bg-red">
         <h1>What is it?</h1>
         <h6>
           A LED panel that emits specific wavelengths of red and near-infrared
@@ -22,7 +22,7 @@ function RedlightPage() {
       </section>
 
       {/* Benefit Sections */}
-      <section className="benefit-section-red text-left-red">
+      <section className="benefit-section text-left benefit-section-bg-red">
         <div className="benefit-image">
           <img src={benefitImage1} alt="Benefit 1" />
         </div>
@@ -39,7 +39,7 @@ function RedlightPage() {
         </div>
       </section>
 
-      <section className="benefit-section-red text-right-red">
+      <section className="benefit-section text-right benefit-section-bg-red">
         <div className="benefit-content-red">
           <h3> Unlock your body's natural potential</h3>
           <ul className="custom-icon-list">
@@ -60,7 +60,7 @@ function RedlightPage() {
       </section>
 
       {/* What to Expect Section */}
-      <section className="expect-section-red">
+      <section className="expect-section expect-section-red-bg">
         <h2>What to Expect?</h2>
         <div className="expect-steps">
           <div className="step" style={{ "--step-index": 0 }}>
@@ -93,7 +93,7 @@ function RedlightPage() {
       </section>
 
       {/* First Time Section */}
-      <section className="first-time-section-red">
+      <section className="first-time-section first-time-section-red-bg">
         <h2>First Time?</h2>
         <p>
           Don't worry! Our staff will let you know all the details and setup the
