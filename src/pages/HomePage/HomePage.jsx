@@ -76,7 +76,7 @@ function HomePage() {
               Ice bath
             </Link>
           </h3>
-          <p>
+          <p className="p-services">
             Ice baths at 1o C/36 F for first timers and icemans alike. Boost
             your energy, recovery and mood!
           </p>
@@ -96,7 +96,7 @@ function HomePage() {
               Red Light Therapy
             </Link>
           </h3>
-          <p>
+          <p className="p-services">
             Private 1.8m red light panel with 5 wavelengths. Improve your skin,
             muscle recovery and inflammation!
           </p>
@@ -112,7 +112,7 @@ function HomePage() {
         </div>
         <div className="benefit-content">
           <h3>Beverages and merch</h3>
-          <p>
+          <p className="p-services">
             Coffee fix, electrolytes refill, protein dose and other drink twists
             - get your favorite healthy beverage. <br />
             Cool tees, hats & more - add a new piece to your collection!
@@ -162,7 +162,7 @@ function HomePage() {
 
         <iframe
           class="map"
-          width="60%"
+          width="100%"
           height="600"
           frameborder="0"
           scrolling="no"

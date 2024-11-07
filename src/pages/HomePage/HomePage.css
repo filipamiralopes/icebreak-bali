@@ -16,6 +16,7 @@ html {
   background-size: cover;
   background-position: center;
   z-index: -1;
+  margin-bottom: 0;
 }
 
 /* Hide Background Video by Default (Mobile) */
@@ -25,19 +26,21 @@ html {
 
 /* LANDING SECTION */
 .landing-section {
+  position: relative;
   z-index: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
-  padding-top: 3rem;
+  min-height: 100dvh;
+  padding-bottom: 3rem;
 }
-
+.landing-section-content {
+  z-index: 1;
+}
 .landing-section-content img {
   height: 250px;
 }
-
 .landing-section-content h5 {
   font-size: 1.2rem;
   text-align: center;
@@ -54,6 +57,7 @@ html {
   background-size: 90%;
   background-color: var(--verdigris);
   padding: 0;
+  margin: 0;
 }
 
 #motto h2 {
@@ -61,13 +65,16 @@ html {
   line-height: 2.5rem;
   font-style: italic;
   color: var(--stone);
-  padding: 1rem 8rem;
+  padding: 1rem 6rem;
 }
 
 /* SERVICES */
 #our-services {
   text-align: center;
   padding-top: 3rem;
+}
+.p-services {
+  padding: 0 2rem;
 }
 
 .no-booking-section {
@@ -124,8 +131,9 @@ html {
 }
 
 .maps-section h4 {
-  padding: 2rem 6rem;
-  font-size: 1.3rem;
+  padding-bottom: 2rem;
+  margin-top: 0;
+  font-size: 1.2rem;
   color: var(--white);
 }
 
@@ -135,7 +143,6 @@ html {
 
 /* DESKTOP AND LARGER SCREENS (min-width: 1025px) */
 @media (min-width: 1025px) {
-
   /* Show Background Video, Hide Background Image */
   #background-video {
     display: block;
@@ -180,11 +187,11 @@ html {
     padding: 1rem 10rem;
   }
 
-  #our-services > header> h2 {
+  #our-services > header > h2 {
     padding: 3rem 0;
   }
 
-  .benefit-section-landing{
+  .benefit-section-landing {
     max-height: 50vh;
   }
 
@@ -202,7 +209,6 @@ html {
 
   /* Maps Section */
   .maps-section h4 {
-    padding: 1rem 3rem 6rem 3rem;
     font-size: 1.3rem;
   }
 }
