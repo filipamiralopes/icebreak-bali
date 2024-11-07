@@ -31,7 +31,7 @@
 
 /* Info Section */
 .info-section {
-  background-image: url("/src/assets/images/backgrounds/ice-green-1.png");
+  background-image: url("/src/assets/images/backgrounds/ice-green-vertical.webp");
   background-size: cover;
   color: var(--stone);
   padding: 3rem;
@@ -198,7 +198,7 @@
   align-items: center;
 }
 .first-time-section-ice-bg {
-  background-image: url("/src/assets/images/backgrounds/ice-green-2.png");
+  background-image: url("/src/assets/images/backgrounds/ice-green-2.webp");
   background-size: cover;
   color: var(--stone);
 }
