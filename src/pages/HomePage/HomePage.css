@@ -218,10 +218,12 @@ html {
   }
   #ig-section h4 {
     font-size: 1.5rem;
+    padding-top: 3rem;
   }
 
   /* Maps Section */
   .maps-section h4 {
     font-size: 1.3rem;
+    padding-top: 3.5rem;
   }
 }
