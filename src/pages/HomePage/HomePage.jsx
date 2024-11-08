@@ -43,10 +43,10 @@ function HomePage() {
       <section id="motto">
         <div>
           <header>
-            <h2>
+            <p>
               Boost your wellbeing and recovery through a quick, intense and
               challenging experience while connecting with like-minded people.
-            </h2>
+            </p>
           </header>
         </div>
       </section>

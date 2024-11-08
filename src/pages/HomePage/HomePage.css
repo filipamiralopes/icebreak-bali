@@ -60,12 +60,12 @@ html {
   margin: 0;
 }
 
-#motto h2 {
+#motto p {
   font-size: 1.5rem;
   line-height: 2.5rem;
-  font-style: italic;
   color: var(--stone);
   padding: 1rem 6rem;
+  text-align: center;
 }
 
 /* SERVICES */
@@ -179,15 +179,13 @@ html {
 
   /* Motto Section */
   #motto {
-    background-image: url("/src/assets/images/backgrounds/ice-isolated.png");
-    background-size: 100%;
+    min-height: 50dvh;
     padding: 0 10rem;
   }
 
-  #motto h2 {
-    font-size: 2.5rem;
+  #motto p {
     line-height: 3.8rem;
-    padding: 1rem 10rem;
+    padding: 0rem 6rem 3rem 6rem;
   }
   .p-services {
     padding: 0;
