@@ -27,15 +27,6 @@ const faqDataIce = [
     },
   },
   {
-    question: "Which time of the day should I do the ice bath?",
-    answer: {
-      text: "Ice Baths can be done at any time of the day but there a few caveats and considerations to be made:",
-      list: [
-        "It is suggested to avoid too close to bedtime as it heats up your body, which in turn makes you feel awake. Fortunately we close at 7PM, so that shouldn't be a problem at Ice Break.",
-      ],
-    },
-  },
-  {
     question: "Its my first time, what should I do?",
     answer: {
       text: "Do not worry! You can request the discovery session and our team will explain and guide you throughout the whole process. Just bring your swimsuit and positive attitude.",
@@ -70,25 +61,6 @@ const faqDataIce = [
         "High blood pressure",
         "Diabetes",
         "Poor circulation.",
-      ],
-    },
-  },
-  {
-    question:
-      "What if I feel unconfortable and need to stop the session early?",
-    answer: {
-      text: "Our ice bath space is wide and open, you will have our team watching you the whole time. You can leave the bath at any time and if you need any help you just need to call out",
-      list: [],
-    },
-  },
-  {
-    question: "Other considerations",
-    answer: {
-      text: "Good to know:",
-      list: [
-        "Cold immersion after a big meal - It's best to wait 1-2 hours between a feast and your ice bath for optimal safety and comfort",
-        "Ice baths while intoxicated - Not a good idea. Alcohol dulls your senses, making it harder to gauge cold and pain, which can be risky",
-        "Strength and hypertrophy training - Cold therapy right after can limit muscle growth. It's recommended to do your ice bath before the workout or wait 2-3 hours after",
       ],
     },
   },
