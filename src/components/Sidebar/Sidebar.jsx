@@ -20,17 +20,25 @@ const Sidebar = () => {
   };
 
   const handleContactClick = () => {
-    window.scrollTo({
-      top: document.body.scrollHeight,
-      behavior: "smooth",
-    });
-    setIsOpen(false); // Close the sidebar after clicking
-  };
+    setIsOpen(false); // Close the sidebar first
 
+    // Delay the scroll action slightly to allow the sidebar to close first
+    setTimeout(() => {
+      window.scrollTo({
+        top: document.body.scrollHeight,
+        behavior: "smooth",
+      });
+    }, 300); // Adjust the timeout as needed; 300ms is generally sufficient
+  };
+  
   // Close sidebar when clicking outside
   useEffect(() => {
     const handleClickOutside = (event) => {
-      if (isOpen && sidebarRef.current && !sidebarRef.current.contains(event.target)) {
+      if (
+        isOpen &&
+        sidebarRef.current &&
+        !sidebarRef.current.contains(event.target)
+      ) {
         setIsOpen(false);
       }
     };
@@ -50,13 +58,25 @@ const Sidebar = () => {
     <>
       {!isOpen && (
         <div className="menu-icon" onClick={toggleSidebar}>
-          <img src={menuIcon} alt="Menu icon" style={{ width: "50px", height: "auto" }} />
+          <img
+            src={menuIcon}
+            alt="Menu icon"
+            style={{ width: "50px", height: "auto" }}
+          />
         </div>
       )}
 
-      <div ref={sidebarRef} className={`sidebar ${isOpen ? "open" : ""}`} onClick={(e) => e.stopPropagation()}>
+      <div
+        ref={sidebarRef}
+        className={`sidebar ${isOpen ? "open" : ""}`}
+        onClick={(e) => e.stopPropagation()}
+      >
         <div className="close-icon" onClick={toggleSidebar}>
-          <img src={closeIcon} alt="Close icon" style={{ width: "70px", height: "auto" }} />
+          <img
+            src={closeIcon}
+            alt="Close icon"
+            style={{ width: "70px", height: "auto" }}
+          />
         </div>
 
         <Link to="/" onClick={toggleSidebar}>
@@ -74,7 +94,11 @@ const Sidebar = () => {
         <div className="know-more">
           <h4 onClick={toggleKnowMore}>
             Know More
-            <img src={arrowDownIcon} alt="Arrow icon" className={`arrow-icon ${isKnowMoreOpen ? "open" : ""}`} />
+            <img
+              src={arrowDownIcon}
+              alt="Arrow icon"
+              className={`arrow-icon ${isKnowMoreOpen ? "open" : ""}`}
+            />
           </h4>
           {isKnowMoreOpen && (
             <div className="submenu">
