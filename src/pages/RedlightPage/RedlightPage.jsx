@@ -1,8 +1,31 @@
-import React from "react";
-import benefitImage1 from "../../assets/images/content/redlight-image-sq.jpg";;
+import React, { useEffect } from "react";
+import benefitImage1 from "../../assets/images/content/redlight-image-sq.jpg";
 import "./RedlightPage.css";
 
 function RedlightPage() {
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("fade-in");
+            observer.unobserve(entry.target); // Stop observing once animated
+          }
+        });
+      },
+      {
+        threshold: 0.1, // Trigger when 10% of the element is in view
+      }
+    );
+
+    // Select all elements with the class 'step'
+    const steps = document.querySelectorAll(".step");
+    steps.forEach((step) => observer.observe(step));
+
+    // Cleanup observer on component unmount
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <div className="treatment-page">
       {/* Call to Action Section */}
@@ -24,7 +47,7 @@ function RedlightPage() {
       {/* Benefit Sections */}
       <section className="benefit-section text-left benefit-section-bg-red">
         <div className="benefit-image">
-          <img src={benefitImage1} alt="Benefit 1" loading="lazy"/>
+          <img src={benefitImage1} alt="Benefit 1" loading="lazy" />
         </div>
         <div className="benefit-content-red">
           <h3>Improves skin quality and appearance</h3>
@@ -55,7 +78,7 @@ function RedlightPage() {
           </ul>
         </div>
         <div className="benefit-image">
-          <img src={benefitImage1} alt="Benefit 2" loading="lazy"/>
+          <img src={benefitImage1} alt="Benefit 2" loading="lazy" />
         </div>
       </section>
 

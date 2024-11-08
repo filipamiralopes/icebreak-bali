@@ -108,6 +108,7 @@
   flex-direction: column;
   align-items: center;
   padding: 0 5rem;
+  text-align: justify;
 }
 
 .expect-steps::before {
@@ -122,7 +123,7 @@
 }
 
 /* Individual steps styling */
-.step {
+.expect-steps .step {
   position: relative;
   width: 40%; /* Reduced width for better alignment */
   padding: 1.5rem;
@@ -131,24 +132,34 @@
   color: var(--stone);
   border-radius: 8px;
   z-index: 2;
-  opacity: 0;
-  animation: fadeInTop 1s ease forwards;
-  animation-delay: calc(var(--step-index) * 0.2s);
-  transform: translateX(-50%); /* Center align each step */
+  opacity: 0; /* Keep hidden initially */
+  text-align: justify;
+  transform: translateY(-20px); /* Start slightly above */
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.expect-steps .step.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+  animation: fadeInTop 20s ease forwards; /* Increase duration further */
+  animation-delay: calc(var(--step-index) * 0.5s); /* Increase delay multiplier */
 }
 
 /* Align odd/even steps without offsetting */
 .step:nth-child(odd) {
   text-align: right;
   margin-right: 2rem; /* Adjust space from the line */
-  right: 39%;
+  right: 22.5%;
 }
 
 .step:nth-child(even) {
   text-align: left;
   margin-left: 2rem; /* Adjust space from the line */
-  left: 39%;
+  left: 22.5%;
 }
+.expect-steps {
+  padding: 0 2rem;
+}
+
 
 /* Circle for each step */
 .step::before {
@@ -172,18 +183,6 @@
 
 .step:nth-child(even)::before {
   left: -15px; /* Position closer to the step */
-}
-
-/* Fade-in from the top animation */
-@keyframes fadeInTop {
-  0% {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 /* First Time Section */
@@ -238,7 +237,7 @@
   }
 
   .info-section h6 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     width: 40%;
   }
 
@@ -283,21 +282,27 @@
   .benefit-content {
     flex: 1;
   }
+  .expect-steps .step {
+    font-size: 1.7rem;
+  }
 
   .expect-section {
     padding: 4rem 2rem;
   }
 
   .step:nth-child(odd) {
-    right: 39.75%;
+    right: 20.75%;
   }
 
   .step:nth-child(even) {
-    left: 39.75%;
+    left: 20.75%;
   }
 
   .first-time-section {
-    padding: 3rem 25rem;
+    padding: 3rem 15rem;
+  }
+  .first-time-section p{
+    font-size: 1.5rem;
   }
 
   .learn-more-section {
@@ -312,14 +317,4 @@
   }
 }
 
-/* Fade-in from the top animation */
-@keyframes fadeInTop {
-  0% {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
+

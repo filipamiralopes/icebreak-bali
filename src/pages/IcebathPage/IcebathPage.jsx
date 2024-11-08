@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import benefitImage1 from "../../assets/images/content/about-image1-sq.jpg";
 import benefitImage2 from "../../assets/images/content/about-image2-sq.jpg";
 import benefitImage3 from "../../assets/images/content/about-image3-sq.jpg";
@@ -7,6 +7,29 @@ import benefitImage5 from "../../assets/images/content/about-image2-sq.jpg";
 import "./IcebathPage.css";
 
 function IcebathPage() {
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("fade-in");
+            observer.unobserve(entry.target); // Stop observing once animated
+          }
+        });
+      },
+      {
+        threshold: 0.1, // Trigger when 10% of the element is in view
+      }
+    );
+
+    // Select all elements with the class 'step'
+    const steps = document.querySelectorAll(".step");
+    steps.forEach((step) => observer.observe(step));
+
+    // Cleanup observer on component unmount
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <div className="treatment-page">
       {/* Call to Action Section */}
@@ -18,7 +41,9 @@ function IcebathPage() {
       {/* What is it? */}
       <section className="info-section">
         <h1>What is it?</h1>
-        <h6>Literally an ice bath with temperatures ranging from 0 to 4℃  / 32-40 F</h6>
+        <h6>
+          Literally an ice bath with temperatures ranging from 0 to 4℃ / 32-40 F
+        </h6>
         <h6>Typically you stay for 1-5min</h6>
         <h6>All it takes is 11 minutes per week</h6>
       </section>
@@ -26,7 +51,7 @@ function IcebathPage() {
       {/* Benefit Sections */}
       <section className="benefit-section text-left">
         <div className="benefit-image">
-          <img src={benefitImage1} alt="Benefit 1" loading="lazy"/>
+          <img src={benefitImage1} alt="Benefit 1" loading="lazy" />
         </div>
         <div className="benefit-content">
           <h3>Increases energy and focus</h3>
@@ -49,13 +74,13 @@ function IcebathPage() {
           </p>
         </div>
         <div className="benefit-image">
-          <img src={benefitImage2} alt="Benefit 2" loading="lazy"/>
+          <img src={benefitImage2} alt="Benefit 2" loading="lazy" />
         </div>
       </section>
 
       <section className="benefit-section text-left">
         <div className="benefit-image">
-          <img src={benefitImage3} alt="Benefit 3" loading="lazy"/>
+          <img src={benefitImage3} alt="Benefit 3" loading="lazy" />
         </div>
         <div className="benefit-content">
           <h3>Enhances your mood</h3>
@@ -79,13 +104,13 @@ function IcebathPage() {
           </p>
         </div>
         <div className="benefit-image">
-          <img src={benefitImage4} alt="Benefit 4" loading="lazy"/>
+          <img src={benefitImage4} alt="Benefit 4" loading="lazy" />
         </div>
       </section>
 
       <section className="benefit-section text-left">
         <div className="benefit-image">
-          <img src={benefitImage5} alt="Benefit 5" loading="lazy"/>
+          <img src={benefitImage5} alt="Benefit 5" loading="lazy" />
         </div>
         <div className="benefit-content">
           <h3>Increases metabolism</h3>
