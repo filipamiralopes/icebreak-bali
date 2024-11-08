@@ -60,21 +60,28 @@ function HomePage() {
       </section>
 
       <section className="benefit-section text-left benefit-section-landing">
-        <div className="benefit-image image-transparency">
-          <img src={landingImg1} alt="Benefit 1" loading="lazy"/>
+        <div className="benefit-image image-transparency service-item">
+          <img
+            src={landingImg1}
+            alt="Benefit 1"
+            loading="lazy"
+            className="service-image"
+          />
+
+          <Link
+            to="/icebath"
+            onClick={() => {
+              window.scrollTo(0, 0);
+            }}
+          >
+            <div className="service-overlay">
+              <p>How cold? Freezing cold</p>
+            </div>
+          </Link>
         </div>
+
         <div className="benefit-content">
-          <h3>
-            <Link
-              to="/icebath"
-              onClick={() => {
-                toggleSidebar();
-                window.scrollTo(0, 0);
-              }}
-            >
-              Ice bath
-            </Link>
-          </h3>
+          <h3 className="h3-services">Ice bath</h3>
           <p className="p-services">
             Ice baths at 1o C/36 F for first timers and icemans alike. Boost
             your energy, recovery and mood!
@@ -84,33 +91,48 @@ function HomePage() {
 
       <section className="benefit-section text-right benefit-section-landing">
         <div className="benefit-content">
-          <h3>
-            <Link
-              to="/redlight"
-              onClick={() => {
-                toggleSidebar();
-                window.scrollTo(0, 0);
-              }}
-            >
-              Red Light Therapy
-            </Link>
-          </h3>
+          <h3 className="h3-services">Red Light Therapy</h3>
           <p className="p-services">
             Private 1.8m red light panel with 5 wavelengths. Improve your skin,
             muscle recovery and inflammation!
           </p>
         </div>
-        <div className="benefit-image image-transparency">
-          <img src={landingImg1} alt="Benefit 2" loading="lazy"/>
+        <div className="benefit-image image-transparency service-item">
+          <img
+            src={landingImg1}
+            alt="Benefit 1"
+            loading="lazy"
+            className="service-image"
+          />
+          <Link
+            to="/redlight"
+            onClick={() => {
+              window.scrollTo(0, 0);
+            }}
+          >
+            <div className="service-overlay">
+              <p>Stubborn stretch marks?<br/> Tell them who's in charge</p>
+            </div>
+          </Link>
         </div>
       </section>
 
       <section className="benefit-section text-left benefit-section-landing">
-        <div className="benefit-image image-transparency">
-          <img src={landingImg1} alt="Benefit 3" loading="lazy"/>
+        <div className="benefit-image image-transparency service-item">
+          <img
+            src={landingImg1}
+            alt="Benefit 1"
+            loading="lazy"
+            className="service-image"
+          />
+          <div className="service-overlay">
+            <p>
+              Pretty hot today no?
+            </p>
+          </div>
         </div>
         <div className="benefit-content">
-          <h3>Beverages and merch</h3>
+          <h3 className="h3-services">Beverages and merch</h3>
           <p className="p-services">
             Coffee fix, electrolytes refill, protein dose and other drink twists
             - get your favorite healthy beverage. <br />
@@ -120,7 +142,9 @@ function HomePage() {
       </section>
 
       <section className="no-booking-section">
-        <h5>No booking required, <br/> just drop in</h5>
+        <h5>
+          No booking required, <br /> just drop in
+        </h5>
       </section>
 
       <section id="ig-section">
@@ -157,10 +181,13 @@ function HomePage() {
       </section>
 
       <section className="maps-section">
-        <p>Find us in Bingin Uluwatu, Bali <br/>Every day from 7:30 AM to 7:30PM</p>
+        <p>
+          Find us in Bingin Uluwatu, Bali <br />
+          Every day from 7:30 AM to 7:30PM
+        </p>
 
         <iframe
-          class="map"
+          className="map"
           width="100%"
           height="600"
           frameborder="0"
