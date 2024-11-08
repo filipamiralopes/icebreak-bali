@@ -11,6 +11,28 @@ function Footer() {
 
       <div className="info">
         <div className="info-icon">
+          <h6>Follow us</h6>
+          <img src={heartIcon} alt="Heart icon" height="50px" />
+        </div>
+        <a
+          href="https://www.instagram.com/icebreakbali/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          @icebreakbali
+        </a>
+        <a
+          href="https://www.facebook.com/profile.php?id=61564166350908"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          facebook
+        </a>
+        <br />
+      </div>
+
+      <div className="info">
+        <div className="info-icon">
           <h6>Contact us</h6>
           <img src={contactIcon} alt="Contact icon" height="50px" />
         </div>
@@ -37,28 +59,6 @@ function Footer() {
           Main Road Bingin Uluwatu Bali
         </a>
         <p>daily 7:30am - 7:30pm</p>
-      </div>
-
-      <div className="info">
-        <div className="info-icon">
-          <h6>Follow us</h6>
-          <img src={heartIcon} alt="Heart icon" height="50px" />
-        </div>
-        <a
-          href="https://www.instagram.com/icebreakbali/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          @icebreakbali
-        </a>
-        <a
-          href="https://www.facebook.com/profile.php?id=61564166350908"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          facebook
-        </a>
-        <br />
       </div>
     </nav>
   );
