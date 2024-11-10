@@ -59,13 +59,15 @@ html {
   padding: 0;
   margin: 0;
 }
-
 #motto p {
   font-size: 1.5rem;
   line-height: 2.5rem;
   color: var(--stone);
   padding: 1rem 6rem;
   text-align: center;
+}
+#br-motto {
+  display: none;
 }
 
 /* SERVICES */
@@ -168,7 +170,7 @@ html {
     overflow: hidden;
     z-index: -1;
   }
-  
+
   #background-video {
     display: block;
     width: 100%;
@@ -204,7 +206,7 @@ html {
 
   #motto p {
     line-height: 3rem;
-    padding: 1.5rem 6rem;
+    padding: 0 6rem;
   }
   .benefit-content .p-services {
     padding: 0;

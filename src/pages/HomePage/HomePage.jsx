@@ -54,7 +54,7 @@ function HomePage() {
         <div>
           <header>
             <p>
-              Boost your wellbeing and recovery through a quick, intense and
+              Boost your wellbeing and recovery through a quick, intense and <br id="br-motto"/>
               challenging experience while connecting with like-minded people.
             </p>
           </header>
