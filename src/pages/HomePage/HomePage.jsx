@@ -55,10 +55,10 @@ function HomePage() {
       <section id="motto">
         <div>
           <header>
-            <p>
+            <h6>
               Boost your wellbeing and recovery through a quick, intense and <br id="br-motto"/>
               challenging experience while connecting with like-minded people.
-            </p>
+            </h6>
           </header>
         </div>
       </section>
@@ -202,11 +202,11 @@ function HomePage() {
         <iframe
           className="map"
           width="100%"
-          height="600"
-          frameborder="0"
+          height="600"z
+          frameBorder="0"
           scrolling="no"
-          marginheight="0"
-          marginwidth="0"
+          marginHeight="0"
+          marginWidth="0"
           src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=-8.827685131398502,%20115.12399631624847+(Icebreak)&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
         >
           <a href="https://www.gps.ie/">gps trackers</a>
