@@ -211,7 +211,27 @@ html {
     line-height: 3.5rem;
     padding: 2rem 6rem 4rem 6rem;
     color: var(--verdigris);
-    border-bottom: 2px solid var(--verdigris);
+    position: relative; /* Required for pseudo-element positioning */
+    overflow: hidden; /* Ensures the border line is clipped initially */
+  }
+  /* Animated border */
+  #motto h6::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0; /* Start with zero width */
+    height: 2px; /* Same height as the border */
+    background-color: var(--verdigris);
+    animation: slide-in 10s ease forwards; /* Slide-in animation */
+  }
+  @keyframes slide-in {
+    0% {
+      width: 0; /* Start invisible */
+    }
+    100% {
+      width: 100%; /* Expand to full width */
+    }
   }
   .benefit-content .p-services {
     padding: 0;
