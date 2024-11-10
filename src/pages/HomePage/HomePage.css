@@ -48,22 +48,22 @@ html {
 
 /* MOTTO */
 #motto {
-  min-height: 100vh;
+  min-height: 60vh;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   background-image: url("/src/assets/images/backgrounds/ice-isolated-vertical.png");
-  background-size: 130%;
+  background-size: 120%;
   background-color: var(--verdigris);
   padding: 0;
   margin: 0;
 }
-#motto p {
-  font-size: 1.5rem;
+#motto h6 {
+  font-size: 1.2rem;
   line-height: 2.5rem;
   color: var(--stone);
-  padding: 1rem 6rem;
+  padding: 1rem 4rem;
   text-align: center;
 }
 #br-motto {

@@ -203,7 +203,7 @@ function HomePage() {
         </p>
 
         <iframe
-          className="map fade-element"
+          className="map"
           width="100%"
           height="600"z
           frameBorder="0"
