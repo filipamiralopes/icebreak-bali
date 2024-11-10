@@ -4,6 +4,7 @@ import yeahCoolImg from "../../assets/images/backgrounds/yeah-cool-green.png";
 import iceVideoMp4 from "../../assets/videos/ice-white.mp4";
 import iceVideoWebm from "../../assets/videos/ice-white.webm";
 import landingImageMobile from "../../assets/images/backgrounds/ice-white-vertical.webp";
+import landingImageDesktop from "../../assets/images/backgrounds/ice-white.webp";
 import landingImg1 from "../../assets/images/content/landing-img-1.jpg";
 import { ElfsightWidget } from "react-elfsight-widget";
 import "./HomePage.css";
@@ -22,11 +23,20 @@ function HomePage() {
       {/* Main section */}
       <section className="landing-section">
         {isDesktop ? (
-          <video playsInline autoPlay muted loop id="background-video">
-            <source src={iceVideoMp4} type="video/mp4" />
-            <source src={iceVideoWebm} type="video/webm" />
-            Your browser does not support the video tag.
-          </video>
+          <div className="video-wrapper">
+            <picture>
+              <img
+                src={landingImageDesktop}
+                alt="Fallback image background"
+                className="fallback-image"
+              />
+            </picture>
+            <video playsInline autoPlay muted loop id="background-video">
+              <source src={iceVideoMp4} type="video/mp4" />
+              <source src={iceVideoWebm} type="video/webm" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
         ) : (
           <div
             className="landing-background-mobile"
@@ -111,7 +121,10 @@ function HomePage() {
             }}
           >
             <div className="service-overlay">
-              <p>Stubborn stretch marks?<br/> Tell them who's in charge</p>
+              <p>
+                Stubborn stretch marks?
+                <br /> Tell them who's in charge
+              </p>
             </div>
           </Link>
         </div>
@@ -126,9 +139,7 @@ function HomePage() {
             className="service-image"
           />
           <div className="service-overlay">
-            <p>
-              Pretty hot today no?
-            </p>
+            <p>Pretty hot today no?</p>
           </div>
         </div>
         <div className="benefit-content">
