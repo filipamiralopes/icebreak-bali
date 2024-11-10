@@ -9,10 +9,13 @@ import benefitImage1 from "../../assets/images/content/about-image1-sq.jpg";
 import benefitImage2 from "../../assets/images/content/about-image2-sq.jpg";
 import benefitImage3 from "../../assets/images/content/about-image3-sq.jpg";
 import { ElfsightWidget } from "react-elfsight-widget";
+import useFadeInOnScroll from "../../hooks/useFadeInOnScroll";
 import "./HomePage.css";
 
 function HomePage() {
   const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 1024);
+
+  useFadeInOnScroll(".fade-element", 0.3, 0.3);
 
   useEffect(() => {
     const handleResize = () => setIsDesktop(window.innerWidth >= 1024);
@@ -46,14 +49,14 @@ function HomePage() {
           ></div>
         )}
         <div className="landing-section-content">
-          <img src={yeahCoolImg} alt="Yeah cool img" />
-          <h5>Ice Break, Uluwatu, Bali</h5>
+          <img className="fade-element" src={yeahCoolImg} alt="Yeah cool img" />
+          <h5 className="fade-element">Ice Break, Uluwatu, Bali</h5>
         </div>
       </section>
 
       {/* Motto*/}
       <section id="motto">
-        <div>
+        <div className="fade-element">
           <header>
             <h6>
               Boost your wellbeing and recovery through a quick, intense and <br id="br-motto"/>
@@ -65,14 +68,14 @@ function HomePage() {
 
       {/* Services*/}
 
-      <section id="our-services">
+      <section id="our-services" className="fade-element">
         <header>
           <h1>Our services</h1>
         </header>
       </section>
 
       <section className="benefit-section text-left benefit-section-landing">
-        <div className="benefit-image image-transparency service-item clip-crop">
+        <div className="benefit-image image-transparency service-item clip-crop fade-element">
           <img
             src={benefitImage1}
             alt="Benefit 1"
@@ -92,7 +95,7 @@ function HomePage() {
           </Link>
         </div>
 
-        <div className="benefit-content">
+        <div className="benefit-content fade-element">
           <h3 className="h3-services">Ice bath</h3>
           <p className="p-services">
             Ice baths at 1o C/36 F for first timers and icemans alike. Boost
@@ -102,14 +105,14 @@ function HomePage() {
       </section>
 
       <section className="benefit-section text-right benefit-section-landing">
-        <div className="benefit-content">
+        <div className="benefit-content fade-element">
           <h3 className="h3-services">Red Light Therapy</h3>
           <p className="p-services">
             Private 1.8m red light panel with 5 wavelengths. Improve your skin,
             muscle recovery and inflammation!
           </p>
         </div>
-        <div className="benefit-image image-transparency service-item clip-crop">
+        <div className="benefit-image image-transparency service-item clip-crop fade-element">
           <img
             src={benefitImage2}
             alt="Benefit 1"
@@ -133,7 +136,7 @@ function HomePage() {
       </section>
 
       <section className="benefit-section text-left benefit-section-landing">
-        <div className="benefit-image image-transparency service-item clip-crop">
+        <div className="benefit-image image-transparency service-item clip-crop fade-element fade-element">
           <img
             src={benefitImage3}
             alt="Benefit 1"
@@ -144,7 +147,7 @@ function HomePage() {
             <p>Pretty hot today no?</p>
           </div>
         </div>
-        <div className="benefit-content">
+        <div className="benefit-content fade-element">
           <h3 className="h3-services">Beverages and merch</h3>
           <p className="p-services">
             Coffee fix, electrolytes refill, protein dose and other drink twists
@@ -155,7 +158,7 @@ function HomePage() {
       </section>
 
       <section className="no-booking-section">
-        <h5>
+        <h5 className="fade-element">
           No booking required, <br /> just drop in
         </h5>
       </section>
@@ -200,7 +203,7 @@ function HomePage() {
         </p>
 
         <iframe
-          className="map"
+          className="map fade-element"
           width="100%"
           height="600"z
           frameBorder="0"
