@@ -47,7 +47,7 @@ function RedlightPage() {
       {/* Benefit Sections */}
       <section className="benefit-section text-left benefit-section-bg-red">
         <div className="benefit-image">
-          <img src={benefitImage1} alt="Benefit 1" loading="lazy" />
+          <img src={benefitImage1} alt="Benefit 1" loading="lazy" class="clip-crop"/>
         </div>
         <div className="benefit-content-red">
           <h3>Improves skin quality and appearance</h3>
@@ -78,7 +78,7 @@ function RedlightPage() {
           </ul>
         </div>
         <div className="benefit-image">
-          <img src={benefitImage1} alt="Benefit 2" loading="lazy" />
+          <img src={benefitImage1} alt="Benefit 2" loading="lazy" class="clip-crop"/>
         </div>
       </section>
 

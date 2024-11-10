@@ -5,7 +5,9 @@ import iceVideoMp4 from "../../assets/videos/ice-white.mp4";
 import iceVideoWebm from "../../assets/videos/ice-white.webm";
 import landingImageMobile from "../../assets/images/backgrounds/ice-white-vertical.webp";
 import landingImageDesktop from "../../assets/images/backgrounds/ice-white.webp";
-import landingImg1 from "../../assets/images/content/landing-img-1.jpg";
+import benefitImage1 from "../../assets/images/content/about-image1-sq.jpg";
+import benefitImage2 from "../../assets/images/content/about-image2-sq.jpg";
+import benefitImage3 from "../../assets/images/content/about-image3-sq.jpg";
 import { ElfsightWidget } from "react-elfsight-widget";
 import "./HomePage.css";
 
@@ -70,9 +72,9 @@ function HomePage() {
       </section>
 
       <section className="benefit-section text-left benefit-section-landing">
-        <div className="benefit-image image-transparency service-item">
+        <div className="benefit-image image-transparency service-item clip-crop">
           <img
-            src={landingImg1}
+            src={benefitImage1}
             alt="Benefit 1"
             loading="lazy"
             className="service-image"
@@ -107,9 +109,9 @@ function HomePage() {
             muscle recovery and inflammation!
           </p>
         </div>
-        <div className="benefit-image image-transparency service-item">
+        <div className="benefit-image image-transparency service-item clip-crop">
           <img
-            src={landingImg1}
+            src={benefitImage2}
             alt="Benefit 1"
             loading="lazy"
             className="service-image"
@@ -131,9 +133,9 @@ function HomePage() {
       </section>
 
       <section className="benefit-section text-left benefit-section-landing">
-        <div className="benefit-image image-transparency service-item">
+        <div className="benefit-image image-transparency service-item clip-crop">
           <img
-            src={landingImg1}
+            src={benefitImage3}
             alt="Benefit 1"
             loading="lazy"
             className="service-image"

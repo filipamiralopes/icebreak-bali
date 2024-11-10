@@ -255,6 +255,9 @@
   .benefit-image img {
     width: 40%;
   }
+  .clip-crop {
+    clip-path: inset(150px 0px); /* Crop 20px from top and bottom, 40px from left and right */
+  }
 
   .benefit-content {
     flex: 1;
@@ -266,9 +269,11 @@
   .benefit-section {
     display: flex;
     align-items: center;
-    padding: 2rem 4rem;
+    padding: 0 4rem;
     gap: 2rem;
+    max-height: 50vh;
   }
+
   .benefit-section.text-left {
     flex-direction: row;
   }
