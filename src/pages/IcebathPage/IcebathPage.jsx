@@ -4,9 +4,11 @@ import benefitImage2 from "../../assets/images/content/about-image2-sq.jpg";
 import benefitImage3 from "../../assets/images/content/about-image3-sq.jpg";
 import benefitImage4 from "../../assets/images/content/about-image1-sq.jpg";
 import benefitImage5 from "../../assets/images/content/about-image2-sq.jpg";
+import useFadeInOnScroll from "../../hooks/useFadeInOnScroll";
 import "./IcebathPage.css";
 
 function IcebathPage() {
+  useFadeInOnScroll(".fade-element", 0.3, 0.3);
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -34,28 +36,33 @@ function IcebathPage() {
     <div className="treatment-page">
       {/* Call to Action Section */}
       <section className="cta-section">
-        <h4>Try something new or keep up with your healthy routine</h4>
-        <h1>Come for the coldest ice bath in town</h1>
+        <h4 className="fade-element">Try something new or keep up with your healthy routine</h4>
+        <h1 className="fade-element">Come for the coldest ice bath in town</h1>
       </section>
 
       {/* What is it? */}
       <section className="info-section">
-        <h1>What is it?</h1>
-        <h6>
+        <h1 className="fade-element">What is it?</h1>
+        <h6 className="fade-element">
           Literally an ice bath with temperatures ranging from 0 to 4℃ / 32-40 F
         </h6>
-        <h6>Typically you stay for 1-5min</h6>
-        <h6>All it takes is 11 minutes per week</h6>
+        <h6 className="fade-element">Typically you stay for 1-5min</h6>
+        <h6 className="fade-element">All it takes is 11 minutes per week</h6>
       </section>
 
       {/* Benefit Sections */}
       <section className="benefit-section text-left">
-        <div className="benefit-image">
-          <img src={benefitImage1} alt="Benefit 1" loading="lazy" class="clip-crop"/>
+        <div className="benefit-image fade-element">
+          <img
+            src={benefitImage1}
+            alt="Benefit 1"
+            loading="lazy"
+            class="clip-crop"
+          />
         </div>
         <div className="benefit-content">
-          <h3>Increases energy and focus</h3>
-          <p>
+          <h3 className="fade-element">Increases energy and focus</h3>
+          <p className="fade-element">
             Cold exposure triggers the release of adrenaline and norepinephrine,
             boosting energy, focus, and alertness for up to six hours. You'll
             definitely feel these effects well beyond the ice bath session.
@@ -65,26 +72,36 @@ function IcebathPage() {
 
       <section className="benefit-section text-right">
         <div className="benefit-content">
-          <h3>Accelerates recovery and reduces inflammation</h3>
-          <p>
+          <h3 className="fade-element">Accelerates recovery and reduces inflammation</h3>
+          <p className="fade-element">
             Ice baths aid recovery from intense physical activity by activating
             cold shock proteins, improving blood flow to core organs, and
             reducing inflammation. They can also help with symptoms like 'Bali
             Belly' or hangovers.
           </p>
         </div>
-        <div className="benefit-image">
-          <img src={benefitImage2} alt="Benefit 2" loading="lazy" class="clip-crop"/>
+        <div className="benefit-image fade-element">
+          <img
+            src={benefitImage2}
+            alt="Benefit 2"
+            loading="lazy"
+            class="clip-crop"
+          />
         </div>
       </section>
 
       <section className="benefit-section text-left">
-        <div className="benefit-image">
-          <img src={benefitImage3} alt="Benefit 3" loading="lazy" class="clip-crop"/>
+        <div className="benefit-image fade-element">
+          <img
+            src={benefitImage3}
+            alt="Benefit 3"
+            loading="lazy"
+            class="clip-crop"
+          />
         </div>
         <div className="benefit-content">
-          <h3>Enhances your mood</h3>
-          <p>
+          <h3 className="fade-element">Enhances your mood</h3>
+          <p className="fade-element">
             Cold immersion prompts a lasting release of dopamine, which enhances
             mood, energy, and motivation. Even brief full body dips can increase
             dopamine levels by 200-300%, and you will definitely feel it in your
@@ -95,26 +112,36 @@ function IcebathPage() {
 
       <section className="benefit-section text-right">
         <div className="benefit-content">
-          <h3>Builds resilience & grit</h3>
-          <p>
+          <h3 className="fade-element">Builds resilience & grit</h3>
+          <p className="fade-element">
             Cold exposure builds mental resilience by activating brain centers
             that help manage stress. This self-directed challenge strengthens
             your ability to stay calm and focused in difficult situations, both
             in and out of the ice bath.
           </p>
         </div>
-        <div className="benefit-image">
-          <img src={benefitImage4} alt="Benefit 4" loading="lazy" class="clip-crop"/>
+        <div className="benefit-image fade-element">
+          <img
+            src={benefitImage4}
+            alt="Benefit 4"
+            loading="lazy"
+            class="clip-crop"
+          />
         </div>
       </section>
 
       <section className="benefit-section text-left">
-        <div className="benefit-image">
-          <img src={benefitImage5} alt="Benefit 5" loading="lazy" class="clip-crop"/>
+        <div className="benefit-image fade-element">
+          <img
+            src={benefitImage5}
+            alt="Benefit 5"
+            loading="lazy"
+            class="clip-crop"
+          />
         </div>
         <div className="benefit-content">
-          <h3>Increases metabolism</h3>
-          <p>
+          <h3 className="fade-element">Increases metabolism</h3>
+          <p className="fade-element">
             Cold exposure boosts short-term metabolism as the body burns
             calories to generate heat. It can also transform white fat into
             brown fat, which is more metabolically active, leading to longer-
@@ -157,8 +184,8 @@ function IcebathPage() {
 
       {/* First Time Section */}
       <section className="first-time-section first-time-section-ice-bg">
-        <h2>First Time?</h2>
-        <p>
+        <h2 className="fade-element">First Time?</h2>
+        <p className="fade-element">
           Don't worry, we are (almost) certain you will love it! You can get our
           discovery session and our team will be right there with you the whole
           way, guiding you with breathing exercises and positive energy!

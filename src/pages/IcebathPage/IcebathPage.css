@@ -236,6 +236,10 @@
     font-size: 3rem;
   }
 
+  .info-section {
+    min-height: 70dvh;
+    background-image: url("/src/assets/images/backgrounds/ice-green-1.webp");
+  }
   .info-section h6 {
     font-size: 1.5rem;
     width: 40%;
