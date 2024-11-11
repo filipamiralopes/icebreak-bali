@@ -40,7 +40,7 @@
 .founder-note h2 {
   font-size: 2rem;
   color: var(--verdigris);
-  text-align: center;
+  text-align: left;
   margin-bottom: 1.5rem;
   padding-bottom: 1rem;
 }
@@ -49,6 +49,23 @@
   font-size: 1.1rem;
   line-height: 1.6;
   text-align: justify;
+}
+
+.founders-note-content {
+  display: flex;
+  gap: 2rem;
+}
+.note-content {
+  width: 50%;
+  padding-right: 1rem;
+}
+.founders-img {
+  width: 50%;
+}
+.founders-img img {
+  width: 600px;
+  opacity: 0.8;
+  margin-top: 1rem;
 }
 
 /* Section 3: Final Thought */
@@ -72,7 +89,22 @@
   .header-section {
     background-image: url("/src/assets/images/backgrounds/ice-isolated-vertical.png");
     background-size: 120%;
-    padding: 0 5rem
+    padding: 0 5rem;
+  }
+  .founder-note h2 {
+    text-align: center;
+  }
+  .founders-note-content {
+    flex-direction: column;
+  }
+  .note-content {
+    width: 100%;
+  }
+  .founders-img {
+    width: 100%;
+  }
+  .founders-img img{
+    width: 300px;
   }
   .final-thought {
     min-height: 50dvh;
