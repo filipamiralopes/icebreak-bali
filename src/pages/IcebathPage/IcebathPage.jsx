@@ -194,7 +194,7 @@ function IcebathPage() {
 
       {/* Learn More Section */}
       <section className="learn-more-section">
-        <h2>The Science Behind</h2>
+        <h2 className="fade-element">The Science Behind</h2>
         <div className="video-grid">
           <iframe
             width="560"

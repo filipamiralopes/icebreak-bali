@@ -223,7 +223,7 @@ html {
     width: 0; /* Start with zero width */
     height: 2px; /* Same height as the border */
     background-color: var(--verdigris);
-    animation: slide-in 10s ease forwards; /* Slide-in animation */
+    animation: slide-in 12s ease forwards; /* Slide-in animation */
   }
   @keyframes slide-in {
     0% {

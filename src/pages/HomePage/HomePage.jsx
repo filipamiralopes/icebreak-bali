@@ -164,7 +164,7 @@ function HomePage() {
       </section>
 
       <section id="ig-section">
-        <h4>
+        <h4 className="fade-element">
           Follow us on{" "}
           <a id="instagram-link" href="https://www.instagram.com/icebreakbali">
             Instagram{" "}
@@ -197,7 +197,7 @@ function HomePage() {
       </section>
 
       <section className="maps-section">
-        <p>
+        <p className="fade-element">
           Find us in Bingin Uluwatu, Bali <br />
           Every day from 7:30 AM to 7:30PM
         </p>
