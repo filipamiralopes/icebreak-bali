@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
-import benefitImage1 from "../../assets/images/content/redlight-image-sq.jpg";
+import benefitImage1 from "../../assets/images/content/redlight1.jpeg";
+import benefitImage2 from "../../assets/images/content/redlight2.png";
 import "./RedlightPage.css";
 
 function RedlightPage() {
@@ -45,40 +46,56 @@ function RedlightPage() {
       </section>
 
       {/* Benefit Sections */}
-      <section className="benefit-section text-left benefit-section-bg-red">
-        <div className="benefit-image">
-          <img src={benefitImage1} alt="Benefit 1" loading="lazy" class="clip-crop"/>
-        </div>
+      <section className="benefit-section text-right benefit-section-bg-red">
         <div className="benefit-content-red">
-          <h3>Improves skin quality and appearance</h3>
-          <ul className="custom-icon-list">
-            <li>Reduction of wrinkles, fine lines, and age spots</li>
+        <ul className="custom-icon-list">
+              <li>Improves skin quality and appearance</li>
+              <li>Stimulates collagen production</li>
+              <li>
+                Increases blood circulation, stimulating healing for faster
+                recovery
+              </li>
+              <li>Reduces inflammation in cells</li>
+              <li>Aids in pain reduction</li>
+              <li>Stimulates hair growth</li>
+              <li>Heals age-related degeneration of the eyes</li>
+            </ul>
+          
+        </div>
+        <div className="service-item">
+          <img
+            src={benefitImage2}
+            alt="Benefit 2"
+            loading="lazy"
+            className="skin-img service-item"
+            style={{width: "500px"}}
+          />
+          <div className="benefit-content-red service-overlay">
+          <p>
+            Red Light Therapy is really good for your skin with many
+            demonstrated benefits
+          </p>
+          </div>
+        </div>
+      </section>
+      <section className="scrolling-text-section">
+        <div className="scrolling-text-container">
+          <ul className="custom-icon-list-scrolling">
+            <li>Reduction of wrinkles, fine lines and age spots</li>
+            <li>More firmness and elasticity</li>
+            <li>Improvement of scar appearance</li>
+            <li>Improvement acne</li>
+            <li>Less redness</li>
+            <li>Improvement of sun-damaged skin</li>
+          </ul>
+          <ul className="custom-icon-list-scrolling">
+            <li>Reduction of wrinkles, fine lines and age spots</li>
             <li>More firmness and elasticity</li>
             <li>Improvement of scar appearance</li>
             <li>Improvement of acne</li>
             <li>Less redness</li>
             <li>Improvement of sun-damaged skin</li>
           </ul>
-        </div>
-      </section>
-
-      <section className="benefit-section text-right benefit-section-bg-red">
-        <div className="benefit-content-red">
-          <h3> Unlock your body's natural potential</h3>
-          <ul className="custom-icon-list">
-            <li>Stimulates collagen production</li>
-            <li>
-              Increases blood circulation, stimulating healing for faster
-              recovery
-            </li>
-            <li>Reduces inflammation in cells</li>
-            <li>Aids in pain reduction</li>
-            <li>Stimulates hair growth</li>
-            <li>Heals age-related degeneration of the eyes</li>
-          </ul>
-        </div>
-        <div className="benefit-image">
-          <img src={benefitImage1} alt="Benefit 2" loading="lazy" class="clip-crop"/>
         </div>
       </section>
 

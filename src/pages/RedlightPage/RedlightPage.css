@@ -57,11 +57,12 @@
   height: auto;
 }
 
-.benefit-content-red h3 {
-  font-size: 1.5rem;
+.benefit-content-red p {
+  font-size: 1.2rem;
   color: var(--stone);
   margin: 1rem 0;
   padding: 1.2rem 0;
+  text-align: center;
 }
 
 .custom-icon-list {
@@ -89,6 +90,70 @@
   background-image: url("../../assets/icons/hexa-icon-stone.png");
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+
+
+/* Styling for the list */
+.custom-icon-list-scrolling {
+  display: inline-flex; /* Inline layout for marquee effect */
+  list-style: none; /* Remove default bullet points */
+  padding: 0;
+  margin: 0;
+  gap: 2rem; /* Space between items */
+  position: relative; /* Required for custom bullet positioning */
+}
+.custom-icon-list-scrolling + .custom-icon-list-scrolling {
+  margin-left: 2rem; /* Add space between the two lists */
+}
+
+.custom-icon-list-scrolling li {
+  position: relative; /* Position relative to allow custom bullet */
+  font-size: 1.2rem; /* Adjust font size */
+  color: var(--stone); /* Text color */
+  padding-left: 2rem; /* Add padding for the bullet */
+}
+
+/* Custom bullet styling */
+.custom-icon-list-scrolling li::before {
+  content: "";
+  position: absolute;
+  left: 0; /* Align the bullet to the left of the item */
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%); /* Adjust vertical alignment */
+  width: 1.5rem; /* Width of the bullet icon */
+  height: 1.5rem; /* Height of the bullet icon */
+  background-image: url("../../assets/icons/hexa-icon-stone.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Animation for scrolling text */
+.scrolling-text-container {
+  display: flex;
+  justify-content: flex-start; /* Start text on the left */
+  white-space: nowrap; /* Prevent text wrapping */
+  animation: scroll-left 20s linear infinite; /* Infinite scrolling animation */
+}
+
+/* Section styling */
+.scrolling-text-section {
+  position: relative;
+  overflow: hidden; /* Hide text that moves out of bounds */
+  border-top: 1px solid var(--stone); /* Top thin border */
+  border-bottom: 1px solid var(--stone); /* Bottom thin border */
+  background-color: var(--off-black); /* Background color */
+  padding: 1rem 0;
+}
+
+/* Animation keyframes */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0); /* Start at the first list */
+  }
+  100% {
+    transform: translateX(-100%); /* End at the end of the second list */
+  }
 }
 
 /* What to Expect Section */
@@ -147,7 +212,15 @@
     flex: 1;
     padding: 0 2rem;
   }
-  
+  .benefit-section-bg-red {
+    min-height: 70dvh;
+    padding: 3rem;
+  }
+  .custom-icon-list {
+    font-size: 1.05rem;
+    width: 100%;
+  }
+
   .learn-more-section {
     padding: 3rem 2rem;
   }
