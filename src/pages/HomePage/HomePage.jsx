@@ -6,7 +6,7 @@ import iceVideoWebm from "../../assets/videos/ice-white.webm";
 import landingImageMobile from "../../assets/images/backgrounds/ice-white-vertical.webp";
 import landingImageDesktop from "../../assets/images/backgrounds/ice-white.webp";
 import benefitImage1 from "../../assets/images/content/about-image1-sq.jpg";
-import benefitImage2 from "../../assets/images/content/about-image2-sq.jpg";
+import benefitImage2 from "../../assets/images/content/redlight1.png";
 import benefitImage3 from "../../assets/images/content/about-image3-sq.jpg";
 import { ElfsightWidget } from "react-elfsight-widget";
 import useFadeInOnScroll from "../../hooks/useFadeInOnScroll";
