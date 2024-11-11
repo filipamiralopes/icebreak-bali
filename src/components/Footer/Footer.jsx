@@ -37,11 +37,11 @@ function Footer() {
           <img src={contactIcon} alt="Contact icon" height="50px" />
         </div>
         <a
-          href="https://api.whatsapp.com/send/?phone=6285190119381&text&type=phone_number&app_absent=0"
+          href="https://api.whatsapp.com/send/?phone=6282147830023&text&type=phone_number&app_absent=0"
           target="_blank"
           rel="noopener noreferrer"  
         >
-          WhatsApp: +62 851 9011 9381
+          WhatsApp: +62 821 4783 0023
         </a>
         <p>general@icebreakbali.com</p>
       </div>
