@@ -1,9 +1,10 @@
 import React, { useEffect } from "react";
-import benefitImage1 from "../../assets/images/content/redlight1.jpeg";
 import benefitImage2 from "../../assets/images/content/redlight2.png";
+import useFadeInOnScroll from "../../hooks/useFadeInOnScroll";
 import "./RedlightPage.css";
 
 function RedlightPage() {
+  useFadeInOnScroll(".fade-element", 0.3, 0.3);
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -31,24 +32,24 @@ function RedlightPage() {
     <div className="treatment-page">
       {/* Call to Action Section */}
       <section className="cta-section-red">
-        <h4>The only step missing in your daily routine</h4>
-        <h1>Come and try the first red light in town</h1>
+        <h4 className="fade-element">The only step missing in your daily routine</h4>
+        <h1 className="fade-element">Come and try the first red light in town</h1>
       </section>
 
       {/* What is it? */}
       <section className="info-section info-section-bg-red">
-        <h1>What is it?</h1>
-        <h6>
+        <h1 className="fade-element">What is it?</h1>
+        <h6 className="fade-element">
           A LED panel that emits specific wavelengths of red and near-infrared
           light to your whole body
         </h6>
-        <h6>Typically the sessions range from 10-20min</h6>
+        <h6 className="fade-element">Typically the sessions range from 10-20min</h6>
       </section>
 
       {/* Benefit Sections */}
       <section className="benefit-section text-right benefit-section-bg-red">
         <div className="benefit-content-red">
-        <ul className="custom-icon-list">
+        <ul className="custom-icon-list fade-element">
               <li>Improves skin quality and appearance</li>
               <li>Stimulates collagen production</li>
               <li>
@@ -62,7 +63,7 @@ function RedlightPage() {
             </ul>
           
         </div>
-        <div className="service-item">
+        <div className="service-item fade-element">
           <img
             src={benefitImage2}
             alt="Benefit 2"
@@ -134,8 +135,8 @@ function RedlightPage() {
 
       {/* First Time Section */}
       <section className="first-time-section first-time-section-red-bg">
-        <h2>First Time?</h2>
-        <p>
+        <h2 className="fade-element">First Time?</h2>
+        <p className="fade-element">
           Don't worry! Our staff will let you know all the details and setup the
           session for you. If you have any questions during the session, give
           them a shout (you are right behind the counter)
@@ -144,7 +145,7 @@ function RedlightPage() {
 
       {/* Learn More Section */}
       <section className="learn-more-section">
-        <h2>The Science Behind</h2>
+        <h2 className="fade-element">The Science Behind</h2>
         <div className="video-grid">
           <iframe
             width="560"
