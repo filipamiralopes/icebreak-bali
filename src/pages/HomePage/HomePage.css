@@ -32,11 +32,12 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100dvh;
+  min-height: 90dvh;
   padding-bottom: 3rem;
 }
 .landing-section-content {
   z-index: 1;
+  margin-top: 4rem;
 }
 .landing-section-content img {
   height: 250px;
@@ -48,22 +49,20 @@ html {
 
 /* MOTTO */
 #motto {
-  min-height: 60vh;
+  min-height: 40vh;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-image: url("/src/assets/images/backgrounds/ice-isolated-vertical.png");
-  background-size: 120%;
   background-color: var(--verdigris);
   padding: 0;
   margin: 0;
 }
 #motto h6 {
   font-size: 1.2rem;
-  line-height: 2.5rem;
+  line-height: 2rem;
   color: var(--stone);
-  padding: 1rem 4rem;
+  padding: 1rem 2rem;
   text-align: center;
 }
 #br-motto {
@@ -92,7 +91,7 @@ html {
   color: var(--off-black);
   padding: 0;
   text-align: center;
-  min-height: 60vh;
+  min-height: 40vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -102,7 +101,7 @@ html {
 .no-booking-section h5 {
   padding: 0;
   width: 70%;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 /* IG and Maps Sections */
@@ -187,6 +186,7 @@ html {
   .landing-section {
     background: none;
     padding-top: 3rem;
+    min-height: 100dvh;
   }
 
   .landing-section-content img {
@@ -197,6 +197,9 @@ html {
     font-size: 1.2rem;
     padding: 0;
     margin: 0;
+  }
+  .landing-section-content {
+    margin-top: 0;
   }
 
   /* Motto Section */
@@ -307,9 +310,12 @@ html {
   }
 
   /* No-Booking Section */
+  .no-booking-section{
+    min-height: 60dvh;
+  }
   .no-booking-section h5 {
     padding-top: 3rem;
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   /* IG Section */
