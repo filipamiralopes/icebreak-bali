@@ -51,8 +51,8 @@ function IcebathPage() {
       </section>
 
       {/* Benefit Sections */}
-      <section className="benefit-section text-left">
-        <div className="benefit-image fade-element">
+      <section className="benefit-section text-left fade-element">
+        <div className="benefit-image">
           <img
             src={benefitImage1}
             alt="Benefit 1"
@@ -61,8 +61,8 @@ function IcebathPage() {
           />
         </div>
         <div className="benefit-content">
-          <h3 className="fade-element">Increases energy and focus</h3>
-          <p className="fade-element">
+          <h3>Increases energy and focus</h3>
+          <p>
             Cold exposure triggers the release of adrenaline and norepinephrine,
             boosting energy, focus, and alertness for up to six hours. You'll
             definitely feel these effects well beyond the ice bath session.
@@ -70,17 +70,17 @@ function IcebathPage() {
         </div>
       </section>
 
-      <section className="benefit-section text-right">
+      <section className="benefit-section text-right fade-element">
         <div className="benefit-content">
-          <h3 className="fade-element">Accelerates recovery and reduces inflammation</h3>
-          <p className="fade-element">
+          <h3>Accelerates recovery and reduces inflammation</h3>
+          <p>
             Ice baths aid recovery from intense physical activity by activating
             cold shock proteins, improving blood flow to core organs, and
             reducing inflammation. They can also help with symptoms like 'Bali
             Belly' or hangovers.
           </p>
         </div>
-        <div className="benefit-image fade-element">
+        <div className="benefit-image">
           <img
             src={benefitImage2}
             alt="Benefit 2"
@@ -90,8 +90,8 @@ function IcebathPage() {
         </div>
       </section>
 
-      <section className="benefit-section text-left">
-        <div className="benefit-image fade-element">
+      <section className="benefit-section text-left fade-element">
+        <div className="benefit-image">
           <img
             src={benefitImage3}
             alt="Benefit 3"
@@ -100,8 +100,8 @@ function IcebathPage() {
           />
         </div>
         <div className="benefit-content">
-          <h3 className="fade-element">Enhances your mood</h3>
-          <p className="fade-element">
+          <h3>Enhances your mood</h3>
+          <p>
             Cold immersion prompts a lasting release of dopamine, which enhances
             mood, energy, and motivation. Even brief full body dips can increase
             dopamine levels by 200-300%, and you will definitely feel it in your
@@ -110,17 +110,17 @@ function IcebathPage() {
         </div>
       </section>
 
-      <section className="benefit-section text-right">
+      <section className="benefit-section text-right fade-element">
         <div className="benefit-content">
-          <h3 className="fade-element">Builds resilience & grit</h3>
-          <p className="fade-element">
+          <h3>Builds resilience & grit</h3>
+          <p>
             Cold exposure builds mental resilience by activating brain centers
             that help manage stress. This self-directed challenge strengthens
             your ability to stay calm and focused in difficult situations, both
             in and out of the ice bath.
           </p>
         </div>
-        <div className="benefit-image fade-element">
+        <div className="benefit-image">
           <img
             src={benefitImage4}
             alt="Benefit 4"
@@ -130,8 +130,8 @@ function IcebathPage() {
         </div>
       </section>
 
-      <section className="benefit-section text-left">
-        <div className="benefit-image fade-element">
+      <section className="benefit-section text-left fade-element">
+        <div className="benefit-image">
           <img
             src={benefitImage5}
             alt="Benefit 5"
@@ -140,8 +140,8 @@ function IcebathPage() {
           />
         </div>
         <div className="benefit-content">
-          <h3 className="fade-element">Increases metabolism</h3>
-          <p className="fade-element">
+          <h3>Increases metabolism</h3>
+          <p>
             Cold exposure boosts short-term metabolism as the body burns
             calories to generate heat. It can also transform white fat into
             brown fat, which is more metabolically active, leading to longer-
