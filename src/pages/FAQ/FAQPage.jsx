@@ -1,5 +1,6 @@
 import arrowDown from "../../assets/icons/arrow-down.png";
 import React, { useState } from "react";
+import useFadeInOnScroll from "../../hooks/useFadeInOnScroll";
 import "./FAQPage.css";
 
 const faqDataIce = [
@@ -140,17 +141,19 @@ function FAQPage() {
     setActiveIndex(activeIndex === index ? null : index); // Toggle the clicked section
   };
 
+  useFadeInOnScroll(".fade-element", 0.3, 0.3);
+
   return (
     <div className="faq-page">
       <header className="faq-header">
-        <h2>Frequently asked questions</h2>
+        <h2 className="fade-element">Frequently asked questions</h2>
       </header>
 
       <header className="faq-header-h1">
-        <h1>General</h1>
+        <h1 className="fade-element">General</h1>
       </header>
 
-      <div className="faq-list">
+      <div className="faq-list fade-element">
         {faqDataGeneral.map((item, index) => (
           <div
             key={index}
@@ -186,10 +189,10 @@ function FAQPage() {
       </div>
 
       <header className="faq-header-h1">
-        <h1>Ice bath</h1>
+        <h1 className="fade-element">Ice bath</h1>
       </header>
 
-      <div className="faq-list">
+      <div className="faq-list fade-element">
         {faqDataIce.map((item, index) => (
           <div
             key={index}
@@ -225,10 +228,10 @@ function FAQPage() {
       </div>
 
       <header className="faq-header-h1">
-        <h1>Red Light Therapy</h1>
+        <h1 className="fade-element">Red Light Therapy</h1>
       </header>
 
-      <div className="faq-list">
+      <div className="faq-list fade-element">
         {faqDataRed.map((item, index) => (
           <div
             key={index}
