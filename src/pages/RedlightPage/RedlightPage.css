@@ -60,7 +60,7 @@
 
 .custom-icon-list {
   list-style: none; /* Removes default bullets */
-  padding: 0 1.5rem;
+  padding: 2rem;
   margin: 0;
   font-size: 1rem;
 }
@@ -212,6 +212,7 @@
   .custom-icon-list {
     font-size: 1.2rem;
     width: 100%;
+    padding: 0;
   }
 
   .learn-more-section {
