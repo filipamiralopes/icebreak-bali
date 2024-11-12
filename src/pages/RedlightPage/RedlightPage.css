@@ -8,15 +8,8 @@
 
 /* Call to Action Section (Mobile-First) */
 .cta-section-red {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background-color: var(--off-black);
   color: var(--stone);
-  padding: 2rem;
-  text-align: center;
+  background-color: var(--off-black);
 }
 
 .cta-section-red h4 {

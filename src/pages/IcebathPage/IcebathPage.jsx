@@ -35,7 +35,7 @@ function IcebathPage() {
   return (
     <div className="treatment-page">
       {/* Call to Action Section */}
-      <section className="cta-section">
+      <section className="cta-section cta-section-ice">
         <h4 className="fade-element">Try something new or keep up with your healthy routine</h4>
         <h1 className="fade-element">Come for the coldest ice bath in town</h1>
       </section>

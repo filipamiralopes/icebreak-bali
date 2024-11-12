@@ -31,7 +31,7 @@ function RedlightPage() {
   return (
     <div className="treatment-page">
       {/* Call to Action Section */}
-      <section className="cta-section-red">
+      <section className="cta-section cta-section-red">
         <h4 className="fade-element">The only step missing in your daily routine</h4>
         <h1 className="fade-element">Come and try the first red light in town</h1>
       </section>

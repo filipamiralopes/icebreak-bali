@@ -12,10 +12,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  min-height: 70dvh;
+  padding: 3rem 2rem;
+}
+.cta-section-ice {
   background-color: var(--stone);
   color: var(--off-black);
-  padding: 2rem;
 }
 
 .cta-section h4 {
@@ -35,7 +37,7 @@
   background-size: cover;
   color: var(--stone);
   padding: 3rem;
-  min-height: 100vh;
+  min-height: 50vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -191,7 +193,7 @@
   background-size: cover;
   color: var(--stone);
   padding: 3rem 1rem;
-  min-height: 60vh;
+  min-height: 40vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -233,8 +235,12 @@
 
 /* Desktop and Tablet (min-width: 1024px) */
 @media (min-width: 1024px) {
+  .cta-section {
+    min-height: 100dvh;
+  }
   .cta-section h1 {
     font-size: 3rem;
+    padding: 2rem;
   }
 
   .info-section {
@@ -287,7 +293,8 @@
   .benefit-section.text-right {
     flex-direction: row-reverse;
   }
-  .benefit-image, .benefit-content {
+  .benefit-image,
+  .benefit-content {
     flex: 1;
     width: 100%;
     display: block; /* Ensure consistent display type */
@@ -295,7 +302,8 @@
     transition: transform 0.4s ease, opacity 0.4s ease; /* Smooth transition */
     will-change: transform, opacity; /* Optimize for smoother rendering */
   }
-  .benefit-image:hover, .benefit-content:hover {
+  .benefit-image:hover,
+  .benefit-content:hover {
     transform: scale(1.05); /* Zoom in */
   }
   .benefit-image:hover {
@@ -324,6 +332,7 @@
   }
   .first-time-section {
     padding: 3rem 15rem;
+    min-height: 50vh;
   }
   .first-time-section p {
     font-size: 1.4rem;

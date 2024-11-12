@@ -88,8 +88,10 @@
 @media (max-width: 768px) {
   .header-section {
     background-image: url("/src/assets/images/backgrounds/ice-isolated-vertical.png");
-    background-size: 120%;
-    padding: 0 5rem;
+    background-size: 110%;
+    padding: 2rem 3rem 0 3rem;
+    margin-bottom: 0;
+    min-height: 60dvh;
   }
   .founder-note h2 {
     text-align: center;
@@ -102,12 +104,14 @@
   }
   .founders-img {
     width: 100%;
+    padding: 0;
+    margin: 0;
   }
   .founders-img img{
-    width: 300px;
+    width: 350px;
   }
   .final-thought {
-    min-height: 50dvh;
+    min-height: 40dvh;
     padding: 0 2rem;
   }
 }
