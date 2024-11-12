@@ -78,6 +78,9 @@ html {
   padding-top: 3rem;
   margin: 0;
 }
+.h3-services-link:hover {
+  color: var(--verdigris);
+} 
 .p-services {
   padding: 0 2rem;
 }

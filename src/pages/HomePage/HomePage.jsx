@@ -59,7 +59,8 @@ function HomePage() {
         <div className="fade-element">
           <header>
             <h6>
-              Boost your wellbeing and recovery through a quick, intense and <br id="br-motto"/>
+              Boost your wellbeing and recovery through a quick, intense and{" "}
+              <br id="br-motto" />
               challenging experience while connecting with like-minded people.
             </h6>
           </header>
@@ -96,7 +97,14 @@ function HomePage() {
         </div>
 
         <div className="benefit-content fade-element">
-          <h3 className="h3-services">Ice bath</h3>
+          <Link
+            to="/icebath"
+            onClick={() => {
+              window.scrollTo(0, 0);
+            }}
+          >
+            <h3 className="h3-services h3-services-link">Ice bath</h3>
+          </Link>
           <p className="p-services">
             Ice baths at 1o C/36 F for first timers and icemans alike. Boost
             your energy, recovery and mood!
@@ -106,7 +114,12 @@ function HomePage() {
 
       <section className="benefit-section text-right benefit-section-landing">
         <div className="benefit-content fade-element">
-          <h3 className="h3-services">Red Light Therapy</h3>
+          <Link to="/redlight"
+            onClick={() => {
+              window.scrollTo(0, 0);
+            }}>
+            <h3 className="h3-services h3-services-link">Red Light Therapy</h3>
+          </Link>
           <p className="p-services">
             Private 1.8m red light panel with 5 wavelengths. Improve your skin,
             muscle recovery and inflammation!
@@ -205,7 +218,8 @@ function HomePage() {
         <iframe
           className="map"
           width="100%"
-          height="600"z
+          height="600"
+          z
           frameBorder="0"
           scrolling="no"
           marginHeight="0"
