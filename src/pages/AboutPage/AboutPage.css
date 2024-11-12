@@ -97,18 +97,24 @@
     text-align: center;
   }
   .founders-note-content {
+    display: flex;
     flex-direction: column;
+    align-items: center; /* Center-align content */
+    margin: 0; /* Remove any default margin */
+    padding: 0; /* Remove padding */
   }
   .note-content {
     width: 100%;
   }
   .founders-img {
-    width: 100%;
-    padding: 0;
-    margin: 0;
+    width: 100%; /* Ensure the container spans the full width */
+    margin: 0; /* Remove margins */
+    padding: 0; /* Remove padding */
   }
-  .founders-img img{
-    width: 350px;
+  .founders-img img {
+    width: 100%; /* Make the image span the full width of the container */
+    height: auto; /* Maintain the aspect ratio */
+    display: block; /* Remove inline-block spacing issues */
   }
   .final-thought {
     min-height: 40dvh;
