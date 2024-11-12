@@ -126,7 +126,7 @@
   display: flex;
   justify-content: flex-start; /* Start text on the left */
   white-space: nowrap; /* Prevent text wrapping */
-  animation: scroll-left 20s linear infinite; /* Infinite scrolling animation */
+  animation: scroll-left 5s linear infinite; /* Infinite scrolling animation */
 }
 
 /* Section styling */
@@ -214,7 +214,9 @@
     width: 100%;
     padding: 0;
   }
-
+  .scrolling-text-container {
+    animation: scroll-left 20s linear infinite; 
+  }
   .learn-more-section {
     padding: 3rem 2rem;
   }
