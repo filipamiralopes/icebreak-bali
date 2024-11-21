@@ -114,10 +114,12 @@ function HomePage() {
 
       <section className="benefit-section text-right benefit-section-landing">
         <div className="benefit-content fade-element">
-          <Link to="/redlight"
+          <Link
+            to="/redlight"
             onClick={() => {
               window.scrollTo(0, 0);
-            }}>
+            }}
+          >
             <h3 className="h3-services h3-services-link">Red Light Therapy</h3>
           </Link>
           <p className="p-services">
@@ -186,26 +188,18 @@ function HomePage() {
         </h4>
 
         <div className="instagram-feed">
-          {/* <iframe
-            src="https://lightwidget.com/widgets/your-widget-id.html"
+          <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
+          <iframe
+            src="https://cdn.lightwidget.com/widgets/0559dd1446c4571d911fb4b96ccb4ca9.html"
             scrolling="no"
-            allowtransparency="true"
-            className="instagram-embed"
+            allowTransparency="true"
+            className="lightwidget-widget"
             style={{
-              border: "none",
-              overflow: "hidden",
               width: "100%",
-              height: "500px",
+              border: "0",
+              overflow: "hidden",
             }}
-            title="Instagram Feed"
-          ></iframe> */}
-
-          {/* Note for Filipa: when free Elfsight widget reaches 200 website views and gets disable, switch to lightwidget (10$ one time fee per widget) and ask M&V to create account, connect IG and add me as dev*/}
-
-          <ElfsightWidget
-            widgetId={"db065442-8db8-4e6f-8cc2-fd090a285493"}
-            lazy
-          />
+          ></iframe>
         </div>
       </section>
 

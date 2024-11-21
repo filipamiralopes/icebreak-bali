@@ -137,6 +137,10 @@ html {
 #ig-section > h4 > a:hover {
   color: var(--verdigris);
 }
+.lightwidget-widget {
+  height: 350dvh;
+  padding: 2rem 0;
+}
 
 .maps-section p {
   padding: 2rem 0;
@@ -330,7 +334,11 @@ html {
   }
   #ig-section h4 {
     font-size: 1.5rem;
-    padding-top: 3rem;
+    padding: 3rem;
+  }
+  .lightwidget-widget {
+    height: 100dvh;
+    padding-bottom: 2rem;
   }
 
   /* Maps Section */
