@@ -138,7 +138,7 @@ html {
   color: var(--verdigris);
 }
 .lightwidget-widget {
-  height: 350dvh;
+  height: 200dvh;
   padding: 2rem 0;
 }
 
