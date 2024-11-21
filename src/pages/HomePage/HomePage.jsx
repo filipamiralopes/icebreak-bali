@@ -77,12 +77,19 @@ function HomePage() {
 
       <section className="benefit-section text-left benefit-section-landing">
         <div className="benefit-image image-transparency service-item clip-crop fade-element">
-          <img
-            src={benefitImage1}
-            alt="Benefit 1"
-            loading="lazy"
-            className="service-image"
-          />
+          <Link
+            to="/icebath"
+            onClick={() => {
+              window.scrollTo(0, 0);
+            }}
+          >
+            <img
+              src={benefitImage1}
+              alt="Benefit 1"
+              loading="lazy"
+              className="service-image"
+            />
+          </Link>
 
           <Link
             to="/icebath"
@@ -128,12 +135,19 @@ function HomePage() {
           </p>
         </div>
         <div className="benefit-image image-transparency service-item clip-crop fade-element">
-          <img
-            src={benefitImage2}
-            alt="Benefit 1"
-            loading="lazy"
-            className="service-image"
-          />
+          <Link
+            to="/redlight"
+            onClick={() => {
+              window.scrollTo(0, 0);
+            }}
+          >
+            <img
+              src={benefitImage2}
+              alt="Benefit 1"
+              loading="lazy"
+              className="service-image"
+            />
+          </Link>
           <Link
             to="/redlight"
             onClick={() => {
