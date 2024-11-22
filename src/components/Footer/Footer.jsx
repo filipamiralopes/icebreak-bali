@@ -58,7 +58,7 @@ function Footer() {
         >
           Main Road Bingin, Uluwatu, Bali
         </a>
-        <p>daily 7:30am - 7:30pm</p>
+        <p>daily 7:30am - 6pm</p>
       </div>
     </nav>
   );
