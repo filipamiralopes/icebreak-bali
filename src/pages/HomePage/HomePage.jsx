@@ -225,17 +225,14 @@ function HomePage() {
 
         <iframe
           className="map"
-          width="100%"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d63082.43932716874!2d115.0883535!3d-8.8186829!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd2450036daf1b7%3A0xd39e229d92e56c66!2sIce%20Break!5e0!3m2!1sen!2sph!4v1732261065439!5m2!1sen!2sph"          width="100%"
           height="600"
-          z
+          loading="lazy"
           frameBorder="0"
           scrolling="no"
           marginHeight="0"
           marginWidth="0"
-          src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=8%C2%B048'49.4%22S%20115%C2%B006'38.6%22E+(Icebreak)&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-        >
-          <a href="https://www.gps.ie/">gps trackers</a>
-        </iframe>
+        ></iframe>
       </section>
     </div>
   );
