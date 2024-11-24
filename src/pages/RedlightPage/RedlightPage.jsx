@@ -32,8 +32,13 @@ function RedlightPage() {
     <div className="treatment-page">
       {/* Call to Action Section */}
       <section className="cta-section cta-section-red">
-        <h4 className="fade-element">The only step missing in your daily routine</h4>
-        <h1 className="fade-element">Come and try the first red light in town</h1>
+        <h4 className="fade-element">
+          The only step missing in your daily routine
+        </h4>
+        <h1 className="fade-element">
+          Come and try the{" "}
+          <span style={{ color: "#e52d20" }}>first red light</span> in town
+        </h1>
       </section>
 
       {/* What is it? */}
@@ -43,25 +48,26 @@ function RedlightPage() {
           A LED panel that emits specific wavelengths of red and near-infrared
           light to your whole body
         </h6>
-        <h6 className="fade-element">Typically the sessions range from 10-20min</h6>
+        <h6 className="fade-element">
+          Typically the sessions range from 10-20min
+        </h6>
       </section>
 
       {/* Benefit Sections */}
       <section className="benefit-section text-right benefit-section-bg-red">
         <div className="benefit-content-red">
-        <ul className="custom-icon-list fade-element">
-              <li>Improves skin quality and appearance</li>
-              <li>Stimulates collagen production</li>
-              <li>
-                Increases blood circulation, stimulating healing for faster
-                recovery
-              </li>
-              <li>Reduces inflammation in cells</li>
-              <li>Aids in pain reduction</li>
-              <li>Stimulates hair growth</li>
-              <li>Heals age-related degeneration of the eyes</li>
-            </ul>
-          
+          <ul className="custom-icon-list fade-element">
+            <li>Improves skin quality and appearance</li>
+            <li>Stimulates collagen production</li>
+            <li>
+              Increases blood circulation, stimulating healing for faster
+              recovery
+            </li>
+            <li>Reduces inflammation in cells</li>
+            <li>Aids in pain reduction</li>
+            <li>Stimulates hair growth</li>
+            <li>Heals age-related degeneration of the eyes</li>
+          </ul>
         </div>
         <div className="service-item fade-element">
           <img
@@ -69,13 +75,13 @@ function RedlightPage() {
             alt="Benefit 2"
             loading="lazy"
             className="skin-img service-item"
-            style={{width: "500px"}}
+            style={{ width: "500px" }}
           />
           <div className="benefit-content-red service-overlay">
-          <p>
-            Red Light Therapy is really good for your skin with many
-            demonstrated benefits
-          </p>
+            <p>
+              Red Light Therapy is really good for your skin with many
+              demonstrated benefits
+            </p>
           </div>
         </div>
       </section>

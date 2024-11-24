@@ -37,7 +37,7 @@ function IcebathPage() {
       {/* Call to Action Section */}
       <section className="cta-section cta-section-ice">
         <h4 className="fade-element">Try something new or keep up with your healthy routine</h4>
-        <h1 className="fade-element">Come for the coldest ice bath in town</h1>
+        <h1 className="fade-element">Come for the <span style={{ color: "#6fbabc" }}>coldest ice bath</span> in town</h1>
       </section>
 
       {/* What is it? */}
