@@ -64,7 +64,7 @@ function RedlightPage() {
       <section className="benefit-section text-right benefit-section-bg-red">
         <div className="benefit-content-red">
           <ul className="custom-icon-list fade-element">
-            <li>* Improves skin quality and appearance</li>
+            <li>Improves skin quality and appearance *</li>
             <li>Stimulates collagen production</li>
             <li>
               Increases blood circulation, stimulating healing for faster
