@@ -59,11 +59,13 @@ function HomePage() {
         <div className="fade-element">
           <header>
             <h6>
-              Boost your <span style={{ color: '#222221' }}>wellbeing</span> and recovery through a <span style={{ color: '#222221' }}>
-                quick, intense and{" "}
-                <br id="br-motto" />
+              Boost your <span style={{ color: "#222221" }}>wellbeing</span> and
+              recovery through a{" "}
+              <span style={{ color: "#222221" }}>
+                quick, intense and <br id="br-motto" />
                 challenging experience
-              </span> while connecting with like-minded people.
+              </span>{" "}
+              while connecting with like-minded people.
             </h6>
           </header>
         </div>
@@ -87,7 +89,7 @@ function HomePage() {
           >
             <img
               src={benefitImage1}
-              alt="Benefit 1"
+              alt="Ice Bath"
               loading="lazy"
               className="service-image"
             />
@@ -145,7 +147,7 @@ function HomePage() {
           >
             <img
               src={benefitImage2}
-              alt="Benefit 1"
+              alt="Red Light Therapy "
               loading="lazy"
               className="service-image"
             />
@@ -170,7 +172,7 @@ function HomePage() {
         <div className="benefit-image image-transparency service-item clip-crop fade-element fade-element">
           <img
             src={benefitImage3}
-            alt="Benefit 1"
+            alt="Beverages"
             loading="lazy"
             className="service-image"
           />
@@ -179,12 +181,32 @@ function HomePage() {
           </div>
         </div>
         <div className="benefit-content fade-element">
-          <h3 className="h3-services">Beverages and merch</h3>
+          <h3 className="h3-services">Beverages</h3>
           <p className="p-services">
             Coffee fix, electrolytes refill, protein dose and other drink twists
-            - get your favorite healthy beverage. <br />
+            - get your favorite healthy beverage.
+          </p>
+        </div>
+      </section>
+
+      <section className="benefit-section text-right benefit-section-landing">
+        <div className="benefit-content fade-element">
+          <h3 className="h3-services h3-services-link">Merch</h3>
+          <p className="p-services">
             Cool tees, hats & more - add a new piece to your collection!
           </p>
+        </div>
+        <div className="benefit-image image-transparency service-item clip-crop fade-element">
+          <img
+            src={benefitImage2}
+            alt="Merch"
+            loading="lazy"
+            className="service-image"
+          />
+
+          <div className="service-overlay">
+            <p>What's cooler than being cool?</p>
+          </div>
         </div>
       </section>
 
@@ -227,7 +249,8 @@ function HomePage() {
 
         <iframe
           className="map"
-          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d63082.43932716874!2d115.0883535!3d-8.8186829!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd2450036daf1b7%3A0xd39e229d92e56c66!2sIce%20Break!5e0!3m2!1sen!2sph!4v1732261065439!5m2!1sen!2sph"          width="100%"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d63082.43932716874!2d115.0883535!3d-8.8186829!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd2450036daf1b7%3A0xd39e229d92e56c66!2sIce%20Break!5e0!3m2!1sen!2sph!4v1732261065439!5m2!1sen!2sph"
+          width="100%"
           height="600"
           loading="lazy"
           frameBorder="0"
