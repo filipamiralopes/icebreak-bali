@@ -64,7 +64,7 @@ function RedlightPage() {
       <section className="benefit-section text-right benefit-section-bg-red">
         <div className="benefit-content-red">
           <ul className="custom-icon-list fade-element">
-            <li>Improves skin quality and appearance</li>
+            <li>* Improves skin quality and appearance</li>
             <li>Stimulates collagen production</li>
             <li>
               Increases blood circulation, stimulating healing for faster
@@ -85,30 +85,27 @@ function RedlightPage() {
             style={{ width: "500px" }}
           />
           <div className="benefit-content-red service-overlay">
-            <p>
-              Red Light Therapy is really good for your skin with many
-              demonstrated benefits
-            </p>
+            <p>Could your skincare routine use a boost?</p>
           </div>
         </div>
       </section>
       <section className="scrolling-text-section">
         <div className="scrolling-text-container">
           <ul className="custom-icon-list-scrolling">
-            <li>Reduction of wrinkles, fine lines and age spots</li>
-            <li>More firmness and elasticity</li>
-            <li>Improvement of scar appearance</li>
-            <li>Improvement acne</li>
-            <li>Less redness</li>
-            <li>Improvement of sun-damaged skin</li>
+            <li>* Less wrinkles, fine lines and age spots</li>
+            <li>* More firmness and elasticity</li>
+            <li>* Helps in scar appearance</li>
+            <li>* Reduces acne</li>
+            <li>* Less redness</li>
+            <li>* Improves sun-damaged skin</li>
           </ul>
           <ul className="custom-icon-list-scrolling">
-            <li>Reduction of wrinkles, fine lines and age spots</li>
-            <li>More firmness and elasticity</li>
-            <li>Improvement of scar appearance</li>
-            <li>Improvement of acne</li>
-            <li>Less redness</li>
-            <li>Improvement of sun-damaged skin</li>
+            <li>* Less wrinkles, fine lines and age spots</li>
+            <li>* More firmness and elasticity</li>
+            <li>* Helps in scar appearance</li>
+            <li>* Reduces acne</li>
+            <li>* Less redness</li>
+            <li>* Improves sun-damaged skin</li>
           </ul>
         </div>
       </section>

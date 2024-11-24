@@ -40,7 +40,11 @@
 /* Benefits Section (Mobile-First) */
 .benefits-of-red {
   color: var(--stone);
-  background-color: var(--off-black);
+}
+.benefits-of-red h1 {
+  padding-top: 5rem;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 .benefit-section-bg-red {
@@ -71,13 +75,14 @@
   padding: 3rem 2rem;
   margin: 0;
   font-size: 1rem;
+  padding-top: 1rem;
 }
 
 .custom-icon-list li {
   position: relative;
   padding-left: 1.5rem; /* Space for custom icon */
   margin-bottom: 0.7rem;
-  line-height: 1.5;
+  line-height: 2;
   color: var(--stone);
 }
 
@@ -85,15 +90,13 @@
   content: "";
   position: absolute;
   left: 0;
-  top: 0;
+  top: 4px;
   width: 1.5rem;
   height: 1.5rem;
   background-image: url("../../assets/icons/hexa-icon-stone.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
-
-
 
 /* Styling for the list */
 .custom-icon-list-scrolling {
@@ -199,6 +202,10 @@
     font-size: 3rem;
   }
 
+  .benefits-of-red h1 {
+    padding-bottom: 3.5rem;
+  }
+
   .benefit-section-red {
     flex-direction: row;
     padding: 0 4rem;
@@ -222,8 +229,18 @@
     width: 100%;
     padding: 0;
   }
+  .custom-icon-list li {
+    line-height: 2.9;
+  }
+  .custom-icon-list li::before {
+    top: 14px;
+  }
+
+  .scrolling-text-section {
+    margin-top: 2rem;
+  }
   .scrolling-text-container {
-    animation: scroll-left 20s linear infinite; 
+    animation: scroll-left 20s linear infinite;
   }
   .learn-more-section {
     padding: 3rem 2rem;
