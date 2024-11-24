@@ -36,8 +36,13 @@ function IcebathPage() {
     <div className="treatment-page">
       {/* Call to Action Section */}
       <section className="cta-section cta-section-ice">
-        <h4 className="fade-element">Try something new or keep up with your healthy routine</h4>
-        <h1 className="fade-element">Come for the <span style={{ color: "#6fbabc" }}>coldest ice bath</span> in town</h1>
+        <h4 className="fade-element">
+          Try something new or keep up with your healthy routine
+        </h4>
+        <h1 className="fade-element">
+          Come for the{" "}
+          <span style={{ color: "#6fbabc" }}>coldest ice bath</span> in town
+        </h1>
       </section>
 
       {/* What is it? */}
@@ -51,6 +56,13 @@ function IcebathPage() {
       </section>
 
       {/* Benefit Sections */}
+
+      <section className="fade-element benefits-of">
+        <header>
+          <h1 className="fade-element">Benefits of ice baths</h1>
+        </header>
+      </section>
+
       <section className="benefit-section text-left fade-element">
         <div className="benefit-image">
           <img

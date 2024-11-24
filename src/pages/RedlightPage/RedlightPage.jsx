@@ -29,7 +29,7 @@ function RedlightPage() {
   }, []);
 
   return (
-    <div className="treatment-page">
+    <div className="treatment-page treatment-page-red">
       {/* Call to Action Section */}
       <section className="cta-section cta-section-red">
         <h4 className="fade-element">
@@ -54,6 +54,13 @@ function RedlightPage() {
       </section>
 
       {/* Benefit Sections */}
+
+      <section className="fade-element benefits-of benefits-of-red">
+        <header>
+          <h1 className="fade-element">Benefits of red light therapy</h1>
+        </header>
+      </section>
+
       <section className="benefit-section text-right benefit-section-bg-red">
         <div className="benefit-content-red">
           <ul className="custom-icon-list fade-element">

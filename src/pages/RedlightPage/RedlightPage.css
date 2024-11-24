@@ -5,6 +5,9 @@
   overflow-x: hidden;
   text-align: center;
 }
+.treatment-page-red {
+  background-color: var(--off-black);
+}
 
 /* Call to Action Section (Mobile-First) */
 .cta-section-red {
@@ -35,6 +38,11 @@
 }
 
 /* Benefits Section (Mobile-First) */
+.benefits-of-red {
+  color: var(--stone);
+  background-color: var(--off-black);
+}
+
 .benefit-section-bg-red {
   background-color: var(--off-black);
 }
