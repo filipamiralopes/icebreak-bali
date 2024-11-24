@@ -59,9 +59,11 @@ function HomePage() {
         <div className="fade-element">
           <header>
             <h6>
-              Boost your wellbeing and recovery through a quick, intense and{" "}
-              <br id="br-motto" />
-              challenging experience while connecting with like-minded people.
+              Boost your <span style={{ color: '#222221' }}>wellbeing</span> and recovery through a <span style={{ color: '#222221' }}>
+                quick, intense and{" "}
+                <br id="br-motto" />
+                challenging experience
+              </span> while connecting with like-minded people.
             </h6>
           </header>
         </div>
