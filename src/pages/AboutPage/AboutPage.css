@@ -15,9 +15,9 @@
 
 /* Section 1: Centered header */
 .header-section {
-  background-image: url("/src/assets/images/backgrounds/ice-isolated.png");
-  background-size: 100%;
-  min-height: 100dvh;
+  background-image: url("/src/assets/images/backgrounds/ice-isolated-3.png");
+  background-size: cover;
+  min-height: 60dvh;
   padding: 0;
 }
 .header-section h1 {
@@ -30,7 +30,7 @@
 /* Section 2: Founders' Note */
 .founder-note {
   text-align: left;
-  padding: 2rem 10%;
+  padding: 2rem 4rem;
   background-color: var(--stone);
   color: var(--off-black);
   border-radius: 8px;
@@ -46,7 +46,7 @@
 }
 
 .founder-note p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   line-height: 1.6;
   text-align: justify;
 }
@@ -63,23 +63,9 @@
   width: 50%;
 }
 .founders-img img {
-  width: 600px;
+  width: 550px;
   opacity: 0.8;
   margin-top: 1rem;
-}
-
-/* Section 3: Final Thought */
-.final-thought {
-  padding: 4rem 2rem 4rem 8rem;
-  min-height: 30dvh;
-  align-items: left;
-}
-
-.final-thought p {
-  font-size: 1.5rem;
-  font-style: italic;
-  color: var(--verdigris);
-  margin: 0;
 }
 
 /* Responsive Design */
@@ -88,7 +74,7 @@
 @media (max-width: 768px) {
   .header-section {
     background-image: url("/src/assets/images/backgrounds/ice-isolated-vertical.png");
-    background-size: 110%;
+    background-size: cover;
     padding: 2rem 3rem 0 3rem;
     margin-bottom: 0;
     min-height: 60dvh;
@@ -115,9 +101,8 @@
     width: 100%; /* Make the image span the full width of the container */
     height: auto; /* Maintain the aspect ratio */
     display: block; /* Remove inline-block spacing issues */
+    margin: 0 0 2rem 0;
+    padding: 0;
   }
-  .final-thought {
-    min-height: 40dvh;
-    padding: 0 2rem;
-  }
+  
 }

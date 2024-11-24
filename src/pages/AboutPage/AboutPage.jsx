@@ -61,22 +61,14 @@ const AboutPage = () => {
               <br />
               With warmth (and a bit of chill),
               <br />M and V
+              <br />
+              <h6 style={{ color: "#6fbabc", fontSize: "1.2rem" }}>If you can face the ice,<br/> what else can you do in your life?</h6>
             </p>
           </article>
           <div class="founders-img fade-element">
             <img src={foundersImg} alt="Founders image" loading="lazy" />
           </div>
         </div>
-      </section>
-
-      {/* Section 3 */}
-      <section
-        className="section final-thought"
-        aria-labelledby="final-thought-title"
-      >
-        <p id="final-thought-title" className="fade-element">
-          <em>If you can face the ice, what else can you do in your life?</em>
-        </p>
       </section>
     </main>
   );
