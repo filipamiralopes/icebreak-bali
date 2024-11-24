@@ -39,11 +39,11 @@ function Footer() {
         <a
           href="https://api.whatsapp.com/send/?phone=6282147830023&text&type=phone_number&app_absent=0"
           target="_blank"
-          rel="noopener noreferrer"  
+          rel="noopener noreferrer"
         >
           WhatsApp: +62 821 4783 0023
         </a>
-        <p>general@icebreakbali.com</p>
+        <a href="mailto:example@example.com">general@icebreakbali.com</a>
       </div>
 
       <div className="info">
