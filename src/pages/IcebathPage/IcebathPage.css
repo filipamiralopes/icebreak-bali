@@ -280,12 +280,7 @@
   }
   .clip-crop {
     clip-path: inset(
-      60px 0px
-    ); /* Crop 20px from top and bottom, 40px from left and right */
-  }
-  .clip-crop-vertical {
-    clip-path: inset(
-      210px 0px
+      50px 0px
     ); /* Crop 20px from top and bottom, 40px from left and right */
   }
 

@@ -169,7 +169,7 @@ function HomePage() {
       </section>
 
       <section className="benefit-section text-left benefit-section-landing">
-        <div className="benefit-image image-transparency service-item clip-crop-vertical fade-element fade-element">
+        <div className="benefit-image image-transparency service-item clip-crop fade-element fade-element">
           <img
             src={beverageImg}
             alt="Beverages"
