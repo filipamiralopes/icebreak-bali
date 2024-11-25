@@ -10,7 +10,7 @@ import redlightImg1 from "../../assets/images/content/redlight-1.webp";
 import beverageImg from "../../assets/images/content/beverage.webp";
 import merchImg from "../../assets/images/content/merch.webp";
 import useFadeInOnScroll from "../../hooks/useFadeInOnScroll";
-import Loading from "../../components/Loading/Loading"
+import Loading from "../../components/Loading/Loading";
 import "./HomePage.css";
 
 function HomePage() {
@@ -32,7 +32,7 @@ function HomePage() {
 
   return (
     <>
-      {loading && <Loading />} {/* Show the loader if loading */}
+      {loading && <Loading />} {/* Show the spinner while loading */}
       <div className={`home-page ${loading ? "hidden" : ""}`}>
         {/* Main section */}
         <section className="landing-section">
@@ -43,7 +43,6 @@ function HomePage() {
                   src={landingImageDesktop}
                   alt="Fallback image background"
                   className="fallback-image"
-                  onLoad={handleMediaLoaded} // Trigger when the image loads
                 />
               </picture>
               <video
@@ -52,7 +51,7 @@ function HomePage() {
                 muted
                 loop
                 id="background-video"
-                onLoadedData={handleMediaLoaded} // Trigger when the video loads
+                onLoadedData={handleMediaLoaded} // Trigger when video is loaded
               >
                 <source src={iceVideoMp4} type="video/mp4" />
                 <source src={iceVideoWebm} type="video/webm" />
@@ -63,7 +62,6 @@ function HomePage() {
             <div
               className="landing-background-mobile"
               style={{ backgroundImage: `url(${landingImageMobile})` }}
-              onLoad={handleMediaLoaded} // Trigger when the mobile background loads
             ></div>
           )}
           <div className="landing-section-content">
@@ -71,7 +69,6 @@ function HomePage() {
               className="fade-element"
               src={yeahCoolImg}
               alt="Yeah cool img"
-              onLoad={handleMediaLoaded} // Trigger when the image loads
             />
             <h5 className="fade-element">Ice Break, Uluwatu, Bali</h5>
           </div>
