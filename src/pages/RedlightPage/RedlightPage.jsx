@@ -81,8 +81,7 @@ function RedlightPage() {
             src={redLightImg2}
             alt="Benefit 2"
             loading="lazy"
-            className="service-item"
-            style={{ width: "500px" }}
+            className="service-item redlight-img-2-img"
           />
           <div className="benefit-content-red service-overlay">
             <p>Could your skincare routine use a boost?</p>

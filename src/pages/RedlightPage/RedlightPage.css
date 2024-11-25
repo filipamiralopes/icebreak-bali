@@ -61,6 +61,10 @@
   width: 100%;
   height: auto;
 }
+.redlight-img-2-img {
+  width: 350px;
+  height: auto;
+}
 
 .benefit-content-red p {
   font-size: 1.2rem;
@@ -218,6 +222,9 @@
   }
   .redlight-img-2 {
     padding-left: 2rem;
+  }
+  .redlight-img-2-img {
+    width: 500px;
   }
   .benefit-content-red {
     flex: 1;
