@@ -66,7 +66,7 @@ function IcebathPage() {
       <section className="benefit-section text-left fade-element">
         <div className="benefit-image">
           <img
-            src={icebathImg1}
+            src={icebathImg4}
             alt="Benefit 1"
             loading="lazy"
             class="clip-crop"
@@ -134,7 +134,7 @@ function IcebathPage() {
         </div>
         <div className="benefit-image">
           <img
-            src={icebathImg4}
+            src={icebathImg5}
             alt="Benefit 4"
             loading="lazy"
             class="clip-crop"
@@ -145,7 +145,7 @@ function IcebathPage() {
       <section className="benefit-section text-left fade-element">
         <div className="benefit-image">
           <img
-            src={icebathImg5}
+            src={icebathImg1}
             alt="Benefit 5"
             loading="lazy"
             class="clip-crop"

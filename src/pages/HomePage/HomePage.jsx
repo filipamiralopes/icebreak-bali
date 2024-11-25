@@ -169,7 +169,7 @@ function HomePage() {
       </section>
 
       <section className="benefit-section text-left benefit-section-landing">
-        <div className="benefit-image image-transparency service-item clip-crop fade-element fade-element">
+        <div className="benefit-image image-transparency service-item clip-crop-vertical fade-element fade-element">
           <img
             src={beverageImg}
             alt="Beverages"
@@ -191,7 +191,7 @@ function HomePage() {
 
       <section className="benefit-section text-right benefit-section-landing">
         <div className="benefit-content fade-element">
-          <h3 className="h3-services h3-services-link">Merch</h3>
+          <h3 className="h3-services">Merch</h3>
           <p className="p-services">
             Cool tees, hats & more - add a new piece to your collection!
           </p>

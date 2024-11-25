@@ -57,7 +57,6 @@
   margin: 0;
 }
 
-
 .benefit-section {
   display: flex;
   flex-direction: column;
@@ -281,7 +280,12 @@
   }
   .clip-crop {
     clip-path: inset(
-      150px 0px
+      60px 0px
+    ); /* Crop 20px from top and bottom, 40px from left and right */
+  }
+  .clip-crop-vertical {
+    clip-path: inset(
+      210px 0px
     ); /* Crop 20px from top and bottom, 40px from left and right */
   }
 
