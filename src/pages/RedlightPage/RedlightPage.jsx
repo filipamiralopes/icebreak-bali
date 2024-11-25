@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import benefitImage2 from "../../assets/images/content/redlight2.png";
+import redLightImg2 from "../../assets/images/content/red-light-2.webp";
 import useFadeInOnScroll from "../../hooks/useFadeInOnScroll";
 import "./RedlightPage.css";
 
@@ -78,7 +78,7 @@ function RedlightPage() {
         </div>
         <div className="service-item fade-element">
           <img
-            src={benefitImage2}
+            src={redLightImg2}
             alt="Benefit 2"
             loading="lazy"
             className="skin-img service-item"
