@@ -25,6 +25,11 @@
   padding: 1rem;
 }
 
+
+.logo-white {
+  filter: invert(100%); /* White */
+}
+
 /* Mobile and Tablets (max-width: 1024px) */
 @media (max-width: 1024px) {
   .header {

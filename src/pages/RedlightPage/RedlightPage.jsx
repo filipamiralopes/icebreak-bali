@@ -31,7 +31,7 @@ function RedlightPage() {
   return (
     <div className="treatment-page treatment-page-red">
       {/* Call to Action Section */}
-      <section className="cta-section cta-section-red">
+      <section className="cta-section cta-section-red color-section" data-logo-color="logo-white">
         <h4 className="fade-element">
           The only step missing in your daily routine
         </h4>
@@ -55,13 +55,13 @@ function RedlightPage() {
 
       {/* Benefit Sections */}
 
-      <section className="fade-element benefits-of benefits-of-red">
+      <section className="fade-element benefits-of benefits-of-red color-section" data-logo-color="logo-white">
         <header>
           <h1 className="fade-element">Benefits of red light therapy</h1>
         </header>
       </section>
 
-      <section className="benefit-section text-right benefit-section-bg-red">
+      <section className="benefit-section text-right benefit-section-bg-red color-section" data-logo-color="logo-white">
         <div className="benefit-content-red">
           <ul className="custom-icon-list fade-element">
             <li>Improves skin quality and appearance *</li>
@@ -88,7 +88,7 @@ function RedlightPage() {
           </div>
         </div>
       </section>
-      <section className="scrolling-text-section">
+      <section className="scrolling-text-section color-section" data-logo-color="logo-white">
         <div className="scrolling-text-container">
           <ul className="custom-icon-list-scrolling">
             <li>* Less wrinkles, fine lines and age spots</li>
@@ -110,7 +110,7 @@ function RedlightPage() {
       </section>
 
       {/* What to Expect Section */}
-      <section className="expect-section expect-section-red-bg">
+      <section className="expect-section expect-section-red-bg color-section" data-logo-color="logo-white">
         <h2>What to Expect?</h2>
         <div className="expect-steps">
           <div className="step" style={{ "--step-index": 0 }}>
@@ -143,7 +143,7 @@ function RedlightPage() {
       </section>
 
       {/* First Time Section */}
-      <section className="first-time-section first-time-section-red-bg">
+      <section className="first-time-section first-time-section-red-bg color-section" data-logo-color="logo-white">
         <h2 className="fade-element">First Time?</h2>
         <p className="fade-element">
           Don't worry! Our staff will let you know all the details and setup the
@@ -153,7 +153,7 @@ function RedlightPage() {
       </section>
 
       {/* Learn More Section */}
-      <section className="learn-more-section">
+      <section className="learn-more-section color-section">
         <h2 className="fade-element">The Science Behind</h2>
         <div className="video-grid">
           <iframe

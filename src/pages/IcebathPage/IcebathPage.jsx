@@ -35,7 +35,7 @@ function IcebathPage() {
   return (
     <div className="treatment-page">
       {/* Call to Action Section */}
-      <section className="cta-section cta-section-ice">
+      <section className="cta-section cta-section-ice color-section">
         <h4 className="fade-element">
           Try something new or keep up with your healthy routine
         </h4>
@@ -46,7 +46,7 @@ function IcebathPage() {
       </section>
 
       {/* What is it? */}
-      <section className="info-section">
+      <section className="info-section color-section" data-logo-color="logo-white">
         <h1 className="fade-element">What is it?</h1>
         <h6 className="fade-element">
           Literally an ice bath with temperatures ranging from 0 to 4℃ / 32-40 F
@@ -57,13 +57,13 @@ function IcebathPage() {
 
       {/* Benefit Sections */}
 
-      <section className="fade-element benefits-of">
+      <section className="fade-element benefits-of color-section">
         <header>
           <h1 className="fade-element">Benefits of ice baths</h1>
         </header>
       </section>
 
-      <section className="benefit-section text-left fade-element">
+      <section className="benefit-section text-left fade-element color-section">
         <div className="benefit-image">
           <img
             src={icebathImg4}
@@ -82,7 +82,7 @@ function IcebathPage() {
         </div>
       </section>
 
-      <section className="benefit-section text-right fade-element">
+      <section className="benefit-section text-right fade-element color-section">
         <div className="benefit-content">
           <h3>Accelerates recovery and reduces inflammation</h3>
           <p>
@@ -102,7 +102,7 @@ function IcebathPage() {
         </div>
       </section>
 
-      <section className="benefit-section text-left fade-element">
+      <section className="benefit-section text-left fade-element color-section">
         <div className="benefit-image">
           <img
             src={icebathImg3}
@@ -122,7 +122,7 @@ function IcebathPage() {
         </div>
       </section>
 
-      <section className="benefit-section text-right fade-element">
+      <section className="benefit-section text-right fade-element color-section">
         <div className="benefit-content">
           <h3>Builds resilience & grit</h3>
           <p>
@@ -142,7 +142,7 @@ function IcebathPage() {
         </div>
       </section>
 
-      <section className="benefit-section text-left fade-element">
+      <section className="benefit-section text-left fade-element color-section">
         <div className="benefit-image">
           <img
             src={icebathImg1}
@@ -163,7 +163,7 @@ function IcebathPage() {
       </section>
 
       {/* What to Expect Section */}
-      <section className="expect-section">
+      <section className="expect-section color-section" data-logo-color="logo-white">
         <h2>What to Expect?</h2>
         <div className="expect-steps">
           <div className="step" style={{ "--step-index": 0 }}>
@@ -195,7 +195,7 @@ function IcebathPage() {
       </section>
 
       {/* First Time Section */}
-      <section className="first-time-section first-time-section-ice-bg">
+      <section className="first-time-section first-time-section-ice-bg color-section" data-logo-color="logo-white">
         <h2 className="fade-element">First Time?</h2>
         <p className="fade-element">
           Don't worry, we are (almost) certain you will love it! You can get our
@@ -205,7 +205,7 @@ function IcebathPage() {
       </section>
 
       {/* Learn More Section */}
-      <section className="learn-more-section">
+      <section className="learn-more-section color-section">
         <h2 className="fade-element">The Science Behind</h2>
         <div className="video-grid">
           <iframe

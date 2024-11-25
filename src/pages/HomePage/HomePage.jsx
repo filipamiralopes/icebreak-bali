@@ -35,7 +35,7 @@ function HomePage() {
       {loading && <Loading />} {/* Show the spinner while loading */}
       <div className={`home-page ${loading ? "hidden" : ""}`}>
         {/* Main section */}
-        <section className="landing-section">
+        <section className="landing-section color-section">
           {isDesktop ? (
             <div className="video-wrapper">
               <picture>
@@ -75,7 +75,7 @@ function HomePage() {
         </section>
 
         {/* Motto */}
-        <section id="motto">
+        <section id="motto" className="color-section">
           <div className="fade-element">
             <header>
               <h6>
@@ -93,13 +93,13 @@ function HomePage() {
 
         {/* Services*/}
 
-        <section id="our-services" className="fade-element">
+        <section id="our-services" className="fade-element color-section">
           <header>
             <h1>Our services</h1>
           </header>
         </section>
 
-        <section className="benefit-section text-left benefit-section-landing">
+        <section className="benefit-section text-left benefit-section-landing color-section">
           <div className="benefit-image image-transparency service-item clip-crop fade-element">
             <Link
               to="/icebath"
@@ -143,7 +143,7 @@ function HomePage() {
           </div>
         </section>
 
-        <section className="benefit-section text-right benefit-section-landing">
+        <section className="benefit-section text-right benefit-section-landing color-section">
           <div className="benefit-content fade-element">
             <Link
               to="/redlight"
@@ -190,7 +190,7 @@ function HomePage() {
           </div>
         </section>
 
-        <section className="benefit-section text-left benefit-section-landing">
+        <section className="benefit-section text-left benefit-section-landing color-section">
           <div className="benefit-image image-transparency service-item clip-crop fade-element fade-element">
             <img
               src={beverageImg}
@@ -211,7 +211,7 @@ function HomePage() {
           </div>
         </section>
 
-        <section className="benefit-section text-right benefit-section-landing">
+        <section className="benefit-section text-right benefit-section-landing color-section">
           <div className="benefit-content fade-element">
             <h3 className="h3-services">Merch</h3>
             <p className="p-services">
@@ -232,13 +232,13 @@ function HomePage() {
           </div>
         </section>
 
-        <section className="no-booking-section">
+        <section className="no-booking-section color-section">
           <h5 className="fade-element">
             No booking required, <br /> just drop in
           </h5>
         </section>
 
-        <section id="ig-section">
+        <section id="ig-section" className="color-section" data-logo-color="logo-white">
           <h4 className="fade-element">
             Follow us on{" "}
             <a
@@ -250,13 +250,13 @@ function HomePage() {
             for more
           </h4>
 
-          <div className="instagram-feed">
-            <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
+          <div className="instagram-feed color-section" data-logo-color="logo-white">
+            <script src="https://cdn.lightwidget.com/widgets/lightwidget.js" className="color-section" data-logo-color="logo-white"></script>
             <iframe
               src="https://cdn.lightwidget.com/widgets/0559dd1446c4571d911fb4b96ccb4ca9.html"
               scrolling="no"
-              allowTransparency="true"
-              className="lightwidget-widget"
+              allowtransparency="true"
+              className="lightwidget-widget color-section" data-logo-color="logo-white"
               style={{
                 width: "100%",
                 border: "0",
@@ -266,14 +266,14 @@ function HomePage() {
           </div>
         </section>
 
-        <section className="maps-section">
-          <p className="fade-element">
+        <section className="maps-section color-section">
+          <p className="fade-element color-section" data-logo-color="logo-white">
             Find us in Bingin Uluwatu, Bali <br />
             Every day from 7:30 AM to 7:30PM
           </p>
 
           <iframe
-            className="map"
+            className="map color-section"
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d63082.43932716874!2d115.0883535!3d-8.8186829!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd2450036daf1b7%3A0xd39e229d92e56c66!2sIce%20Break!5e0!3m2!1sen!2sph!4v1732261065439!5m2!1sen!2sph"
             width="100%"
             height="600"
