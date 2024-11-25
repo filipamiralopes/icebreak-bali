@@ -89,7 +89,7 @@ html {
 }
 
 .no-booking-section {
-  background-image: url("/src/assets/images/backgrounds/ice-white.webp");
+  background-image: url("/src/assets/images/backgrounds/ice-white-vertical.webp");
   background-size: cover;
   color: var(--off-black);
   padding: 0;
@@ -322,6 +322,8 @@ html {
   /* No-Booking Section */
   .no-booking-section{
     min-height: 60dvh;
+    background-image: url("/src/assets/images/backgrounds/ice-white-2.webp");
+    background-size: cover;
   }
   .no-booking-section h5 {
     padding-top: 3rem;
