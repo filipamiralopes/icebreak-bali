@@ -3,6 +3,11 @@ html {
   overflow-x: hidden;
 }
 
+.hidden {
+  display: none;
+}
+
+
 /* MOBILE STYLES */
 
 /* Background Image for Mobile */
