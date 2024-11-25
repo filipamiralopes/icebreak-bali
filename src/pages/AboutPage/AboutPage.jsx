@@ -1,5 +1,5 @@
 import React from "react";
-import foundersImg from "../../assets/images/content/founders.jpg";
+import foundersImg from "../../assets/images/content/founders.webp";
 import useFadeInOnScroll from "../../hooks/useFadeInOnScroll";
 import "./AboutPage.css";
 

@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
-import benefitImage1 from "../../assets/images/content/about-image1-sq.jpg";
-import benefitImage2 from "../../assets/images/content/about-image2-sq.jpg";
-import benefitImage3 from "../../assets/images/content/about-image3-sq.jpg";
-import benefitImage4 from "../../assets/images/content/about-image1-sq.jpg";
-import benefitImage5 from "../../assets/images/content/about-image2-sq.jpg";
+import icebathImg1 from "../../assets/images/content/ice-bath-1.webp";
+import icebathImg2 from "../../assets/images/content/ice-bath-2.webp";
+import icebathImg3 from "../../assets/images/content/ice-bath-3.webp";
+import icebathImg4 from "../../assets/images/content/ice-bath-4.webp";
+import icebathImg5 from "../../assets/images/content/ice-bath-5.webp";
 import useFadeInOnScroll from "../../hooks/useFadeInOnScroll";
 import "./IcebathPage.css";
 
@@ -66,7 +66,7 @@ function IcebathPage() {
       <section className="benefit-section text-left fade-element">
         <div className="benefit-image">
           <img
-            src={benefitImage1}
+            src={icebathImg1}
             alt="Benefit 1"
             loading="lazy"
             class="clip-crop"
@@ -94,7 +94,7 @@ function IcebathPage() {
         </div>
         <div className="benefit-image">
           <img
-            src={benefitImage2}
+            src={icebathImg2}
             alt="Benefit 2"
             loading="lazy"
             class="clip-crop"
@@ -105,7 +105,7 @@ function IcebathPage() {
       <section className="benefit-section text-left fade-element">
         <div className="benefit-image">
           <img
-            src={benefitImage3}
+            src={icebathImg3}
             alt="Benefit 3"
             loading="lazy"
             class="clip-crop"
@@ -134,7 +134,7 @@ function IcebathPage() {
         </div>
         <div className="benefit-image">
           <img
-            src={benefitImage4}
+            src={icebathImg4}
             alt="Benefit 4"
             loading="lazy"
             class="clip-crop"
@@ -145,7 +145,7 @@ function IcebathPage() {
       <section className="benefit-section text-left fade-element">
         <div className="benefit-image">
           <img
-            src={benefitImage5}
+            src={icebathImg5}
             alt="Benefit 5"
             loading="lazy"
             class="clip-crop"

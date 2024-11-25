@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import redLightImg2 from "../../assets/images/content/red-light-2.webp";
+import redLightImg2 from "../../assets/images/content/redlight-2.webp";
 import useFadeInOnScroll from "../../hooks/useFadeInOnScroll";
 import "./RedlightPage.css";
 

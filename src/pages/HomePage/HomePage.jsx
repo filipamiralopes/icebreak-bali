@@ -5,9 +5,10 @@ import iceVideoMp4 from "../../assets/videos/ice-white.mp4";
 import iceVideoWebm from "../../assets/videos/ice-white.webm";
 import landingImageMobile from "../../assets/images/backgrounds/ice-white-vertical.webp";
 import landingImageDesktop from "../../assets/images/backgrounds/ice-white.webp";
-import benefitImage1 from "../../assets/images/content/about-image1-sq.jpg";
-import benefitImage2 from "../../assets/images/content/redlight1.png";
-import benefitImage3 from "../../assets/images/content/about-image3-sq.jpg";
+import icebathImg6 from "../../assets/images/content/ice-bath-6.webp";
+import redlightImg1 from "../../assets/images/content/redlight-1.webp";
+import beverageImg from "../../assets/images/content/beverage.webp";
+import merchImg from "../../assets/images/content/merch.webp";
 import useFadeInOnScroll from "../../hooks/useFadeInOnScroll";
 import "./HomePage.css";
 
@@ -87,7 +88,7 @@ function HomePage() {
             }}
           >
             <img
-              src={benefitImage1}
+              src={icebathImg6}
               alt="Ice Bath"
               loading="lazy"
               className="service-image"
@@ -145,7 +146,7 @@ function HomePage() {
             }}
           >
             <img
-              src={benefitImage2}
+              src={redlightImg1}
               alt="Red Light Therapy "
               loading="lazy"
               className="service-image"
@@ -170,7 +171,7 @@ function HomePage() {
       <section className="benefit-section text-left benefit-section-landing">
         <div className="benefit-image image-transparency service-item clip-crop fade-element fade-element">
           <img
-            src={benefitImage3}
+            src={beverageImg}
             alt="Beverages"
             loading="lazy"
             className="service-image"
@@ -197,7 +198,7 @@ function HomePage() {
         </div>
         <div className="benefit-image image-transparency service-item clip-crop fade-element">
           <img
-            src={benefitImage2}
+            src={merchImg}
             alt="Merch"
             loading="lazy"
             className="service-image"
