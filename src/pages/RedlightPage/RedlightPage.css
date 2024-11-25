@@ -233,7 +233,7 @@
     padding: 0;
   }
   .custom-icon-list li {
-    line-height: 2.9;
+    line-height: 2.7;
   }
   .custom-icon-list li::before {
     top: 14px;
