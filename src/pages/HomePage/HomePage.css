@@ -214,6 +214,7 @@ html {
     min-height: 50dvh;
     padding: 0 10rem;
     background-color: var(--white);
+    margin-bottom: 0;
   }
 
   #motto h6 {
@@ -223,6 +224,8 @@ html {
     color: var(--verdigris);
     position: relative; /* Required for pseudo-element positioning */
     overflow: hidden; /* Ensures the border line is clipped initially */
+    padding-top: 4rem;
+    margin: 0;
   }
   /* Animated border */
   #motto h6::after {
@@ -248,7 +251,7 @@ html {
     font-size: 1.3rem;
   }
   #our-services > header > h1 {
-    padding-bottom: 8rem;
+    padding: 2rem;
     font-size: 2rem;
     margin: 0;
   }
