@@ -216,6 +216,9 @@
     flex: 1;
     max-width: 50%;
   }
+  .redlight-img-2 {
+    padding-left: 2rem;
+  }
   .benefit-content-red {
     flex: 1;
     padding: 0 2rem;
@@ -225,7 +228,7 @@
     padding: 3rem;
   }
   .custom-icon-list {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     width: 100%;
     padding: 0;
   }

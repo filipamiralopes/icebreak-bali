@@ -76,12 +76,12 @@ function RedlightPage() {
             <li>Heals age-related degeneration of the eyes</li>
           </ul>
         </div>
-        <div className="service-item fade-element">
+        <div className="service-item fade-element redlight-img-2">
           <img
             src={redLightImg2}
             alt="Benefit 2"
             loading="lazy"
-            className="skin-img service-item"
+            className="service-item"
             style={{ width: "500px" }}
           />
           <div className="benefit-content-red service-overlay">
