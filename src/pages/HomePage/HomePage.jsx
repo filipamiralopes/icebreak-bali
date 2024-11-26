@@ -62,7 +62,7 @@ function HomePage() {
                   src={landingImageDesktop}
                   alt="Fallback image background"
                   className="fallback-image"
-                  onLoad={handleMediaLoaded} // Trigger when desktop image loads
+                  // onLoad={handleMediaLoaded} // Trigger when desktop image loads
                 />
               </picture>
               <video
