@@ -15,20 +15,39 @@ import "./HomePage.css";
 
 function HomePage() {
   const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 1024);
-  const [loading, setLoading] = useState(true); // Add loading state
+  const [loading, setLoading] = useState(true);
+  const [mediaLoadedCount, setMediaLoadedCount] = useState(0);
+  const totalMediaCount = 2; // Adjust this based on the number of media elements
 
   useFadeInOnScroll(".fade-element", 0.3, 0.3);
 
+  // Track window resize to determine desktop or mobile
   useEffect(() => {
     const handleResize = () => setIsDesktop(window.innerWidth >= 1024);
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  // Track when the video and images are fully loaded
+  // Increment the media loaded count
   const handleMediaLoaded = () => {
-    setLoading(false);
+    setMediaLoadedCount((prev) => prev + 1);
   };
+
+  // Remove loader when all media are loaded
+  useEffect(() => {
+    if (mediaLoadedCount >= totalMediaCount) {
+      setLoading(false);
+    }
+  }, [mediaLoadedCount]);
+
+  // Fallback timeout to prevent indefinite loading
+  useEffect(() => {
+    const fallbackTimeout = setTimeout(() => {
+      setLoading(false);
+    }, 500); // 10 seconds
+    return () => clearTimeout(fallbackTimeout);
+  }, []);
+
 
   return (
     <>
@@ -43,6 +62,7 @@ function HomePage() {
                   src={landingImageDesktop}
                   alt="Fallback image background"
                   className="fallback-image"
+                  onLoad={handleMediaLoaded} // Trigger when desktop image loads
                 />
               </picture>
               <video
@@ -59,10 +79,12 @@ function HomePage() {
               </video>
             </div>
           ) : (
-            <div
+            <img
               className="landing-background-mobile"
-              style={{ backgroundImage: `url(${landingImageMobile})` }}
-            ></div>
+              src={landingImageMobile}
+              alt="Mobile Background"
+              onLoad={handleMediaLoaded} // Trigger when mobile background image loads
+            />
           )}
           <div className="landing-section-content">
             <img
