@@ -44,7 +44,7 @@ function HomePage() {
   useEffect(() => {
     const fallbackTimeout = setTimeout(() => {
       setLoading(false);
-    }, 500); // 10 seconds
+    }, 500); // 5 seconds
     return () => clearTimeout(fallbackTimeout);
   }, []);
 
@@ -62,7 +62,7 @@ function HomePage() {
                   src={landingImageDesktop}
                   alt="Fallback image background"
                   className="fallback-image"
-                  // onLoad={handleMediaLoaded} // Trigger when desktop image loads
+                  onLoad={handleMediaLoaded} // Trigger when desktop image loads
                 />
               </picture>
               <video
