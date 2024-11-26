@@ -17,11 +17,11 @@ function HomePage() {
   const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 1024);
   const [loading, setLoading] = useState(true);
   const [mediaLoadedCount, setMediaLoadedCount] = useState(0);
-  const totalMediaCount = 2; // Adjust this based on the number of media elements
+  const totalMediaCount = isDesktop ? 1 : 2; // Adjust for desktop/mobile
 
   useFadeInOnScroll(".fade-element", 0.3, 0.3);
 
-  // Track window resize to determine desktop or mobile
+  // Track window resize
   useEffect(() => {
     const handleResize = () => setIsDesktop(window.innerWidth >= 1024);
     window.addEventListener("resize", handleResize);
@@ -31,6 +31,12 @@ function HomePage() {
   // Increment the media loaded count
   const handleMediaLoaded = () => {
     setMediaLoadedCount((prev) => prev + 1);
+  };
+
+  // Check if the video is unsupported
+  const handleVideoError = () => {
+    console.warn("Video is unsupported or failed to load. Falling back to image.");
+    handleMediaLoaded(); // Treat the video as "loaded" to rely on the fallback image
   };
 
   // Remove loader when all media are loaded
@@ -44,10 +50,9 @@ function HomePage() {
   useEffect(() => {
     const fallbackTimeout = setTimeout(() => {
       setLoading(false);
-    }, 500); // 5 seconds
+    }, 5000); // 5 seconds
     return () => clearTimeout(fallbackTimeout);
   }, []);
-
 
   return (
     <>
@@ -62,7 +67,7 @@ function HomePage() {
                   src={landingImageDesktop}
                   alt="Fallback image background"
                   className="fallback-image"
-                  onLoad={handleMediaLoaded} // Trigger when desktop image loads
+                  onLoad={!isDesktop ? handleMediaLoaded : undefined} // Mobile-only fallback
                 />
               </picture>
               <video
@@ -71,7 +76,8 @@ function HomePage() {
                 muted
                 loop
                 id="background-video"
-                onLoadedData={handleMediaLoaded} // Trigger when video is loaded
+                onLoadedData={handleMediaLoaded} // Trigger when video loads
+                onError={handleVideoError} // Trigger fallback on video error
               >
                 <source src={iceVideoMp4} type="video/mp4" />
                 <source src={iceVideoWebm} type="video/webm" />
