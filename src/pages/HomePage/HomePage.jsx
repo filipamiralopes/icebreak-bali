@@ -50,7 +50,7 @@ function HomePage() {
   useEffect(() => {
     const fallbackTimeout = setTimeout(() => {
       setLoading(false);
-    }, 5000); // 5 seconds
+    }, 4000); // 4 seconds
     return () => clearTimeout(fallbackTimeout);
   }, []);
 
