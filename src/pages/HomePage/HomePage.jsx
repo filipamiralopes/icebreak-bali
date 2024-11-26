@@ -291,7 +291,7 @@ function HomePage() {
         <section className="maps-section color-section">
           <p className="fade-element color-section" data-logo-color="logo-white">
             Find us in Bingin Uluwatu, Bali <br />
-            Every day from 7:30 AM to 7:30PM
+            Every day from 7:30 AM to 6PM
           </p>
 
           <iframe
