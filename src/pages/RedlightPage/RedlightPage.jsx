@@ -37,7 +37,7 @@ function RedlightPage() {
         </h4>
         <h1 className="fade-element">
           Come and try the{" "}
-          <span style={{ color: "#e52d20" }}>first red light</span> in town
+          <span style={{ color: "#e52d20" }}>first red light</span> in Uluwatu
         </h1>
       </section>
 
