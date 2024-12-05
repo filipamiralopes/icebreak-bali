@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Helmet } from "react-helmet";
 import redLightImg2 from "../../assets/images/content/redlight-2.webp";
 import useFadeInOnScroll from "../../hooks/useFadeInOnScroll";
 import "./RedlightPage.css";
@@ -29,24 +30,84 @@ function RedlightPage() {
   }, []);
 
   return (
-    <div className="treatment-page treatment-page-red">
+    <>
+      {/* SEO Enhancements */}
+      <Helmet>
+        <title>Red Light Therapy in Bali - Skin & Recovery Benefits | Ice Break Bali</title>
+        <meta
+          name="description"
+          content="Try the first red light therapy in Uluwatu. Improve skin appearence, reduce inflammation, and accelerate healing with our state-of-the-art treatment."
+        />
+        <meta
+          name="keywords"
+          content="Red light therapy Uluwatu, skin rejuvenation, anti-aging therapy, Bali wellness, pain reduction therapy"
+        />
+        <meta property="og:title" content="Red Light Therapy in Uluwatu - Skin & Recovery: Red Light Therapy Benefits | Ice Break Bali" />
+        <meta
+          property="og:description"
+          content="Discover the benefits of red light therapy in Uluwatu, Bali. Improve skin appearence, reduce inflammation, and rejuvenate at Ice Break Bali."
+        />
+        <meta
+          property="og:image"
+          content="https://icebreakbali.com/assets/images/content/redlight-1.webp"
+        />
+        <meta property="og:url" content="https://icebreakbali.com/redlight" />
+        <meta property="og:type" content="article" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Red Light Therapy in Uluwatu - Skin & Recovery: Red Light Therapy Benefits | Ice Break Bali" />
+        <meta
+          name="twitter:description"
+          content="Discover the benefits of red light therapy in Uluwatu, Bali. Improve skin appearence, reduce inflammation, and rejuvenate at Ice Break Bali."
+        />
+        <meta
+          name="twitter:image"
+          content="https://icebreakbali.com/assets/images/content/redlight-1.webp"
+        />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            name: "Ice Break Bali",
+            image: "https://icebreakbali.com/assets/images/content/redlight-2.webp",
+            address: {
+              "@type": "PostalAddress",
+              streetAddress: "Bingin, Uluwatu",
+              addressLocality: "Bali",
+              addressRegion: "ID",
+              postalCode: "80361",
+              addressCountry: "Indonesia",
+            },
+            description: "Discover the benefits of red light therapy in Uluwatu, Bali. Improve skin appearence, reduce inflammation, and rejuvenate at Ice Break Bali.",
+            priceRange: "$$",
+            telephone: "+62 821-4783-0023",
+            openingHours: "Mo-Su 08:00-18:00",
+            sameAs: ["https://www.instagram.com/icebreakbali"],
+          })}
+        </script>
+      </Helmet>
+
+    <main className="treatment-page treatment-page-red">
       {/* Call to Action Section */}
       <section
         className="cta-section cta-section-red color-section"
         data-logo-color="logo-white"
       >
-        <h2 className="fade-element">
-          The only step missing in your daily routine
-        </h2>
-        <h1 className="fade-element">
-          Come and try the{" "}
-          <span style={{ color: "#e52d20" }}>first red light</span> in Uluwatu
-        </h1>
+        <header>
+          <h2 className="fade-element">
+            The only step missing in your daily routine
+          </h2>
+          <h1 className="fade-element">
+            Come and try the{" "}
+            <span style={{ color: "#e52d20" }}>first red light</span> in Uluwatu
+          </h1>
+        </header>
       </section>
 
       {/* What is it? */}
       <section className="info-section info-section-bg-red">
-        <h2 className="fade-element">What is it?</h2>
+        <header>
+          <h2 className="fade-element">What is it?</h2>
+        </header>
         <p className="fade-element">
           A LED panel that emits specific wavelengths of red and near-infrared
           light to your whole body
@@ -214,7 +275,8 @@ function RedlightPage() {
           ></iframe>
         </div>
       </section>
-    </div>
+    </main>
+    </>
   );
 }
 
