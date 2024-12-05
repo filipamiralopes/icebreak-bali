@@ -1,5 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
+import { Link } from "react-router-dom";
 import foundersImg from "../../assets/images/content/founders.webp";
 import useFadeInOnScroll from "../../hooks/useFadeInOnScroll";
 import "./AboutPage.css";
@@ -127,8 +128,16 @@ const AboutPage = () => {
                 We miss those icy waters here in Bali. So, we envisioned a space
                 where people (including ourselves!) could experience those same
                 benefits - a place that merges efficiency, honesty, challenge
-                and community. That is the foundation of Ice Break, a place
-                where you can transform through safe discomfort.
+                and community. That is the foundation of{" "}
+                <Link
+                  to="/"
+                  onClick={() => {
+                    window.scrollTo(0, 0);
+                  }}
+                >
+                  <span style={{ textDecoration: "underline", textUnderlineOffset: "4px" }}>Ice Break</span>
+                </Link>
+                , a place where you can transform through safe discomfort.
                 <br />
                 <br />
                 Whether you are sore from surfing or working out, hangover or
@@ -148,7 +157,11 @@ const AboutPage = () => {
               </p>
             </article>
             <div className="founders-img fade-element">
-              <img src={foundersImg} alt="Founders of Ice Break Bali" loading="lazy" />
+              <img
+                src={foundersImg}
+                alt="Founders of Ice Break Bali"
+                loading="lazy"
+              />
             </div>
           </div>
         </section>
