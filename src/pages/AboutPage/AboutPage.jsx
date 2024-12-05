@@ -84,7 +84,7 @@ const AboutPage = () => {
         </script>
       </Helmet>
 
-      <main className="about-page">
+      <main className="about-page color-section" >
         {/* Section 1 */}
         <section
           className="section header-section"

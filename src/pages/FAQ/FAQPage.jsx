@@ -221,7 +221,7 @@ function FAQPage() {
         </script>
       </Helmet>
 
-      <div className="faq-page">
+      <main className="faq-page color-section">
         <header className="faq-header">
           <h1 className="fade-element">Frequently asked questions</h1>
         </header>
@@ -356,7 +356,7 @@ function FAQPage() {
             </div>
           ))}
         </div>
-      </div>
+      </main>
     </>
   );
 }
