@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import yeahCoolImg from "../../assets/images/backgrounds/yeah-cool-green.png";
 import iceVideoMp4 from "../../assets/videos/ice-white.mp4";
 import iceVideoWebm from "../../assets/videos/ice-white.webm";
@@ -35,7 +36,9 @@ function HomePage() {
 
   // Check if the video is unsupported
   const handleVideoError = () => {
-    console.warn("Video is unsupported or failed to load. Falling back to image.");
+    console.warn(
+      "Video is unsupported or failed to load. Falling back to image."
+    );
     handleMediaLoaded(); // Treat the video as "loaded" to rely on the fallback image
   };
 
@@ -56,10 +59,80 @@ function HomePage() {
 
   return (
     <>
+      {/* SEO Enhancements */}
+      <Helmet>
+        <title>
+          Ice bath Uluwatu - Ice Bath and Red Light Therapy | Icebreak Bali
+        </title>
+        <meta
+          name="description"
+          content="Boost your recovery and wellbeing at Ice Break. Cold plunge, red light therapy, iced coffee and more. Visit us today in Bingin, Uluwatu, Bali."
+        />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            name: "Ice Break Bali",
+            image:
+              "https://icebreakbali.com/assets/images/backgrounds/yeah-cool-green.png",
+            address: {
+              "@type": "PostalAddress",
+              streetAddress: "Bingin, Uluwatu",
+              addressLocality: "Bali",
+              addressRegion: "ID",
+              postalCode: "80361",
+              addressCountry: "Indonesia",
+            },
+            openingHours: "Mo-Su 08:00-18:00",
+            priceRange: "$$",
+            telephone: "+62 812-3456-7890",
+            sameAs: ["https://www.instagram.com/icebreakbali"],
+          })}
+        </script>
+        {/* Open Graph Meta Tags */}
+        <meta
+          property="og:title"
+          content="Ice Break Bali - Ice Bath and Red Light Therapy in Uluwatu"
+        />
+        <meta
+          property="og:description"
+          content="Boost your recovery with ice bath, red light therapy, and more in Uluwatu, Bali. Drop in today!"
+        />
+        <meta
+          property="og:image"
+          content="https://icebreakbali.com/assets/images/content/ice-bath-6.webp"
+        />
+        <meta property="og:url" content="https://icebreakbali.com" />
+        <meta property="og:type" content="website" />
+
+        {/* Twitter Card Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Ice Break Bali - Ice Bath and Red Light Therapy in Uluwatu"
+        />
+        <meta
+          name="twitter:description"
+          content="Boost your recovery with ice bath, red light therapy, and more in Uluwatu, Bali. Drop in today!"
+        />
+        <meta
+          name="twitter:image"
+          content="https://icebreakbali.com/assets/images/content/ice-bath-6.webp"
+        />
+      </Helmet>
       {loading && <Loading />} {/* Show the spinner while loading */}
-      <div className={`home-page ${loading ? "hidden" : ""}`}>
-        {/* Main section */}
+      <main className={`home-page ${loading ? "hidden" : ""}`}>
+        {/* Landing */}
         <section className="landing-section color-section">
+          <header className="landing-section-content">
+            <img
+              className="fade-element"
+              src={yeahCoolImg}
+              alt="Yeah Cool Img"
+            />
+            <h1 className="fade-element">Ice Break, Uluwatu, Bali</h1>
+          </header>
+
           {isDesktop ? (
             <div className="video-wrapper">
               <picture>
@@ -75,6 +148,7 @@ function HomePage() {
                 autoPlay
                 muted
                 loop
+                preload="auto"
                 id="background-video"
                 onLoadedData={handleMediaLoaded} // Trigger when video loads
                 onError={handleVideoError} // Trigger fallback on video error
@@ -92,21 +166,13 @@ function HomePage() {
               onLoad={handleMediaLoaded} // Trigger when mobile background image loads
             />
           )}
-          <div className="landing-section-content">
-            <img
-              className="fade-element"
-              src={yeahCoolImg}
-              alt="Yeah cool img"
-            />
-            <h5 className="fade-element">Ice Break, Uluwatu, Bali</h5>
-          </div>
         </section>
 
         {/* Motto */}
         <section id="motto" className="color-section">
           <div className="fade-element">
             <header>
-              <h6>
+              <h2>
                 Boost your <span style={{ color: "#222221" }}>wellbeing</span>{" "}
                 and recovery through a{" "}
                 <span style={{ color: "#222221" }}>
@@ -114,16 +180,15 @@ function HomePage() {
                   challenging experience
                 </span>{" "}
                 while connecting with like-minded people.
-              </h6>
+              </h2>
             </header>
           </div>
         </section>
 
         {/* Services*/}
-
         <section id="our-services" className="fade-element color-section">
           <header>
-            <h1>Our services</h1>
+            <h2>Our services</h2>
           </header>
         </section>
 
@@ -261,30 +326,42 @@ function HomePage() {
         </section>
 
         <section className="no-booking-section color-section">
-          <h5 className="fade-element">
+          <h2 className="fade-element">
             No booking required, <br /> just drop in
-          </h5>
+          </h2>
         </section>
 
-        <section id="ig-section" className="color-section" data-logo-color="logo-white">
-          <h4 className="fade-element">
-            Follow us on{" "}
+        <section
+          id="ig-section"
+          className="color-section"
+          data-logo-color="logo-white"
+        >
+          <h2 className="fade-element">
+            Stay updated - follow us on{" "}
             <a
               id="instagram-link"
               href="https://www.instagram.com/icebreakbali"
+              aria-label="Follow Ice Break Bali on Instagram"
             >
               Instagram{" "}
             </a>
-            for more
-          </h4>
+          </h2>
 
-          <div className="instagram-feed color-section" data-logo-color="logo-white">
-            <script src="https://cdn.lightwidget.com/widgets/lightwidget.js" className="color-section" data-logo-color="logo-white"></script>
+          <div
+            className="instagram-feed color-section"
+            data-logo-color="logo-white"
+          >
+            <script
+              src="https://cdn.lightwidget.com/widgets/lightwidget.js"
+              className="color-section"
+              data-logo-color="logo-white"
+            ></script>
             <iframe
               src="https://cdn.lightwidget.com/widgets/0559dd1446c4571d911fb4b96ccb4ca9.html"
               scrolling="no"
               allowtransparency="true"
-              className="lightwidget-widget color-section" data-logo-color="logo-white"
+              className="lightwidget-widget color-section"
+              data-logo-color="logo-white"
               style={{
                 width: "100%",
                 border: "0",
@@ -295,10 +372,13 @@ function HomePage() {
         </section>
 
         <section className="maps-section color-section">
-          <p className="fade-element color-section" data-logo-color="logo-white">
+          <h2
+            className="fade-element color-section"
+            data-logo-color="logo-white"
+          >
             Find us in Bingin Uluwatu, Bali <br />
             Every day from 8 AM to 6PM
-          </p>
+          </h2>
 
           <iframe
             className="map color-section"
@@ -312,7 +392,7 @@ function HomePage() {
             marginWidth="0"
           ></iframe>
         </section>
-      </div>
+      </main>
     </>
   );
 }

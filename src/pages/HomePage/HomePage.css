@@ -45,9 +45,10 @@ html {
 .landing-section-content img {
   height: 250px;
 }
-.landing-section-content h5 {
+.landing-section-content h1 {
   font-size: 1.2rem;
   text-align: center;
+  font-family: "CringeSans Bold";
 }
 
 /* MOTTO */
@@ -61,7 +62,7 @@ html {
   padding: 0;
   margin: 0;
 }
-#motto h6 {
+#motto h2 {
   font-size: 1.2rem;
   line-height: 2rem;
   color: var(--stone);
@@ -104,10 +105,11 @@ html {
   align-items: center;
 }
 
-.no-booking-section h5 {
+.no-booking-section h2 {
   padding: 0;
   width: 70%;
   font-size: 1.8rem;
+  font-family: "CringeSans Bold";
 }
 
 /* IG and Maps Sections */
@@ -127,17 +129,17 @@ html {
   order: 2;
   padding: 0 5rem;
 }
-#ig-section > h4 {
+#ig-section > h2 {
   padding: 2rem 2rem 0 2rem;
   width: 50%;
   font-size: 1.2rem;
   color: var(--stone);
   margin-bottom: 0;
 }
-#ig-section > h4 > a {
+#ig-section > h2 > a {
   color: var(--stone);
 }
-#ig-section > h4 > a:hover {
+#ig-section > h2 > a:hover {
   color: var(--verdigris);
 }
 .lightwidget-widget {
@@ -145,13 +147,14 @@ html {
   padding: 2rem 0;
 }
 
-.maps-section p {
+.maps-section h2 {
   padding: 2rem 0;
   margin-top: 0;
   width: 80%;
   font-size: 1.2rem;
   color: var(--stone);
   text-align: center;
+  line-height: 1.8rem;
 }
 
 .map {
@@ -203,7 +206,7 @@ html {
     height: 450px;
   }
 
-  .landing-section-content h5 {
+  .landing-section-content h1 {
     font-size: 1.2rem;
     padding: 0;
     margin: 0;
@@ -220,7 +223,7 @@ html {
     margin-bottom: 0;
   }
 
-  #motto h6 {
+  #motto h2 {
     font-size: 2.5rem;
     line-height: 3.5rem;
     padding: 2rem 6rem 4rem 6rem;
@@ -231,7 +234,7 @@ html {
     margin: 0;
   }
   /* Animated border */
-  #motto h6::after {
+  #motto h2::after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -253,7 +256,7 @@ html {
     padding: 0;
     font-size: 1.3rem;
   }
-  #our-services > header > h1 {
+  #our-services > header > h2 {
     padding: 2rem;
     font-size: 2rem;
     margin: 0;
@@ -328,7 +331,7 @@ html {
     background-image: url("/src/assets/images/backgrounds/ice-white-2.webp");
     background-size: cover;
   }
-  .no-booking-section h5 {
+  .no-booking-section h2 {
     padding-top: 3rem;
     font-size: 2.5rem;
   }
@@ -340,7 +343,7 @@ html {
   .instagram-feed {
     min-width: 80%;
   }
-  #ig-section h4 {
+  #ig-section h2 {
     font-size: 1.5rem;
     padding: 3rem;
   }
@@ -350,7 +353,7 @@ html {
   }
 
   /* Maps Section */
-  .maps-section h4 {
+  .maps-section h2 {
     font-size: 1.3rem;
     padding-top: 3.5rem;
   }
