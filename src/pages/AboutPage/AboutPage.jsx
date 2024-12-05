@@ -65,7 +65,7 @@ const AboutPage = () => {
               <h6 style={{ color: "#6fbabc", fontSize: "1.2rem" }}>If you can face the ice,<br/> what else can you do in your life?</h6>
             </p>
           </article>
-          <div class="founders-img fade-element">
+          <div className="founders-img fade-element">
             <img src={foundersImg} alt="Founders image" loading="lazy" />
           </div>
         </div>

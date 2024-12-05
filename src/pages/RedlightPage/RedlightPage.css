@@ -15,7 +15,7 @@
   background-color: var(--off-black);
 }
 
-.cta-section-red h4 {
+.cta-section-red h2 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
@@ -189,17 +189,6 @@
   min-height: 60vh;
 }
 
-.video-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
-}
-
-.video-grid iframe {
-  width: 100%;
-  height: auto;
-}
-
 /* Desktop and Tablet (min-width: 1024px) */
 @media (min-width: 1024px) {
   .cta-section-red h1 {
@@ -254,9 +243,5 @@
   }
   .learn-more-section {
     padding: 3rem 2rem;
-  }
-
-  .video-grid {
-    grid-template-columns: repeat(2, 1fr);
   }
 }

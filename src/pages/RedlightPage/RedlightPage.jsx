@@ -31,10 +31,13 @@ function RedlightPage() {
   return (
     <div className="treatment-page treatment-page-red">
       {/* Call to Action Section */}
-      <section className="cta-section cta-section-red color-section" data-logo-color="logo-white">
-        <h4 className="fade-element">
+      <section
+        className="cta-section cta-section-red color-section"
+        data-logo-color="logo-white"
+      >
+        <h2 className="fade-element">
           The only step missing in your daily routine
-        </h4>
+        </h2>
         <h1 className="fade-element">
           Come and try the{" "}
           <span style={{ color: "#e52d20" }}>first red light</span> in Uluwatu
@@ -43,25 +46,31 @@ function RedlightPage() {
 
       {/* What is it? */}
       <section className="info-section info-section-bg-red">
-        <h1 className="fade-element">What is it?</h1>
-        <h6 className="fade-element">
+        <h2 className="fade-element">What is it?</h2>
+        <p className="fade-element">
           A LED panel that emits specific wavelengths of red and near-infrared
           light to your whole body
-        </h6>
-        <h6 className="fade-element">
-          Typically the sessions range from 10-20min
-        </h6>
+        </p>
+        <p className="fade-element">
+          Typically the sessions range from 10 to 20min
+        </p>
       </section>
 
       {/* Benefit Sections */}
 
-      <section className="fade-element benefits-of benefits-of-red color-section" data-logo-color="logo-white">
+      <section
+        className="fade-element benefits-of benefits-of-red color-section"
+        data-logo-color="logo-white"
+      >
         <header>
-          <h1 className="fade-element">Benefits of red light therapy</h1>
+          <h2 className="fade-element">Benefits of red light therapy</h2>
         </header>
       </section>
 
-      <section className="benefit-section text-right benefit-section-bg-red color-section" data-logo-color="logo-white">
+      <section
+        className="benefit-section text-right benefit-section-bg-red color-section"
+        data-logo-color="logo-white"
+      >
         <div className="benefit-content-red">
           <ul className="custom-icon-list fade-element">
             <li>Improves skin quality and appearance *</li>
@@ -88,7 +97,10 @@ function RedlightPage() {
           </div>
         </div>
       </section>
-      <section className="scrolling-text-section color-section" data-logo-color="logo-white">
+      <section
+        className="scrolling-text-section color-section"
+        data-logo-color="logo-white"
+      >
         <div className="scrolling-text-container">
           <ul className="custom-icon-list-scrolling">
             <li>* Less wrinkles, fine lines and age spots</li>
@@ -110,41 +122,51 @@ function RedlightPage() {
       </section>
 
       {/* What to Expect Section */}
-      <section className="expect-section expect-section-red-bg color-section" data-logo-color="logo-white">
-        <h2>What to Expect?</h2>
-        <div className="expect-steps">
-          <div className="step" style={{ "--step-index": 0 }}>
+      <section
+        className="expect-section expect-section-red-bg color-section"
+        data-logo-color="logo-white"
+      >
+        <header>
+          <h2>What to Expect?</h2>
+        </header>
+        <ul className="expect-steps">
+          <li className="step" style={{ "--step-index": 0 }}>
             Check-in at the counter with our team and choose your program
-          </div>
-          <div className="step" style={{ "--step-index": 1 }}>
+          </li>
+          <li className="step" style={{ "--step-index": 1 }}>
             The team will guide you to the private room
-          </div>
-          <div className="step" style={{ "--step-index": 2 }}>
+          </li>
+          <li className="step" style={{ "--step-index": 2 }}>
             Get as naked as you are comfortable (the more exposed skin the
             better)
-          </div>
-          <div className="step" style={{ "--step-index": 3 }}>
+          </li>
+          <li className="step" style={{ "--step-index": 3 }}>
             Tip: best if your skin is clean of any oils, lotions, make-up and
             sunscreen, feel free to use our shower or bathroom
-          </div>
-          <div className="step" style={{ "--step-index": 4 }}>
+          </li>
+          <li className="step" style={{ "--step-index": 4 }}>
             Connect to our soundsystem and play your favorite tunes
-          </div>
-          <div className="step" style={{ "--step-index": 5 }}>
+          </li>
+          <li className="step" style={{ "--step-index": 5 }}>
             Enjoy the light!
-          </div>
-          <div className="step" style={{ "--step-index": 6 }}>
+          </li>
+          <li className="step" style={{ "--step-index": 6 }}>
             Make sure you turn to cover your whole body
-          </div>
-          <div className="step" style={{ "--step-index": 7 }}>
+          </li>
+          <li className="step" style={{ "--step-index": 7 }}>
             When the program is done, the light will turn off automatically
-          </div>
-        </div>
+          </li>
+        </ul>
       </section>
 
       {/* First Time Section */}
-      <section className="first-time-section first-time-section-red-bg color-section" data-logo-color="logo-white">
-        <h2 className="fade-element">First Time?</h2>
+      <section
+        className="first-time-section first-time-section-red-bg color-section"
+        data-logo-color="logo-white"
+      >
+        <header>
+          <h2 className="fade-element">First Time?</h2>
+        </header>
         <p className="fade-element">
           Don't worry! Our staff will let you know all the details and setup the
           session for you. If you have any questions during the session, give
@@ -154,47 +176,41 @@ function RedlightPage() {
 
       {/* Learn More Section */}
       <section className="learn-more-section color-section">
-        <h2 className="fade-element">The Science Behind</h2>
+        <header>
+          <h2 className="fade-element">The Science Behind</h2>
+        </header>
         <div className="video-grid">
           <iframe
-            width="560"
-            height="315"
             src="https://www.youtube.com/embed/UF0nqolsNZc?si=sqJ8UuAUG8lzqqDX"
             title="YouTube video player"
-            frameborder="0"
+            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullscreen
           ></iframe>
           <iframe
-            width="560"
-            height="315"
             src="https://www.youtube.com/embed/aMLso7-yRUc?si=IoTDG4xoehjsSGeF"
             title="YouTube video player"
-            frameborder="0"
+            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullscreen
           ></iframe>
           <iframe
-            width="560"
-            height="315"
             src="https://www.youtube.com/embed/jnbGuZIPljs?si=YXH8R7i-ih0A7cKg"
             title="YouTube video player"
-            frameborder="0"
+            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullscreen
           ></iframe>
           <iframe
-            width="560"
-            height="315"
             src="https://www.youtube.com/embed/AkvpcziY7GY?si=JhHp5nWnJinxjzEO"
             title="YouTube video player"
-            frameborder="0"
+            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullscreen
           ></iframe>
         </div>
       </section>

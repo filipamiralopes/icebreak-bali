@@ -85,7 +85,7 @@ function HomePage() {
             },
             openingHours: "Mo-Su 08:00-18:00",
             priceRange: "$$",
-            telephone: "+62 812-3456-7890",
+            telephone: "+62 821-4783-0023",
             sameAs: ["https://www.instagram.com/icebreakbali"],
           })}
         </script>

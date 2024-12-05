@@ -20,7 +20,7 @@
   color: var(--off-black);
 }
 
-.cta-section h4 {
+.cta-section h2 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
@@ -42,16 +42,19 @@
   align-items: center;
   justify-content: center;
 }
-
-.info-section h6 {
+.info-section h2 {
+  font-size: 3rem;
+}
+.info-section p {
   margin: 1rem 0;
   font-size: 1rem;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-family: "CringeSans Bold";
 }
 
 /* Benefit Section (Mobile-First) */
 
-.benefits-of h1 {
+.benefits-of h2 {
   padding: 4rem 0 2rem 0;
   font-size: 2rem;
   margin: 0;
@@ -110,6 +113,10 @@
 }
 
 /* Vertical timeline styling */
+.expect-steps li {
+  list-style-type: none
+}
+
 .expect-steps {
   position: relative;
   display: flex;
@@ -235,10 +242,9 @@
 }
 
 .video-grid iframe {
-  width: 100%;
-  height: auto;
+  width: 330px;
+  height: 250px;
 }
-
 /* Desktop and Tablet (min-width: 1024px) */
 @media (min-width: 1024px) {
   .cta-section {
@@ -253,7 +259,7 @@
     min-height: 70dvh;
     background-image: url("/src/assets/images/backgrounds/ice-green-1.webp");
   }
-  .info-section h6 {
+  .info-section p {
     font-size: 1.5rem;
     width: 40%;
   }
@@ -359,5 +365,10 @@
 
   .video-grid {
     grid-template-columns: repeat(2, 1fr);
+    margin: 0 1rem;
+  }
+  .video-grid iframe {
+    width: 530px;
+    height: 250px;
   }
 }
