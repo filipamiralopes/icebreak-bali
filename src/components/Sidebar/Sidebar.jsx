@@ -66,10 +66,11 @@ const Sidebar = () => {
         </div>
       )}
 
-      <div
+      <nav
         ref={sidebarRef}
         className={`sidebar ${isOpen ? "open" : ""}`}
         onClick={(e) => e.stopPropagation()}
+        aria-label="Main Sidebar Navigation"
       >
         <div className="close-icon" onClick={toggleSidebar}>
           <img
@@ -92,7 +93,7 @@ const Sidebar = () => {
         </Link>
 
         <div className="know-more">
-          <h4 onClick={toggleKnowMore}>
+          <h4 onClick={toggleKnowMore} aria-expanded={isKnowMoreOpen}>
             Know More
             <img
               src={arrowDownIcon}
@@ -115,7 +116,7 @@ const Sidebar = () => {
         <Link onClick={handleContactClick}>
           <h4>Contact Us</h4>
         </Link>
-      </div>
+      </nav>
     </>
   );
 };
