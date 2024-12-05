@@ -1,5 +1,6 @@
 import arrowDown from "../../assets/icons/arrow-down.png";
 import React, { useState } from "react";
+import { Helmet } from "react-helmet";
 import useFadeInOnScroll from "../../hooks/useFadeInOnScroll";
 import "./FAQPage.css";
 
@@ -144,13 +145,74 @@ function FAQPage() {
   useFadeInOnScroll(".fade-element", 0.3, 0.3);
 
   return (
+    <>
+      {/* SEO Enhancements */}
+      <Helmet>
+        <title>FAQs - Ice Bath and Red Light Therapy in Uluwatu | Ice Break Bali</title>
+        <meta
+          name="description"
+          content="Find answers to frequently asked questions about ice bath and red light therapy in Uluwatu, Bali. Learn about benefits, safety, and session details."
+        />
+        <meta
+          name="keywords"
+          content="Ice bath FAQs, Red light therapy FAQs, wellness questions Uluwatu, Bali, cold plunge therapy, light therapy"
+        />
+        <meta property="og:title" content="FAQs - Ice Bath and Red Light Therapy in Uluwatu | Ice Break Bali" />
+        <meta
+          property="og:description"
+          content="Find answers to frequently asked questions about ice bath and red light therapy in Uluwatu, Bali. Learn about benefits, safety, and session details."
+        />
+        <meta property="og:url" content="https://icebreakbali.com/faq" />
+        <meta property="og:type" content="article" />
+        <meta property="og:image" content="https://icebreakbali.com/assets/images/content/founders.webp" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="FAQs - Ice Bath and Red Light Therapy in Uluwatu | Ice Break Bali" />
+        <meta
+          name="twitter:description"
+          content="Find answers to frequently asked questions about ice bath and red light therapy in Uluwatu, Bali. Learn about benefits, safety, and session details."
+        />
+        <meta name="twitter:image" content="https://icebreakbali.com/assets/images/content/founders.webp" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: [
+              ...faqDataGeneral.map((item) => ({
+                "@type": "Question",
+                name: item.question,
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: item.answer.text,
+                },
+              })),
+              ...faqDataIce.map((item) => ({
+                "@type": "Question",
+                name: item.question,
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: item.answer.text,
+                },
+              })),
+              ...faqDataRed.map((item) => ({
+                "@type": "Question",
+                name: item.question,
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: item.answer.text,
+                },
+              })),
+            ],
+          })}
+        </script>
+      </Helmet>
+
     <div className="faq-page">
       <header className="faq-header">
-        <h2 className="fade-element">Frequently asked questions</h2>
+        <h1 className="fade-element">Frequently asked questions</h1>
       </header>
 
-      <header className="faq-header-h1">
-        <h1 className="fade-element">General</h1>
+      <header className="faq-header-h2">
+        <h2 className="fade-element">General</h2>
       </header>
 
       <div className="faq-list fade-element">
@@ -160,7 +222,7 @@ function FAQPage() {
             className={`faq-item ${activeIndex === index ? "active" : ""}`}
             onClick={() => toggleFAQ(index)}
           >
-            <h2>
+            <h3>
               {item.question}
               <span
                 className={`arrow ${activeIndex === index ? "rotate" : ""}`}
@@ -172,7 +234,7 @@ function FAQPage() {
                 />
               </span>{" "}
               {/* Arrow icon */}
-            </h2>
+            </h3>
             <div className="faq-answer">
               <p>{item.answer.text}</p>
               {/* Render list if it exists */}
@@ -188,8 +250,8 @@ function FAQPage() {
         ))}
       </div>
 
-      <header className="faq-header-h1">
-        <h1 className="fade-element">Ice bath</h1>
+      <header className="faq-header-h2">
+        <h2 className="fade-element">Ice bath</h2>
       </header>
 
       <div className="faq-list fade-element">
@@ -199,7 +261,7 @@ function FAQPage() {
             className={`faq-item ${activeIndex === index ? "active" : ""}`}
             onClick={() => toggleFAQ(index)}
           >
-            <h2>
+            <h3>
               {item.question}
               <span
                 className={`arrow ${activeIndex === index ? "rotate" : ""}`}
@@ -211,7 +273,7 @@ function FAQPage() {
                 />
               </span>{" "}
               {/* Arrow icon */}
-            </h2>
+            </h3>
             <div className="faq-answer">
               <p>{item.answer.text}</p>
               {/* Render list if it exists */}
@@ -227,8 +289,8 @@ function FAQPage() {
         ))}
       </div>
 
-      <header className="faq-header-h1">
-        <h1 className="fade-element">Red Light Therapy</h1>
+      <header className="faq-header-h2">
+        <h2 className="fade-element">Red Light Therapy</h2>
       </header>
 
       <div className="faq-list fade-element">
@@ -238,7 +300,7 @@ function FAQPage() {
             className={`faq-item ${activeIndex === index ? "active" : ""}`}
             onClick={() => toggleFAQ(index)}
           >
-            <h2>
+            <h3>
               {item.question}
               <span
                 className={`arrow ${activeIndex === index ? "rotate" : ""}`}
@@ -250,7 +312,7 @@ function FAQPage() {
                 />
               </span>{" "}
               {/* Arrow icon */}
-            </h2>
+            </h3>
             <div className="faq-answer">
               <p>{item.answer.text}</p>
               {/* Render list if it exists */}
@@ -266,6 +328,7 @@ function FAQPage() {
         ))}
       </div>
     </div>
+    </>
   );
 }
 

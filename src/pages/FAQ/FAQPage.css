@@ -16,7 +16,7 @@
   margin: 2rem 2rem 0 2rem;
 }
 
-.faq-header h2 {
+.faq-header h1 {
   font-size: 1.4rem;
   color: var(--off-black);
   margin-top: 2.5rem;
@@ -24,11 +24,13 @@
   padding-top: 2rem;
 }
 
-.faq-header-h1 {
-  font-size: 2rem;
+.faq-header-h2 {
   text-align: center;
   margin: 1.5rem 0;
   padding: 1rem 2rem;
+}
+.faq-header-h2 h2{
+  font-size: 2.5rem;
 }
 
 /* FAQ List Styling */
@@ -52,7 +54,7 @@
   background-color: rgba(255, 255, 255, 1);
 }
 
-.faq-item h2 {
+.faq-item h3 {
   font-size: 1.2rem;
   margin: 0;
   display: flex;
@@ -116,14 +118,16 @@
     padding: 4rem 0 1rem 0;
   }
 
-  .faq-header h2 {
+  .faq-header h1 {
     font-size: 1.8rem;
     margin-top: 1rem;
   }
 
-  .faq-header-h1 {
-    font-size: 3rem;
+  .faq-header-h2 {
     margin: 2rem 0;
+  }
+  .faq-header-h2 h2 {
+    font-size: 3rem;
   }
 
   /* FAQ List Styling */
@@ -132,7 +136,7 @@
   }
 
   /* FAQ Item */
-  .faq-item h2 {
+  .faq-item h3 {
     font-size: 1.25rem;
   }
 
